@@ -1,0 +1,23 @@
+<div class="tag-list">
+  <div class="loop-slider">
+    @for(tag of tags; track tag){
+    <div class="tag"><span>#</span> {{ tag }}</div>
+    }
+  </div>
+</div>
+
+<div class="fade"></div>
+
+<section class="tags-section py-5 nmc-bg-light">
+  <div class="container-boxed">
+    <div class="text-center heading mb-5">
+      <h2 class="mb-4 text-bottom-line position-relative">What You'll Learn</h2>
+    </div>
+
+    <div class="plain row align-items-center flex-wrap gy-2 justify-content-center">
+      @for(tag of tags; track tag){
+      <div class="tag col-auto"><span>#</span> {{ tag }}</div>
+      }
+    </div>
+  </div>
+</section>

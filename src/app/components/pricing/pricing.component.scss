@@ -1,0 +1,72 @@
+@use "../../styles/variables" as *;
+
+.pricing-section {
+    .heading {
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+    }
+
+    .pricing-table {
+        padding: 30px;
+        background: $nmc-white;
+        -webkit-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
+        -moz-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
+        box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
+        transition: ease all .3s;
+        position: relative;
+
+        .pricing-text li {
+            font-weight: 600;
+            color: $nmc-medium-grey;
+            list-style-type: disc;
+            text-align: left;
+        }
+
+        .price {
+            sup {
+                font-size: 24px;
+                top: -1em;
+                color: $nmc-medium-grey;
+            }
+
+            .number {
+                font-size: 60px;
+                font-weight: 600;
+                color: $nmc-primary;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            -webkit-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.2);
+        }
+
+    }
+
+    figure {
+        max-width: 275px;
+        height: 100%;
+    }
+}
+
+a.disabled {
+    color: white;
+    background-color: grey;
+    pointer-events: none;
+}
+
+@media (max-width: 992px) {
+    .pricing-section .pricing-table .price .number {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    .note h3 {
+        font-size: 20px;
+    }
+}

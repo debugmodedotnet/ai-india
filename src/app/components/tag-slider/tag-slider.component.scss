@@ -1,0 +1,97 @@
+@use "../../styles/variables" as *;
+
+.tags-section {
+    .heading {
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+    }
+}
+
+.tag-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem 0;
+    position: relative;
+    padding: 1.5rem 0;
+    overflow: hidden;
+}
+
+.plain {
+    white-space: nowrap;
+}
+
+.loop-slider {
+    display: flex;
+    animation-name: loop;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 15s;
+    width: calc(200%);
+    white-space: nowrap;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 0 0.2rem;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    padding: 0.9rem 1.1rem;
+    margin-right: 0.5rem;
+}
+
+.tag span {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.tag:nth-child(odd) {
+    background-color: #334155;
+}
+
+.tag:nth-child(even) {
+    background-color: #64748b;
+}
+
+.tag:nth-child(3n) {
+    background-color: #f59e0b;
+}
+
+.tag:nth-child(4n) {
+    background-color: #14b8a6;
+}
+
+.tag:nth-child(5n) {
+    background-color: #e11d48;
+}
+
+.tag:nth-child(6n) {
+    background-color: #9333ea;
+}
+
+.fade {
+    pointer-events: none;
+    background: linear-gradient(90deg, #1e293b, transparent 30%, transparent 70%, #1e293b);
+    position: absolute;
+    inset: 0;
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.tag-list .loop-slider:nth-child(odd) {
+    animation-direction: reverse;
+}

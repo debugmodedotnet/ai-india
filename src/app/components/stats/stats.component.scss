@@ -1,0 +1,25 @@
+@use "../../styles/variables" as *;
+
+.event-summary .event-card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+    h5 {
+        border-top: 1px solid $nmc-dark-grey;
+    }
+}
+
+// @media (max-width: 1199px) {
+//     .event-summary {
+//         h5 {
+//             font-size: 23px !important;
+//         }
+//     }
+// }
+
+// @media (max-width: 1099px) {
+//     .event-summary {
+//         h5 {
+//             font-size: 21px !important;
+//         }
+//     }
+// }

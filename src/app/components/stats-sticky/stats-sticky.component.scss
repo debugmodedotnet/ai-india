@@ -1,0 +1,67 @@
+.sticky-note {
+  position: relative;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 200px;
+  text-align: center;
+  background-color: #FDACAC;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent rgba(0, 0, 0, 0.1) transparent transparent;
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .sticky-category {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.12);
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    align-self: flex-start;
+  }
+}
+
+// .sticky-yellow {
+//   background: #ff9393;
+//   &:hover {
+//     transform: translateY(-5px);
+//   }
+// }
+
+// .sticky-pink {
+//   background: #f8bbd9;
+//   &:hover {
+//     transform: translateY(-5px);
+//   }
+// }
+
+// .sticky-blue {
+//   background: #bbdefb;
+//   &:hover {
+//     transform: translateY(-5px);
+//   }
+// }
+
+// .sticky-green {
+//   background: #bbfbc6;
+//   &:hover {
+//     transform: translateY(-5px);
+//   }
+// }

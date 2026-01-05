@@ -1,0 +1,169 @@
+@use "../../styles/variables" as *;
+
+.speakers-section {
+    .heading {
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+    }
+
+    .speaker {
+        .speaker-img figure {
+            height: 350px;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+            border: 1px solid $nmc-primary;
+
+            img {
+                object-position: top;
+            }
+        }
+
+        .speaker-info span {
+            display: block;
+            margin-top: 10px;
+        }
+
+        // .flag {
+        //     width: 98px;
+        //     height: auto;
+        //     max-height: 64px;
+        //     box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.07);
+        //     border: 1px solid $nmc-dark-grey;
+        // }
+
+        .flag {
+            width: 50px;
+            height: 30px;
+            top: 0;
+            right: 0;
+            box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.07);
+            border: 1px solid $nmc-dark-grey;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .speaker {
+        .speaker-img figure {
+            height: 200px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .w-767-100 {
+        width: 100% !important;
+    }
+
+    .speaker {
+        gap: 1.5rem !important;
+
+        .flag {
+            position: relative !important;
+            margin: 15px auto;
+        }
+
+        .speaker-img {
+            width: 350px;
+            height: auto;
+
+            figure {
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .speaker {
+        margin-top: 30px !important;
+
+        .speaker-img {
+            width: 280px;
+        }
+    }
+
+    .speakers-list {
+        margin-top: 0 !important;
+    }
+
+    .error-label {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 365px) {
+    .error-label {
+        font-size: 13px !important;
+    }
+}
+
+// .speaker {
+//     figure {
+//         height: 358px;
+//         border: 2px solid $nmc-primary;
+//     }
+
+//     .flag {
+//         width: 50px;
+//         height: 30px;
+//         top: 0;
+//         right: 0;
+//         z-index: 1;
+//         box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.07);
+//     }
+
+//     .flip-card {
+//         background-color: transparent;
+//         width: 100%;
+//         height: 358px;
+//         perspective: 1000px;
+
+//         .flip-card-inner {
+//             position: relative;
+//             width: 100%;
+//             height: 100%;
+//             box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+//             transition: transform 0.6s ease;
+//             transform-style: preserve-3d;
+//         }
+
+//         &:hover .flip-card-inner,
+//         &:focus .flip-card-inner {
+//             transform: rotateY(180deg);
+//         }
+
+//         .flip-card-front,
+//         .flip-card-back {
+//             position: absolute;
+//             width: 100%;
+//             height: 100%;
+//             backface-visibility: hidden;
+//         }
+
+//         .flip-card-front {
+//             background-color: $nmc-white;
+//             color: $nmc-dark-grey;
+
+//             figure {
+//                 height: 100%;
+//             }
+//         }
+
+//         .flip-card-back {
+//             background-color: $nmc-dark-grey;
+//             color: $nmc-white;
+//             border: 2px solid $nmc-primary;
+//             transform: rotateY(180deg);
+//             padding: 20px;
+
+//         }
+//     }
+
+//     .social a:hover,
+//     .social a:focus {
+//         color: $nmc-primary !important;
+//         transition: color 0.3s ease;
+//     }
+// }

@@ -1,0 +1,89 @@
+@use "../../styles/variables" as *;
+
+.agenda-section {
+    .heading {
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+    }
+
+    .agenda {
+        width: 100%;
+        background: $nmc-white;
+        padding: 40px;
+        margin-bottom: 20px;
+        -webkit-box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.07);
+        -moz-box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.07);
+        box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.07);
+
+        .speaker-img {
+            width: 120px;
+            height: 120px;
+            border: 2px solid $nmc-primary;
+
+            img {
+                object-position: top;
+            }
+
+            &.icon img {
+                height: auto !important;
+                width: 70px !important;
+            }
+        }
+
+        .text {
+            width: calc(100% - 120px);
+
+            .time {
+                color: rgba(0, 0, 0, .4);
+            }
+
+            h2 {
+                font-size: 24px;
+                font-weight: 700;
+                color: $nmc-dark-grey;
+            }
+
+            h3.speaker-name {
+                font-size: 20px;
+            }
+
+            .position {
+                color: rgba(0, 0, 0, .4);
+            }
+        }
+
+    }
+}
+
+@media (max-width: 899px) {
+    .position {
+        display: block;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .agenda-section .agenda {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 575px) {
+    .agenda-section .agenda .text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .error-label {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 365px) {
+    .error-label {
+        font-size: 13px !important;
+    }
+}

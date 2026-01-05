@@ -1,0 +1,235 @@
+@use "../../styles/variables" as *;
+
+.border-right {
+    border-right: 1px solid $nmc-primary;
+}
+
+.workshops-section {
+    .heading {
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+    }
+
+    .workshops-listing .wrapper {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        min-height: 100px;
+
+        .nmc-btn-primary:hover {
+            background-color: $nmc-primary !important;
+            transition: all ease 0.3s;
+        }
+
+        .display-img {
+            height: 45px;
+            width: 45px;
+            border: 2px solid $nmc-primary;
+        }
+    }
+
+    .workshops-details {
+        .nmc-btn-primary {
+            box-shadow: none;
+            font-weight: 800;
+            letter-spacing: .2rem;
+            background-color: $nmc-dark-grey;
+        }
+    }
+
+    .speaker {
+        .speaker-img figure {
+            height: 300px;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+            border: 1px solid $nmc-primary;
+
+            img {
+                object-position: center;
+            }
+        }
+
+        .speaker-info span {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .flag {
+            width: 50px;
+            height: 30px;
+            top: 0;
+            right: 0;
+            box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.07);
+            border: 1px solid $nmc-dark-grey;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .speaker {
+        .speaker-img figure {
+            height: 200px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .w-767-100 {
+        width: 100% !important;
+    }
+
+    .speaker {
+        gap: 1.5rem !important;
+
+        .flag {
+            position: relative !important;
+            margin: 15px auto;
+        }
+
+        .speaker-img {
+            width: 350px;
+            height: auto;
+
+            figure {
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .date-wrapper h3 {
+        font-size: 24px !important;
+    }
+
+    .list-pricing {
+        gap: 2rem !important;
+
+        p {
+            font-size: 15px !important;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .date-wrapper h3 {
+        font-size: 20px !important;
+    }
+
+    .list-pricing {
+        gap: .8rem !important;
+
+        p {
+            font-size: 14px !important;
+        }
+    }
+
+    .display-img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .speaker {
+        .speaker-img {
+            width: 280px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .date-wrapper b {
+        display: block;
+    }
+
+    .workshops-listing .wrapper {
+        h3 {
+            font-size: 22px !important;
+        }
+    }
+
+    .list-pricing {
+        // flex-direction: column !important;
+        // align-items: flex-end !important;
+        gap: 1rem !important;
+    }
+
+    .timing p,
+    .timing i {
+        font-size: 15px;
+    }
+
+    .pricing h4 {
+        font-size: 20px !important;
+    }
+
+    .pricing h4+h4 {
+        margin-top: 10px !important;
+    }
+}
+
+// @media (max-width: 991px) {
+//     .speaker {
+//         .speaker-img figure {
+//             height: 100px;
+//         }
+
+//         .speaker-info {
+//             h3 {
+//                 font-size: 24px !important;
+
+//                 span {
+//                     font-size: 16px !important;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 767px) {
+//     .w-767-100 {
+//         width: 100% !important;
+//     }
+
+//     .speaker {
+//         gap: 1.5rem !important;
+
+//         .speaker-img {
+//             width: 250px;
+//             height: auto;
+
+//             figure {
+//                 height: auto;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 575px) {
+//     .speaker {
+//         .speaker-img {
+//             width: 150px;
+//         }
+//     }
+// }
+
+// @media (max-width: 375px) {
+//     .speaker-name {
+//         flex-direction: column-reverse;
+//     }
+
+//     .timing p,
+//     .timing i {
+//         font-size: 15px;
+//     }
+
+//     .pricing h4 {
+//         font-size: 20px !important;
+//     }
+
+//     .pricing h4+h4 {
+//         margin-top: 10px !important;
+//     }
+
+//     .flag {
+//         margin-bottom: 15px;
+//     }
+// }

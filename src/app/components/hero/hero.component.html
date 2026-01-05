@@ -1,0 +1,252 @@
+<section class="hero-section overflow-hidden position-relative py-lg-5 pb-5 pt-4">
+  <div class="container-boxed">
+    <!-- <div
+      class="d-flex justify-content-center align-items-center position-relative z-2"
+    >
+      <div class="hero-text text-center">
+        <h1 class="fw-bolder nmc-dark-grey mb-4">
+          ng-India
+          <sup
+            class="font-18 nmc-bg-primary py-1 px-2 nmc-white position-relative"
+          >
+            7th Edition
+          </sup>
+        </h1>
+
+        <div
+          class="edition font-18 nmc-bg-primary py-1 px-2 nmc-white position-relative d-none fw-bold mb-3"
+        >
+          7th Edition
+        </div>
+
+        <h2
+          class="fw-bolder nmc-dark-grey font-38 font-family-poppins mb-4 mb-sm-5"
+        >
+          India's Largest
+          <span class="nmc-primary text-bottom-line position-relative"
+            >Angular</span
+          >
+          Conference!
+        </h2>
+
+        <div
+          class="d-flex align-items-center justify-content-center flex-column flex-sm-row gap-4 mb-4"
+        >
+          <h6 class="font-26 nmc-dark-grey m-0">
+            <i class="bi bi-calendar-event me-2 font-20 nmc-primary"></i>April
+            12th, 2025
+          </h6>
+
+          <h6 class="font-26 nmc-dark-grey m-0">
+            <i class="bi bi-geo-alt-fill me-2 font-20 nmc-primary"></i>Gurgaon,
+            India
+          </h6>
+        </div>
+
+        <button
+        class="nmc-btn-primary px-5 h-auto py-3 mx-auto font-20 nmc-bg-dark-grey"
+        type="button"
+        [routerLink]="['/home']"
+        fragment="pricing"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+          Buy Tickets
+        </button>
+      </div>
+    </div> -->
+
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-7">
+        <div class="hero-text text-center text-lg-start">
+          <h1 class="fw-bolder nmc-dark-grey mb-4">
+            ng-India
+            <sup class="font-18 nmc-bg-primary py-1 px-2 nmc-white position-relative">
+              8th Edition
+            </sup>
+          </h1>
+
+          <div class="edition font-18 nmc-bg-primary py-1 px-2 nmc-white position-relative d-none fw-bold mb-3">
+            8th Edition
+          </div>
+
+          <h2 class="fw-bolder nmc-dark-grey font-38 font-family-poppins mb-4 mb-sm-5">
+            India's Largest
+            <span class="nmc-primary text-bottom-line position-relative">Angular</span>
+            Conference
+          </h2>
+
+          <div
+            class="d-flex align-items-center align-items-lg-start justify-content-center justify-content-lg-start flex-column gap-4 mb-4">
+            <div class="date">
+              <!-- <h6 class="font-26 nmc-dark-grey m-0">
+                <i
+                  class="bi bi-calendar-event-fill me-2 font-20 nmc-primary"
+                ></i
+                >April 11, 2025 - Workshops
+              </h6> -->
+
+              <h6 class="font-26 nmc-dark-grey m-0 mt-3">
+                <i class="bi bi-calendar-event-fill me-2 font-20 nmc-primary"></i>April 11, 2026
+              </h6>
+            </div>
+
+            <h6 class="font-26 nmc-dark-grey m-0">
+              <i class="bi bi-geo-alt-fill me-2 font-22 nmc-primary"></i>Gurgaon, India
+            </h6>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-lg-start justify-content-center gap-3">
+            <button class="nmc-btn-primary px-4 px-sm-5 h-auto py-2 py-sm-3 font-20" type="button"
+              [routerLink]="['/home']" fragment="pricing" routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }">
+              <i class="bi bi-ticket-perforated me-2"></i>Buy Tickets
+            </button>
+
+            <button class="nmc-btn-primary px-4 px-sm-5 h-auto py-2 py-sm-3 font-20" type="button"
+              (click)="navigateToAIIndia()">
+              <i class="bi bi-stars me-2"></i>AI-India
+            </button>
+
+            <!-- <button
+              class="nmc-btn-primary px-4 px-sm-5 h-auto py-2 py-sm-3 font-20"
+              type="button"
+              (click)="openPhotoalbum()"
+            >
+              2025 PHOTOS
+            </button> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="col-lg-5 mt-4 mt-lg-0">
+        <div class="event-stats">
+          <div class="row align-items-stretch justify-content-between g-4">
+            <div class="col-6">
+              <div class="event-card d-flex flex-column h-100 red-hover z-1">
+                <h3 class="nmc-dark-grey font-24 text-center m-0 p-4">
+                  <span class="font-48 d-block font-family-poppins mt-2">
+                    17
+                  </span>
+                  Talks
+                </h3>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="event-card d-flex flex-column h-100 red-hover z-1">
+                <h3 class="nmc-dark-grey font-24 text-center m-0 p-4">
+                  <span class="font-48 d-block font-family-poppins mt-2">
+                    2
+                  </span>
+                  Workshops
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-stretch justify-content-center g-4">
+            <div class="col-6">
+              <div class="event-card d-flex flex-column h-100 z-2">
+                <h3 class="nmc-dark-grey font-24 text-center m-0 p-4">
+                  <span class="font-48 d-block font-family-poppins mt-2">
+                    2
+                  </span>
+                  Days
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-stretch justify-content-between g-4">
+            <div class="col-6">
+              <div class="event-card d-flex flex-column h-100 red-hover z-1">
+                <h3 class="nmc-dark-grey font-24 text-center m-0 p-4">
+                  <span class="font-48 d-block font-family-poppins mt-2">
+                    17
+                  </span>
+                  Speakers
+                </h3>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="event-card d-flex flex-column h-100 red-hover z-1">
+                <h3 class="nmc-dark-grey font-24 text-center m-0 p-4">
+                  <span class="font-48 d-block font-family-poppins mt-2">
+                    400+
+                  </span>
+                  Delegates
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="event-card d-flex flex-column h-100 ">
+              <h3 class="nmc-dark-grey font-24 text-center m-0 p-4">
+                <span
+                  class="font-48 d-block font-family-poppins mt-2 "
+                >
+                  2
+                </span>
+                Sponsors
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="col-lg-5 mt-4 mt-lg-0">
+        <div class="code-showcase position-relative">
+          <div class="code-window">
+            <div class="code-header d-flex align-items-center gap-2 px-3 py-2">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="file-name ms-2">ng-india-conference.store.ts</span>
+            </div>
+            <div class="code-content p-3 p-md-4">
+              <pre class="m-0"><code><span class="keyword">export class</span> <span class="class-name">NgIndiaConferenceStore</span> &#123;
+
+  <span class="property">apiUrl</span> = <span class="string">'https://api.ng-india.com'</span>;
+
+  <span class="property">conferenceResource</span> = <span class="function">httpResource</span>&lt;<span class="type">IConference</span>[]&gt;(<span class="arrow">() =&gt;</span> (&#123;
+    <span class="property">url</span>: <span class="keyword">this</span>.<span class="property">apiUrl</span> + <span class="string">'/conference-2026'</span>,
+    <span class="property">method</span>: <span class="string">'GET'</span>,
+  &#125;));
+
+  <span class="property">stats</span> = <span class="function">computed</span>(<span class="arrow">() =&gt;</span> &#123;
+    <span class="keyword">if</span> (<span class="keyword">this</span>.<span class="property">conferenceResource</span>.<span class="function">hasValue</span>()) &#123;
+      <span class="keyword">return</span> <span class="keyword">this</span>.<span class="property">conferenceResource</span>.<span class="function">value</span>();
+    &#125;
+    <span class="keyword">return</span> [];
+  &#125;);
+
+  <span class="property">loading</span> = <span class="function">computed</span>(<span class="arrow">() =&gt;</span> 
+    <span class="keyword">this</span>.<span class="property">conferenceResource</span>.<span class="function">isLoading</span>()
+  );
+  
+  <span class="property">totalAttendees</span> = <span class="function">computed</span>(<span class="arrow">() =&gt;</span> <span class="number">400</span>);
+  <span class="property">totalSpeakers</span> = <span class="function">computed</span>(<span class="arrow">() =&gt;</span> <span class="number">17</span>);
+  <span class="property">status</span> = <span class="function">computed</span>(<span class="arrow">() =&gt;</span> 
+    <span class="keyword">this</span>.<span class="property">conferenceResource</span>.<span class="function">status</span>()
+  );
+
+  <span class="function">refresh</span>() &#123;
+    <span class="keyword">this</span>.<span class="property">conferenceResource</span>.<span class="function">reload</span>();
+  &#125;
+&#125;</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <img
+    src="assets/images/hero/hero-bg.png"
+    alt="Indian Monuments"
+    class="hero-image object-fit-contain position-relative mt-3 mx-auto"
+  /> -->
+</section>

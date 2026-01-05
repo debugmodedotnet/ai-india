@@ -1,0 +1,129 @@
+<header class="sticky-header nmc-bg-white fixed-top">
+  <!-- Mobile Navigation -->
+  <ul
+    class="mobile-menu position-absolute text-center p-0 m-0 nmc-bg-white w-100"
+  >
+    <li
+      class="w-100 py-4"
+      (click)="closeMobileMenu()"
+      (keydown)="closeMobileMenu()"
+      tabindex="0"
+    >
+      <a class="font-18 poppins-bold nmc-black" href="home">Home</a>
+    </li>
+
+    <li
+      class="w-100 py-4"
+      (click)="closeMobileMenu()"
+      (keydown)="closeMobileMenu()"
+      tabindex="0"
+    >
+      <a class="font-18 poppins-bold nmc-black" href="/speakers">Speakers</a>
+    </li>
+
+    <li
+      class="w-100 py-4"
+      (click)="closeMobileMenu()"
+      (keydown)="closeMobileMenu()"
+      tabindex="0"
+    >
+      <a class="font-18 poppins-bold nmc-black" href="/agenda">Agenda</a>
+    </li>
+
+    <li
+      class="w-100 py-4"
+      (click)="closeMobileMenu()"
+      (keydown)="closeMobileMenu()"
+      tabindex="0"
+    >
+      <a class="font-18 poppins-bold nmc-black" href="/sponsors">Sponsors</a>
+    </li>
+
+    <li class="w-100 py-4">
+      <button
+        class="nmc-btn-primary px-3 px-lg-5 h-auto py-3 font-20"
+        type="button"
+        (click)="buyTickets()"
+      >
+        Buy Tickets
+      </button>
+    </li>
+  </ul>
+
+  <div class="container-boxed">
+    <div class="inner d-flex align-items-center justify-content-between py-3">
+      <!-- Logo -->
+      <a href="/" class="d-flex align-items-center">
+        <div>
+          <h1 class="m-0 nmc-black fw-bold">ng-India</h1>
+          <div class="d-flex gap-1">
+            <p class="nmc-black font-14 m-0">powered by</p>
+            <p class="nomad-coder-text font-14 m-0">
+              <span class="nomad">nomad</span><span class="coder">coder</span>
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-xl">
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          (click)="toggleMobileMenu()"
+          aria-label="Toggle mobile menu"
+        >
+          <div class="burger" id="burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </div>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end align-items-center"
+          id="navbar"
+        >
+          <ul class="navbar-nav mb-lg-0 gap-3 align-items-center">
+            <li class="nav-item">
+              <a
+                class="nav-link font-16 nmc-black font-uppercase px-3 py-1"
+                [routerLink]="['/home']"
+                fragment="speakers"
+                >Speakers</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link font-16 nmc-black font-uppercase px-3 py-1"
+                [routerLink]="['/home']"
+                fragment="agenda"
+                >Agenda</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link font-16 nmc-black font-uppercase px-3 py-1"
+                [routerLink]="['/home']"
+                fragment="sponsors"
+                >Sponsors</a
+              >
+            </li>
+
+            <li>
+              <button
+                class="nmc-btn-primary px-3 px-lg-5 h-auto py-3 font-20"
+                type="button"
+                (click)="buyTickets()"
+              >
+                Buy Tickets
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>

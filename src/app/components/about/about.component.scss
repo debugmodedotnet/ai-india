@@ -1,0 +1,28 @@
+@use "../../styles/variables" as *;
+
+.heading {
+    h2 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+
+.hero-video iframe {
+    border: 2px solid $nmc-primary;
+}
+
+@media (max-width: 575px) {
+    .about-section {
+        h3 {
+            font-size: 28px !important;
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .about-section {
+        h3 {
+            font-size: 24px !important;
+        }
+    }
+}

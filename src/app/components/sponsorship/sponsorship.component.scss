@@ -1,0 +1,108 @@
+@use "../../styles/variables" as *;
+
+.sponsorship-section {
+    .heading {
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+    }
+
+
+    .text-purple {
+        color: #a02c93;
+    }
+
+    .text-orange {
+        color: #e66826;
+    }
+
+    .package-grid {
+        place-content: center;
+    }
+
+    .pricing-table {
+        padding: 30px;
+        background: $nmc-white;
+        -webkit-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
+        -moz-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
+        box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
+        transition: ease all .3s;
+        position: relative;
+
+        .price {
+            sup {
+                font-size: 24px;
+                top: -1em;
+                color: $nmc-dark-grey;
+            }
+
+            .number {
+                font-size: 60px;
+                font-weight: 600;
+                color: $nmc-dark-grey;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            -webkit-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.2);
+        }
+
+    }
+}
+
+
+@media (max-width: 992px) {
+    .pricing-section .pricing-table .price .number {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 420px) {
+    h3 {
+
+        font-size: 22px !important;
+    }
+
+    .font-20 {
+        font-size: 18px !important;
+    }
+
+    .text-bottom-line::after {
+        inset: 44px 0 0 0;
+    }
+
+    .sponsorship-section {
+        .heading {
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        .contact-links a {
+            font-size: 16px !important;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    h3 {
+        font-size: 20px !important;
+    }
+
+    .download {
+        font-size: 18px !important;
+        padding: 20px !important;
+    }
+
+    .contact-links span {
+        display: block;
+    }
+
+    .note h3 {
+        font-size: 20px;
+    }
+}
