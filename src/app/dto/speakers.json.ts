@@ -1,22 +1,9 @@
 import { ISpeakers } from "../models/speakers";
 
 export const speakers: ISpeakers[] = [
+
   {
     id: 1,
-    name: 'Élise Patrikainen',
-    position: 'FrontEnd Architect',
-    bio: 'Elise is a freelance front-end architect and consultant, with a focus on Vue.js and Angular. She deeply cares about delivering real value to her clients by helping them structure their projects, build efficient codebases and improve team velocity. She is also a professional speaker, and she loves meeting the community at conferences.',
-    image: 'assets/images/speakers/elise.jpeg',
-    flag: 'assets/images/speakers/flags/france.png',
-    twitter: '⁠https://x.com/ElisePatrikain1',
-    linkedin: 'https://www.linkedin.com/in/elisepatrikainen/',
-    github: '⁠https://github.com/ElisePatrikainen',
-    youtube: '',
-    previousTalks: [
-    ],
-  },
-  {
-    id: 2,
     name: 'Michael Hladky',
     position: 'CEO @push-based.io',
     bio: 'Michael Hladky is a Google Developer Expert (GDE), Microsoft MVP, Nx champion, trainer, and consultant with a focus on Angular and RxJS. For years he has been helping companies and developers to set up scalable architectures and performant processes enabling teams to keep up with state-of-the-art development. A vibrant member of the tech community, he organizes multiple community events and workshops each year to give back',
@@ -27,35 +14,11 @@ export const speakers: ISpeakers[] = [
     github: 'https://github.com/BioPhoton',
     youtube: '',
     previousTalks: [
-       {
-        title: 'Key Features of Angular 20',
-        event: 'AI-India 2025',
-        link: 'https://www.youtube.com/watch?v=mT7vSlo742U&t=2s',
-      },
-      {
-        title: '3 Reactive Primitives - Architecture in Modern Angular',
-        event: 'AI-India 2024',
-        link: 'https://www.youtube.com/watch?v=NIbbjM3BuNY',
-      },
-      {
-        title: 'Signals & fine-grained reactivity in Angular',
-        event: 'AI-India 2023',
-        link: 'https://www.youtube.com/watch?v=Z_-vVmCiYPY',
-      },
-      {
-        title: 'Performance at scale',
-        event: 'AI-India 2022',
-        link: 'https://www.youtube.com/watch?v=uPlEPxMJeIM',
-      },
-      {
-        title: 'The Ease Of Using Higher Order Operators ',
-        event: 'AI-India 2019',
-        link: 'https://www.youtube.com/watch?v=My6fBeYRKyA',
-      },
+
     ],
   },
   {
-    id: 3,
+    id: 2,
     name: 'Rainer Hahnekamp',
     position: 'Trainer and Consultant @AngularArchitects.io',
     bio: 'Rainer Hahnekamp is a Google Developer Expert (GDE) and a core team member of NgRx. He is a trainer and consultant in the Angular Architects expert network and runs ng-news, a weekly Angular newsletter. Beyond NgRx, he is deeply involved in open source, working on projects like Testronaut and Sheriff.',
@@ -66,63 +29,12 @@ export const speakers: ISpeakers[] = [
     github: 'https://github.com/rainerhahnekamp',
     youtube: 'https://www.youtube.com/@RainerHahnekamp',
     previousTalks: [
-      {
-        title: 'Micro Frontends: Necessity, Implementation, and Challenges',
-        event: 'AI-India 2025',
-        link: 'https://www.youtube.com/watch?v=Cfkj1nNjefk&t=1s',
-      },
-      {
-        title: 'Match Made in Heaven: NgRx SignalStore',
-        event: 'AI-India 2024',
-        link: 'https://www.youtube.com/watch?v=sZKBMyGhU2Q',
-      },
+     
     ],
   },
+ 
   {
-    id: 4,
-    name: 'Christopher Holder',
-    position: 'Full Stack Engineer @push-based.io',
-    bio: 'Christopher is a Full Stack Engineer at push-based.io. He does consulting and auditing on Angular applications to help companies optimize their application architecture and performance as an Open Source contributor he collaborates on projects that help make the web faster and speed regression by making testing performance easier and scalable.',
-    image: 'assets/images/speakers/chris-holder.png',
-    flag: 'assets/images/speakers/flags/mexico.png',
-    twitter: 'https://twitter.com/chrispholder',
-    linkedin: '',
-    github: 'https://github.com/ChristopherPHolder',
-    youtube: '',
-    previousTalks: [
-       {
-        title: 'Instant Navigation in Angular Applications',
-        event: 'AI-India 2025',
-        link: 'https://www.youtube.com/watch?v=JVjc-Lr777w&t=2s',
-      },
-      {
-        title: 'Optimizing Network Request and LCP in Angular Applications',
-        event: 'AI-India 2023',
-        link: 'https://www.youtube.com/watch?v=l9LXZ6KqU34',
-      },
-    ],
-  },
-  {
-    id: 5,
-    name: 'Julian Jandl',
-    position: 'Lead Performance Engineer',
-    bio: 'Julian is Lead Performance Engineer, Trainer & Consultant at Push-Based.io. As a webperf enthusiast, he loves experimenting with cutting edge technologies to improve the speed of the web at scale. Julian is conducting performance audits for existing applications, fixing performance bottlenecks and teaching about webperf & angular in workshops.',
-    image: 'assets/images/speakers/julian-jandl.webp',
-    flag: 'assets/images/speakers/flags/austria.png',
-    twitter: 'https://twitter.com/hoebbelsB',
-    linkedin: 'https://www.linkedin.com/in/julian-jandl-43a2b9125/',
-    github: 'https://github.com/hoebbelsB',
-    youtube: '',
-    previousTalks: [
-      {
-        title: 'Virtual Views- Rendering What Matters, When It Matters',
-        event: 'AI-India 2025',
-        link: 'https://www.youtube.com/watch?v=S-tIuxfeVCM&t=3s',
-      },
-    ],
-  },
-  {
-    id: 6,
+    id: 3,
     name: 'Markus Ingvarsson',
     position: 'Software Engineer @Podme',
     bio: "Markus is a full-stack developer, holding an Msc in Computer Science from Chalmers University of Technology. From leveling up in World of Warcraft to navigating the world of sales, he's always been up for a challenge. Now, software development is his main quest. Outside of coding, Markus also contributes to the tech scene as a co-organizer of the Angular Community Meetup.",
@@ -133,87 +45,10 @@ export const speakers: ISpeakers[] = [
     github: 'https://github.com/markusingvarsson',
     youtube: '',
     previousTalks: [
-      {
-        title: 'Intelligent Frontends: Angular and Transformers.js',
-        event: 'AI-India 2025',
-        link: 'https://www.youtube.com/watch?v=2yFUItFc6kA',
-      },
-      {
-        title: 'Client-Side Machine Learning - Angular Is All You Need',
-        event: 'AI-India 2024',
-        link: 'https://www.youtube.com/watch?v=dJ2fwiWJ-4Q',
-      },
-    ],
-  },
-   {
-    id: 7,
-    name: 'Michael Egger-Zikes',
-    position: 'Trainer and Consultant @AngularArchitects.io',
-    bio: 'Michael Egger-Zikes is an experienced software architect, trainer, consultant, and international conference speaker specializing in Angular for business applications. As a member of the ANGULARarchitects expert network, he has led hundreds of workshops and implemented large-scale Angular projects for both public and private sector clients. As a former lecturer, he also taught this subject at a university of applied sciences in Graz, Austria. With a degree in business informatics, he brings extensive experience in software engineering and business process automation.',
-    image: 'assets/images/speakers/michaelegger.png',
-    flag: 'assets/images/speakers/flags/austria.png',
-    twitter: 'https://x.com/MikeZks',
-    linkedin: 'https://www.linkedin.com/in/michael-egger-zikes/',
-    github: '',
-    youtube: '',
-    previousTalks: [
-    ],
+    ]
   },
   {
-    id: 8,
-    name: 'Adrian Romanski',
-    position: 'Software Engineer',
-    bio: 'Adrian is an Software Engineer specialising in AI-driven solutions and web accessibility. As a CPACC-certified professional, he brings validated expertise in accessibility principles and inclusive design. He speaks at meet.js in Poland and various Angular meetups, sharing practical insights on modern Angular development, accessibility patterns, and the role of AI in frontend workflows',
-    image: 'assets/images/speakers/adrian.jpeg',
-    flag: 'assets/images/speakers/flags/poland.png',
-    twitter: 'https://x.com/AdrianRoOmanski',
-    linkedin: 'https://www.linkedin.com/in/adrianromanski/',
-    github: '',
-    youtube: '',
-    previousTalks: [
-    ],
-  },
-  {
-    id: 9,
-    name: 'Pankaj Parkar',
-    position: 'Principal Application Developer @AON',
-    bio: 'Pankaj Parkar is currently working as Principal Application Developer at Aon Centre for Innovation and Analytics (ACIA). He has total 10 years of experience in web development. He had worked on multiple JS frameworks like Angular, React, Ionic, VueJS, EmberJS, etc.',
-    image: 'assets/images/speakers/pankaj-parkar.jpeg',
-    flag: 'assets/images/speakers/flags/india.png',
-    twitter: 'https://x.com/pankajparkar',
-    linkedin: 'https://www.linkedin.com/in/pankajparkar',
-    github: 'https://github.com/pankajparkar',
-    youtube: '',
-    previousTalks: [
-      {
-        title: 'Mastering Angular Directives',
-        event: 'AI-India 2024',
-        link: 'https://www.youtube.com/watch?v=Vyv-EooCh-c',
-      },
-      {
-        title: 'Directive Composition API',
-        event: 'AI-India 2023',
-        link: 'https://www.youtube.com/watch?v=Figf9S81r0M',
-      },
-      {
-        title: 'Monorepo with Nx',
-        event: 'AI-India 2022',
-        link: 'https://www.youtube.com/watch?v=SPqbvsLR0t0',
-      },
-      {
-        title: 'Higher Order Components in Angular',
-        event: 'AI-India 2020',
-        link: 'https://www.youtube.com/watch?v=kFHV6Cr5cDY',
-      },
-      {
-        title: 'Demystifying Change Detection in Angular',
-        event: 'AI-India 2019',
-        link: 'https://www.youtube.com/watch?v=XTNL4WJRCrM',
-      },
-    ],
-  },
-  {
-    id: 10,
+    id: 4,
     name: 'Dhananjay Kumar',
     position: 'Founder NomadCoder | AI-India',
     bio: 'Dhananjay Kumar founded NomadCoder, which trains people to become job-ready developers.  He also consults for big enterprise companies, has written a book about Angular, speaks at international developer conferences, and organizes AI-India, a major Angular conference. Dhananjay is writing his second Angular book and training for a 10K run. You can contact him for training and consulting on Angular, .NET, Azure, etc.',
@@ -224,31 +59,6 @@ export const speakers: ISpeakers[] = [
     github: 'https://github.com/debugmodedotnet',
     youtube: 'https://www.youtube.com/@NomadCoderai',
     previousTalks: [
-      {
-        title: 'Getting Started with Signals',
-        event: 'AI-India 2024',
-        link: 'https://www.youtube.com/watch?v=ZsMkMQyQWxk',
-      },
-      {
-        title: 'Standalone Components in Angular',
-        event: 'AI-India 2023',
-        link: 'https://www.youtube.com/watch?v=obkp6LEmZbA',
-      },
-      {
-        title: 'Angular Services',
-        event: 'AI-India 2022',
-        link: 'https://www.youtube.com/watch?v=b8AYk7ADJwE',
-      },
-      {
-        title: 'You do not know about JavaScript objects',
-        event: 'AI-India 2019',
-        link: 'https://www.youtube.com/watch?v=h9eW0zSiFaw',
-      },
-      {
-        title: 'Welcome Talk',
-        event: 'AI-India 2019',
-        link: 'https://www.youtube.com/watch?v=1CEWDQyCrmc',
-      },
     ],
   }
 ];

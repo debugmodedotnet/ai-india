@@ -9,4 +9,8 @@ import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
   styleUrl: './hero-alt.component.scss'
 })
 export class HeroAltComponent {
+
+  navigatetongIndia(){
+    window.open('https://www.ng-ind.com/','_blank');
+  }
 }
