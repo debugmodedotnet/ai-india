@@ -72,7 +72,7 @@ export const agenda: IAgenda[] = [
   {
     title: 'Angular Signals - Zero to One',
     speakerName: 'Dhananjay Kumar',
-    speakerPosition: 'Founder @NomadCoder| ng-India',
+    speakerPosition: 'Founder @NomadCoder| AI-India',
     speakerImage: 'assets/images/speakers/dj.jpeg',
     startTime: '11:30 AM',
     endTime: '12:00 PM',

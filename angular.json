@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-India25": {
+    "AI-India25": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ng-india25",
+            "outputPath": "dist/ai-india25",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ng-India25:build:production"
+              "buildTarget": "AI-India25:build:production"
             },
             "development": {
-              "buildTarget": "ng-India25:build:development"
+              "buildTarget": "AI-India25:build:development"
             }
           },
           "defaultConfiguration": "development"

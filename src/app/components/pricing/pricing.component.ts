@@ -13,37 +13,37 @@ export class PricingComponent {
   tickets : any = [
     {
       id:1,
-      title : "ng-India",
-      price : "4000",
-       features : [
-        "Entry to ng-India Conference on 11 April",
-        "Access to all ng-India conference sessions and recordings",
-        "T-Shirt and goodies bag",
-        "Lunch, Breakfast, Tea/Coffee provided"
-      ],
-      buttonText : "Buy ng-India Ticket",
-      buyLink : "https://www.eventbrite.com/e/ng-india-2025-tickets-743632318017?aff=ngindialive",
-      isDisabled : false, 
-      totalTickets : 500
-    },
-     {
-      id:2,
       title : "AI-India",
       price : "4000",
-      features : [
+       features : [
         "Entry to AI-India Conference on 12 April",
         "Access to all AI-India conference sessions and recordings",
         "T-Shirt and goodies bag",
         "Lunch, Breakfast, Tea/Coffee provided"
       ],
       buttonText : "Buy AI-India Ticket",
-      buyLink : "https://www.eventbrite.com/e/ng-india-2025-tickets-743632318017?aff=ngindialive",
+      buyLink : "https://www.eventbrite.com/e/ai-india-2025-tickets-743632318017?aff=ngindialive",
       isDisabled : false, 
-      totalTickets : 300
+      totalTickets : 400
+    },
+     {
+      id:2,
+      title : "ng-India",
+      price : "4000",
+      features : [
+        "Entry to ng-India Conference on 11 April",
+        "Access to all ng-India conference sessions and recordings",
+        "T-Shirt and goodies bag",
+        "Lunch, Breakfast, Tea/Coffee provided"
+      ],
+      buttonText : "Buy ng-India Ticket",
+      buyLink : "https://www.eventbrite.com/e/ai-india-2025-tickets-743632318017?aff=ngindialive",
+      isDisabled : false, 
+      totalTickets : 400
     },
      {
       id:3,
-      title : "ng-India + AI-India",
+      title : "AI-India + ng-India",
       price : "7000",
       features : [
         "Entry to both Conferences on 11-12 April",
@@ -51,8 +51,8 @@ export class PricingComponent {
         "T-Shirt and goodies bag",
         "Lunch, Breakfast, Tea/Coffee provided"
       ],
-      buttonText : "Buy ng-India + AI-India Ticket",
-      buyLink : "https://www.eventbrite.com/e/ng-india-2025-tickets-743632318017?aff=ngindialive",
+      buttonText : "Buy AI-India + ng-India Ticket",
+      buyLink : "https://www.eventbrite.com/e/ai-india-2025-tickets-743632318017?aff=ngindialive",
       isDisabled : false, 
       totalTickets : 500
     }

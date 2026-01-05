@@ -29,27 +29,27 @@ export const speakers: ISpeakers[] = [
     previousTalks: [
        {
         title: 'Key Features of Angular 20',
-        event: 'ng-India 2025',
+        event: 'AI-India 2025',
         link: 'https://www.youtube.com/watch?v=mT7vSlo742U&t=2s',
       },
       {
         title: '3 Reactive Primitives - Architecture in Modern Angular',
-        event: 'ng-India 2024',
+        event: 'AI-India 2024',
         link: 'https://www.youtube.com/watch?v=NIbbjM3BuNY',
       },
       {
         title: 'Signals & fine-grained reactivity in Angular',
-        event: 'ng-India 2023',
+        event: 'AI-India 2023',
         link: 'https://www.youtube.com/watch?v=Z_-vVmCiYPY',
       },
       {
         title: 'Performance at scale',
-        event: 'ng-India 2022',
+        event: 'AI-India 2022',
         link: 'https://www.youtube.com/watch?v=uPlEPxMJeIM',
       },
       {
         title: 'The Ease Of Using Higher Order Operators ',
-        event: 'ng-India 2019',
+        event: 'AI-India 2019',
         link: 'https://www.youtube.com/watch?v=My6fBeYRKyA',
       },
     ],
@@ -68,12 +68,12 @@ export const speakers: ISpeakers[] = [
     previousTalks: [
       {
         title: 'Micro Frontends: Necessity, Implementation, and Challenges',
-        event: 'ng-India 2025',
+        event: 'AI-India 2025',
         link: 'https://www.youtube.com/watch?v=Cfkj1nNjefk&t=1s',
       },
       {
         title: 'Match Made in Heaven: NgRx SignalStore',
-        event: 'ng-India 2024',
+        event: 'AI-India 2024',
         link: 'https://www.youtube.com/watch?v=sZKBMyGhU2Q',
       },
     ],
@@ -92,12 +92,12 @@ export const speakers: ISpeakers[] = [
     previousTalks: [
        {
         title: 'Instant Navigation in Angular Applications',
-        event: 'ng-India 2025',
+        event: 'AI-India 2025',
         link: 'https://www.youtube.com/watch?v=JVjc-Lr777w&t=2s',
       },
       {
         title: 'Optimizing Network Request and LCP in Angular Applications',
-        event: 'ng-India 2023',
+        event: 'AI-India 2023',
         link: 'https://www.youtube.com/watch?v=l9LXZ6KqU34',
       },
     ],
@@ -116,7 +116,7 @@ export const speakers: ISpeakers[] = [
     previousTalks: [
       {
         title: 'Virtual Views- Rendering What Matters, When It Matters',
-        event: 'ng-India 2025',
+        event: 'AI-India 2025',
         link: 'https://www.youtube.com/watch?v=S-tIuxfeVCM&t=3s',
       },
     ],
@@ -135,12 +135,12 @@ export const speakers: ISpeakers[] = [
     previousTalks: [
       {
         title: 'Intelligent Frontends: Angular and Transformers.js',
-        event: 'ng-India 2025',
+        event: 'AI-India 2025',
         link: 'https://www.youtube.com/watch?v=2yFUItFc6kA',
       },
       {
         title: 'Client-Side Machine Learning - Angular Is All You Need',
-        event: 'ng-India 2024',
+        event: 'AI-India 2024',
         link: 'https://www.youtube.com/watch?v=dJ2fwiWJ-4Q',
       },
     ],
@@ -187,27 +187,27 @@ export const speakers: ISpeakers[] = [
     previousTalks: [
       {
         title: 'Mastering Angular Directives',
-        event: 'ng-India 2024',
+        event: 'AI-India 2024',
         link: 'https://www.youtube.com/watch?v=Vyv-EooCh-c',
       },
       {
         title: 'Directive Composition API',
-        event: 'ng-India 2023',
+        event: 'AI-India 2023',
         link: 'https://www.youtube.com/watch?v=Figf9S81r0M',
       },
       {
         title: 'Monorepo with Nx',
-        event: 'ng-India 2022',
+        event: 'AI-India 2022',
         link: 'https://www.youtube.com/watch?v=SPqbvsLR0t0',
       },
       {
         title: 'Higher Order Components in Angular',
-        event: 'ng-India 2020',
+        event: 'AI-India 2020',
         link: 'https://www.youtube.com/watch?v=kFHV6Cr5cDY',
       },
       {
         title: 'Demystifying Change Detection in Angular',
-        event: 'ng-India 2019',
+        event: 'AI-India 2019',
         link: 'https://www.youtube.com/watch?v=XTNL4WJRCrM',
       },
     ],
@@ -215,8 +215,8 @@ export const speakers: ISpeakers[] = [
   {
     id: 10,
     name: 'Dhananjay Kumar',
-    position: 'Founder NomadCoder | ng-India',
-    bio: 'Dhananjay Kumar founded NomadCoder, which trains people to become job-ready developers.  He also consults for big enterprise companies, has written a book about Angular, speaks at international developer conferences, and organizes ng-India, a major Angular conference. Dhananjay is writing his second Angular book and training for a 10K run. You can contact him for training and consulting on Angular, .NET, Azure, etc.',
+    position: 'Founder NomadCoder | AI-India',
+    bio: 'Dhananjay Kumar founded NomadCoder, which trains people to become job-ready developers.  He also consults for big enterprise companies, has written a book about Angular, speaks at international developer conferences, and organizes AI-India, a major Angular conference. Dhananjay is writing his second Angular book and training for a 10K run. You can contact him for training and consulting on Angular, .NET, Azure, etc.',
     image: 'assets/images/speakers/dj.jpeg',
     flag: 'assets/images/speakers/flags/india.png',
     twitter: 'https://x.com/debug_mode',
@@ -226,27 +226,27 @@ export const speakers: ISpeakers[] = [
     previousTalks: [
       {
         title: 'Getting Started with Signals',
-        event: 'ng-India 2024',
+        event: 'AI-India 2024',
         link: 'https://www.youtube.com/watch?v=ZsMkMQyQWxk',
       },
       {
         title: 'Standalone Components in Angular',
-        event: 'ng-India 2023',
+        event: 'AI-India 2023',
         link: 'https://www.youtube.com/watch?v=obkp6LEmZbA',
       },
       {
         title: 'Angular Services',
-        event: 'ng-India 2022',
+        event: 'AI-India 2022',
         link: 'https://www.youtube.com/watch?v=b8AYk7ADJwE',
       },
       {
         title: 'You do not know about JavaScript objects',
-        event: 'ng-India 2019',
+        event: 'AI-India 2019',
         link: 'https://www.youtube.com/watch?v=h9eW0zSiFaw',
       },
       {
         title: 'Welcome Talk',
-        event: 'ng-India 2019',
+        event: 'AI-India 2019',
         link: 'https://www.youtube.com/watch?v=1CEWDQyCrmc',
       },
     ],
@@ -274,22 +274,22 @@ export const speakers: ISpeakers[] = [
 //       "previousTalks": [
 //           {
 //               title: "Building a Chatbot with Angular and MongoDB Atlas",
-//               event: "ng-India 2024",
+//               event: "AI-India 2024",
 //               link: "https://www.youtube.com/watch?v=KLH-iAPhwKU"
 //           },
 //           {
 //               title: "Building a Real-Time Bidding App with Angular,MongoDB,and GraphQL",
-//               event: "ng-India 2023",
+//               event: "AI-India 2023",
 //               link: "https://www.youtube.com/watch?v=Yaimk5Z22sA"
 //           },
 //           {
 //               title: "GraphQL in Angular",
-//               event: "ng-India 2022",
+//               event: "AI-India 2022",
 //               link: "https://www.youtube.com/watch?v=X9XFphBs7oM"
 //           },
 //           {
 //               title: "Super Chargin your Angular Library with 'ng-add'",
-//               event: "ng-India 2019",
+//               event: "AI-India 2019",
 //               link: "https://www.youtube.com/watch?v=9TSZ97-IH28"
 //           }
 //       ]
@@ -328,7 +328,7 @@ export const speakers: ISpeakers[] = [
   //   previousTalks: [
   //     {
   //       title: 'New Control Flow in Angular by Himanshu Saraswat',
-  //       event: 'ng-India 2024',
+  //       event: 'AI-India 2024',
   //       link: 'https://www.youtube.com/watch?v=_aw9H3S0Xjo&t=10s',
   //     }
   //   ],
@@ -352,7 +352,7 @@ export const speakers: ISpeakers[] = [
   //   previousTalks: [
   //     {
   //       title: 'Hydration in Angular ',
-  //       event: 'ng-India 2024',
+  //       event: 'AI-India 2024',
   //       link: 'https://www.youtube.com/watch?v=WynVr9OyKJ4&t=26s',
   //     },
   //   ],
@@ -444,7 +444,7 @@ export const speakers: ISpeakers[] = [
   //   previousTalks: [
   //     {
   //       title: 'Incremental Static Regeneration for Angular',
-  //       event: 'ng-India 2023',
+  //       event: 'AI-India 2023',
   //       link: 'https://www.youtube.com/watch?v=gIqyTp36NJ0',
   //     },
   //   ],
@@ -467,17 +467,17 @@ export const speakers: ISpeakers[] = [
   //   previousTalks: [
   //     {
   //       title: 'Can imports hurt your build speed & size?',
-  //       event: 'ng-India 2024',
+  //       event: 'AI-India 2024',
   //       link: 'https://www.youtube.com/watch?v=iKCyuUSi5cc',
   //     },
   //     {
   //       title: 'Using custom Angular syntax sugar for better UI performance',
-  //       event: 'ng-India 2023',
+  //       event: 'AI-India 2023',
   //       link: 'https://www.youtube.com/watch?v=caYgrkXCG5s',
   //     },
   //     {
   //       title: 'Optimising Angular app size for production',
-  //       event: 'ng-India 2022',
+  //       event: 'AI-India 2022',
   //       link: 'https://www.youtube.com/watch?v=_Fw4B6zCHtE',
   //     },
   //   ],
@@ -499,7 +499,7 @@ export const speakers: ISpeakers[] = [
   //   previousTalks: [
   //     {
   //       title: 'Angular Template Context Mental Model',
-  //       event: 'ng-India 2023',
+  //       event: 'AI-India 2023',
   //       link: 'https://www.youtube.com/watch?v=o9yabFUkS1Y',
   //     },
   //   ],

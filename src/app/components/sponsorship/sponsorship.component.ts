@@ -10,10 +10,10 @@ import { Component } from '@angular/core';
 export class SponsorshipComponent {
 
   downloadFile() {
-    const fileUrl = 'assets/ng-India 2025 sponsorship document.pdf';
+    const fileUrl = 'assets/AI-India 2025 sponsorship document.pdf';
     const a = document.createElement('a');
     a.href = fileUrl;
-    a.download = 'ng-India 2025 sponsorship document.pdf';
+    a.download = 'AI-India 2025 sponsorship document.pdf';
     a.click();
   }
 
