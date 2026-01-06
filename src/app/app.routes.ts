@@ -12,7 +12,7 @@ export const routes: Routes = [
     { path: 'sponsors', loadComponent: () => import('./components/sponsors/sponsors.component').then(m => m.SponsorsComponent) },
     { path: 'contact', loadComponent: () => import('./components/contact/contact.component').then(m => m.ContactComponent) },
     { path: 'coc', loadComponent: () => import('./components/coc/coc.component').then(m => m.CocComponent) },
-    { path: 'sponsorship', loadComponent: () => import('./components/sponsorship/sponsorship.component').then(m => m.SponsorshipComponent) },
+    // { path: 'sponsorship', loadComponent: () => import('./components/sponsorship/sponsorship.component').then(m => m.SponsorshipComponent) },
 
     { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];

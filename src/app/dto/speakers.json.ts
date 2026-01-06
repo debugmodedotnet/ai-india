@@ -49,6 +49,20 @@ export const speakers: ISpeakers[] = [
   },
   {
     id: 4,
+    name: 'ShivPrasad Koirala',
+    position: 'Founder of Questpond',
+    bio: 'ShivPrasad is a Microsoft Technical Developer and YouTuber who focuses on two key areas: teaching Microsoft development technologies—such as AI/ML, C#, MVC, Design Patterns, Angular, SQL Server, ASP.NET, and Azure—in the simplest way possible, and helping learners prepare for and excel in programming interviews through his videos. More information about his work can be found on his website www.questpond.com and on his YouTube channel @Questpond.',
+    image: 'assets/images/speakers/shivprasad.jpeg',
+    flag: 'assets/images/speakers/flags/india.png',
+    twitter: '',
+    linkedin: 'https://www.linkedin.com/in/shivkoirala',
+    github: '',
+    youtube: 'https://www.youtube.com/@questpondvideos',
+    previousTalks: [
+    ],
+  },
+  {
+    id: 5,
     name: 'Dhananjay Kumar',
     position: 'Founder NomadCoder | AI-India',
     bio: 'Dhananjay Kumar founded NomadCoder, which trains people to become job-ready developers.  He also consults for big enterprise companies, has written a book about Angular, speaks at international developer conferences, and organizes AI-India, a major Angular conference. Dhananjay is writing his second Angular book and training for a 10K run. You can contact him for training and consulting on Angular, .NET, Azure, etc.',
