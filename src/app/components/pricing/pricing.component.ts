@@ -1,4 +1,3 @@
-import { RouterLink } from '@angular/router';
 import { Component } from '@angular/core';
 
 @Component({
@@ -10,51 +9,51 @@ import { Component } from '@angular/core';
 })
 export class PricingComponent {
 
-  tickets : any = [
+  tickets: any = [
     {
-      id:1,
-      title : "AI-India",
-      price : "4000",
-       features : [
+      id: 1,
+      title: "AI-India",
+      price: "4000",
+      features: [
         "Entry to AI-India Conference on 12 April",
         "Access to all AI-India conference sessions and recordings",
         "T-Shirt and goodies bag",
         "Lunch, Breakfast, Tea/Coffee provided"
       ],
-      buttonText : "Buy AI-India Ticket",
-      buyLink : "https://www.eventbrite.com/e/ai-india-2025-tickets-743632318017?aff=ngindialive",
-      isDisabled : false, 
-      totalTickets : 400
+      buttonText: "Buy AI-India Ticket",
+      buyLink: "https://www.townscript.com/v2/e/ngindia-aiindia-2026-430442/booking/tickets",
+      isDisabled: false,
+      totalTickets: 400
     },
-     {
-      id:2,
-      title : "ng-India",
-      price : "4000",
-      features : [
+    {
+      id: 2,
+      title: "ng-India",
+      price: "4000",
+      features: [
         "Entry to ng-India Conference on 11 April",
         "Access to all ng-India conference sessions and recordings",
         "T-Shirt and goodies bag",
         "Lunch, Breakfast, Tea/Coffee provided"
       ],
-      buttonText : "Buy ng-India Ticket",
-      buyLink : "https://www.eventbrite.com/e/ai-india-2025-tickets-743632318017?aff=ngindialive",
-      isDisabled : false, 
-      totalTickets : 400
+      buttonText: "Buy ng-India Ticket",
+      buyLink: "https://www.townscript.com/v2/e/ngindia-aiindia-2026-430442/booking/tickets",
+      isDisabled: false,
+      totalTickets: 400
     },
-     {
-      id:3,
-      title : "AI-India + ng-India",
-      price : "7000",
-      features : [
+    {
+      id: 3,
+      title: "AI-India + ng-India",
+      price: "7000",
+      features: [
         "Entry to both Conferences on 11-12 April",
         "Access to both conferences sessions and recordings",
         "T-Shirt and goodies bag",
         "Lunch, Breakfast, Tea/Coffee provided"
       ],
-      buttonText : "Buy AI-India + ng-India Ticket",
-      buyLink : "https://www.eventbrite.com/e/ai-india-2025-tickets-743632318017?aff=ngindialive",
-      isDisabled : false, 
-      totalTickets : 500
+      buttonText: "Buy AI-India + ng-India Ticket",
+      buyLink: "https://www.townscript.com/v2/e/ngindia-aiindia-2026-430442/booking/tickets",
+      isDisabled: false,
+      totalTickets: 500
     }
   ]
 }
