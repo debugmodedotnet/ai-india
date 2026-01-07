@@ -88,16 +88,10 @@
 
     <div class="speakers-list mt-5">
       @for (speaker of speakers; track speaker;) {
-      <div
-        class="speaker d-flex align-items-center justify-content-between flex-column flex-md-row gap-5 mt-5"
-      >
+      <div class="speaker d-flex align-items-center justify-content-between flex-column flex-md-row gap-5 mt-5">
         <div class="speaker-img position-relative w-30 z-1">
           <figure class="m-0 overflow-hidden">
-            <img
-              [src]="speaker.image"
-              class="h-100 w-100 object-fit-cover"
-              alt=""
-            />
+            <img [src]="speaker.image" class="h-100 w-100 object-fit-cover" alt="" />
           </figure>
 
           <!-- <img
@@ -111,11 +105,7 @@
           <h3 class="nmc-primary font-family-poppins pe-2 position-relative">
             {{ speaker.name }}
 
-            <img
-              [src]="speaker.flag"
-              [alt]="speaker.name"
-              class="flag position-absolute object-fit-cover"
-            />
+            <img [src]="speaker.flag" [alt]="speaker.name" class="flag position-absolute object-fit-cover" />
 
             <span class="nmc-medium-grey font-18">{{ speaker.position }}</span>
           </h3>
@@ -130,11 +120,8 @@
             @for( talk of speaker.previousTalks | slice: 0:5; track talk;){
             <li>
               <i class="bi bi-link-45deg nmc-primary"></i>
-              <a
-                class="nmc-dark-grey fw-semibold text-decoration-underline cursor-pointer"
-                [href]="talk.link"
-                target="_blank"
-              >
+              <a class="nmc-dark-grey fw-semibold text-decoration-underline cursor-pointer" [href]="talk.link"
+                target="_blank">
                 {{ talk.title }} : {{ talk.event }}
               </a>
             </li>
@@ -146,40 +133,26 @@
           </ul>
           }
 
-          <div
-            class="social d-flex align-items-center justify-content-center justify-content-md-start gap-2"
-          >
+          <div class="social d-flex align-items-center justify-content-center justify-content-md-start gap-2">
             @if(speaker.twitter){
-            <a
-              target="_blank"
-              [href]="speaker.twitter"
-              class="font-20 nmc-dark-grey"
-            >
-              <i class="bi bi-twitter-x"></i> </a
-            >} @if(speaker.github){
-            <a
-              target="_blank"
-              [href]="speaker.github"
-              class="font-20 nmc-dark-grey"
-            >
-              <i class="bi bi-github"> </i> </a
-            >} @if(speaker.linkedin){
-            <a
-              target="_blank"
-              [href]="speaker.linkedin"
-              class="font-20 nmc-dark-grey"
-            >
-              <i class="bi bi-linkedin"></i> </a
-            >}
+            <a target="_blank" [href]="speaker.twitter" class="font-20 nmc-dark-grey">
+              <i class="bi bi-twitter-x"></i> </a>} @if(speaker.github){
+            <a target="_blank" [href]="speaker.github" class="font-20 nmc-dark-grey">
+              <i class="bi bi-github"> </i> </a>} @if(speaker.linkedin){
+            <a target="_blank" [href]="speaker.linkedin" class="font-20 nmc-dark-grey">
+              <i class="bi bi-linkedin"></i> </a>}
           </div>
         </div>
       </div>
       }
     </div>
 
+    <button class="nmc-btn-primary px-4 px-sm-5 h-auto py-2 py-sm-3 font-20 mx-auto mt-5" type="button" (click)="openCallForPaper()">
+      Call for Paper
+    </button>
+
     <div
-      class="error-label text-danger font-18 d-flex align-items-center justify-content-center mt-4 mb-0 border-top pt-4"
-    >
+      class="error-label text-danger font-18 d-flex align-items-center justify-content-center mt-4 mb-0 border-top pt-4">
       <i class="bi bi-exclamation-triangle-fill me-2"></i>
       <p class="nmc-medium-grey font-family-inter m-0">
         Speakers are subjected to be changed

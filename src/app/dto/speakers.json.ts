@@ -1,7 +1,6 @@
 import { ISpeakers } from "../models/speakers";
 
 export const speakers: ISpeakers[] = [
-
   {
     id: 1,
     name: 'Michael Hladky',
@@ -32,7 +31,6 @@ export const speakers: ISpeakers[] = [
      
     ],
   },
- 
   {
     id: 3,
     name: 'Markus Ingvarsson',
@@ -49,6 +47,34 @@ export const speakers: ISpeakers[] = [
   },
   {
     id: 4,
+    name: 'Murat Sari',
+    position: 'Owner CodeRabbit GmbH',
+    bio: "Murat Sari is a software architect specializing in Angular. He has designed large projects in the enterprise and industrial environment and implemented them with his teams. Previously, Murat was the Lead Software Architect at one of the leading providers of real-time data analytics in the oil industry. In the backend, he relies on .NET Core and NodeJS/NestJS. Also, he uses big data technologies in some of his projects. Murat studied computer science at the Vienna University of Technology and taught as an external lecturer at the universities of applied sciences in Salzburg and Kapfenberg. At the latter, he designed a lecture on Angular. From 2012 to 2017 he was also a core team member in the Ogre3d project - an open-source 3D engine for Android and Windows Phone.",
+    image: 'assets/images/speakers/murat-Sari.jpeg',
+    flag: 'assets/images/speakers/flags/austria.png',
+    twitter: '',
+    linkedin: 'https://www.linkedin.com/in/muratsari1',
+    github: '',
+    youtube: '',
+    previousTalks: [
+    ]
+  },
+  {
+    id: 5,
+    name: 'Aprajita Verma',
+    position: 'Frontend Architect at Mycom',
+    bio: "Aprajita has over 16 years of experience building elegant, human-centric user interfaces. Her work spans AI-driven experiences, scalable design systems, and future-ready UI architectures, with a strong focus on practical, real-world impact. She is passionate about sharing insights and lessons learned from building products that work at scale.",
+    image: 'assets/images/speakers/aprajita-verma.jpeg',
+    flag: 'assets/images/speakers/flags/india.png',
+    twitter: '',
+    linkedin: 'https://www.linkedin.com/in/aprajita-verma-19522814a/',
+    github: '',
+    youtube: '',
+    previousTalks: [
+    ]
+  },
+  {
+    id: 6,
     name: 'ShivPrasad Koirala',
     position: 'Founder of Questpond',
     bio: 'ShivPrasad is a Microsoft Technical Developer and YouTuber who focuses on two key areas: teaching Microsoft development technologies—such as AI/ML, C#, MVC, Design Patterns, Angular, SQL Server, ASP.NET, and Azure—in the simplest way possible, and helping learners prepare for and excel in programming interviews through his videos. More information about his work can be found on his website www.questpond.com and on his YouTube channel @Questpond.',
@@ -62,7 +88,7 @@ export const speakers: ISpeakers[] = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     name: 'Dhananjay Kumar',
     position: 'Founder NomadCoder | AI-India',
     bio: 'Dhananjay Kumar founded NomadCoder, which trains people to become job-ready developers.  He also consults for big enterprise companies, has written a book about Angular, speaks at international developer conferences, and organizes AI-India, a major Angular conference. Dhananjay is writing his second Angular book and training for a 10K run. You can contact him for training and consulting on Angular, .NET, Azure, etc.',
