@@ -75,6 +75,20 @@ export const speakers: ISpeakers[] = [
   },
   {
     id: 6,
+    name: 'Umesh kumar Potti',
+    position: 'Head of Engineering@Entain India',
+    bio: "Umesh Kumar is a senior engineering leader and Head of Engineering - Gaming, with extensive experience building and scaling large, high-availability platforms used by 100M+ users globally. Over his career, he has worked with organizations such as Microsoft, Adobe, Paytm, and Observe.ai, leading platform, cloud, and large-scale engineering initiatives. More recently, his focus has been on AI and GenAI adoption in engineering, with a strong emphasis on practical, real-world applications. His work centers on improving developer productivity, accelerating modernization, enhancing observability and operational intelligence, and enabling better decision-making at scale. He is particularly passionate about moving GenAI beyond experimentation to deliver embedded, measurable impact in everyday engineering workflows.",
+    image: 'assets/images/speakers/umesh-potti.jpeg',
+    flag: 'assets/images/speakers/flags/india.png',
+    twitter: '',
+    linkedin: 'https://www.linkedin.com/in/umesh226/',
+    github: '',
+    youtube: '',
+    previousTalks: [
+    ]
+  },
+  {
+    id: 7,
     name: 'ShivPrasad Koirala',
     position: 'Founder of Questpond',
     bio: 'ShivPrasad is a Microsoft Technical Developer and YouTuber who focuses on two key areas: teaching Microsoft development technologies—such as AI/ML, C#, MVC, Design Patterns, Angular, SQL Server, ASP.NET, and Azure—in the simplest way possible, and helping learners prepare for and excel in programming interviews through his videos. More information about his work can be found on his website www.questpond.com and on his YouTube channel @Questpond.',
@@ -88,7 +102,7 @@ export const speakers: ISpeakers[] = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     name: 'Dhananjay Kumar',
     position: 'Founder NomadCoder | AI-India',
     bio: 'Dhananjay Kumar founded NomadCoder, which trains people to become job-ready developers.  He also consults for big enterprise companies, has written a book about Angular, speaks at international developer conferences, and organizes AI-India, a major Angular conference. Dhananjay is writing his second Angular book and training for a 10K run. You can contact him for training and consulting on Angular, .NET, Azure, etc.',
