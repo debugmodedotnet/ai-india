@@ -53,7 +53,7 @@ export class PricingComponent {
       buttonText: "Buy AI-India + ng-India Ticket",
       buyLink: "https://www.townscript.com/v2/e/ngindia-aiindia-2026-430442/booking/tickets",
       isDisabled: false,
-      totalTickets: 500
+      totalTickets: 400
     }
   ]
 }

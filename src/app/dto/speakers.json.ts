@@ -1,37 +1,35 @@
 import { ISpeakers } from "../models/speakers";
 
 export const speakers: ISpeakers[] = [
-  {
+   {
     id: 1,
-    name: 'Michael Hladky',
-    position: 'CEO @push-based.io',
-    bio: 'Michael Hladky is a Google Developer Expert (GDE), Microsoft MVP, Nx champion, trainer, and consultant with a focus on Angular and RxJS. For years he has been helping companies and developers to set up scalable architectures and performant processes enabling teams to keep up with state-of-the-art development. A vibrant member of the tech community, he organizes multiple community events and workshops each year to give back',
-    image: 'assets/images/speakers/michael-hladky.jpeg',
-    flag: 'assets/images/speakers/flags/austria.png',
-    twitter: 'https://x.com/Michael_Hladky',
-    linkedin: 'https://www.linkedin.com/in/michael-hladky-519340148/',
-    github: 'https://github.com/BioPhoton',
+    name: 'Umesh kumar Potti',
+    position: 'Head of Engineering@Entain India',
+    bio: "Umesh Kumar is a senior engineering leader and Head of Engineering - Gaming, with extensive experience building and scaling large, high-availability platforms used by 100M+ users globally. Over his career, he has worked with organizations such as Microsoft, Adobe, Paytm, and Observe.ai, leading platform, cloud, and large-scale engineering initiatives. More recently, his focus has been on AI and GenAI adoption in engineering, with a strong emphasis on practical, real-world applications. His work centers on improving developer productivity, accelerating modernization, enhancing observability and operational intelligence, and enabling better decision-making at scale. He is particularly passionate about moving GenAI beyond experimentation to deliver embedded, measurable impact in everyday engineering workflows.",
+    image: 'assets/images/speakers/umesh-potti.jpeg',
+    flag: 'assets/images/speakers/flags/india.png',
+    twitter: '',
+    linkedin: 'https://www.linkedin.com/in/umesh226/',
+    github: '',
     youtube: '',
     previousTalks: [
-
-    ],
+    ]
   },
-  {
+   {
     id: 2,
-    name: 'Rainer Hahnekamp',
-    position: 'Trainer and Consultant @AngularArchitects.io',
-    bio: 'Rainer Hahnekamp is a Google Developer Expert (GDE) and a core team member of NgRx. He is a trainer and consultant in the Angular Architects expert network and runs ng-news, a weekly Angular newsletter. Beyond NgRx, he is deeply involved in open source, working on projects like Testronaut and Sheriff.',
-    image: 'assets/images/speakers/rainer-hahnekamp.jpg',
-    flag: 'assets/images/speakers/flags/austria.png',
-    twitter: 'https://x.com/rainerhahnekamp',
-    linkedin: 'https://www.linkedin.com/in/rainerhahnekamp/',
-    github: 'https://github.com/rainerhahnekamp',
-    youtube: 'https://www.youtube.com/@RainerHahnekamp',
+    name: 'ShivPrasad Koirala',
+    position: 'Founder of Questpond',
+    bio: 'ShivPrasad is a Microsoft Technical Developer and YouTuber who focuses on two key areas: teaching Microsoft development technologies—such as AI/ML, C#, MVC, Design Patterns, Angular, SQL Server, ASP.NET, and Azure—in the simplest way possible, and helping learners prepare for and excel in programming interviews through his videos. More information about his work can be found on his website www.questpond.com and on his YouTube channel @Questpond.',
+    image: 'assets/images/speakers/shivprasad.jpeg',
+    flag: 'assets/images/speakers/flags/india.png',
+    twitter: '',
+    linkedin: 'https://www.linkedin.com/in/shivkoirala',
+    github: '',
+    youtube: 'https://www.youtube.com/@questpondvideos',
     previousTalks: [
-     
     ],
   },
-  {
+    {
     id: 3,
     name: 'Markus Ingvarsson',
     position: 'Software Engineer @Podme',
@@ -47,6 +45,36 @@ export const speakers: ISpeakers[] = [
   },
   {
     id: 4,
+    name: 'Michael Hladky',
+    position: 'CEO @push-based.io',
+    bio: 'Michael Hladky is a Google Developer Expert (GDE), Microsoft MVP, Nx champion, trainer, and consultant with a focus on Angular and RxJS. For years he has been helping companies and developers to set up scalable architectures and performant processes enabling teams to keep up with state-of-the-art development. A vibrant member of the tech community, he organizes multiple community events and workshops each year to give back',
+    image: 'assets/images/speakers/michael-hladky.jpeg',
+    flag: 'assets/images/speakers/flags/austria.png',
+    twitter: 'https://x.com/Michael_Hladky',
+    linkedin: 'https://www.linkedin.com/in/michael-hladky-519340148/',
+    github: 'https://github.com/BioPhoton',
+    youtube: '',
+    previousTalks: [
+
+    ],
+  },
+  {
+    id: 5,
+    name: 'Rainer Hahnekamp',
+    position: 'Trainer and Consultant @AngularArchitects.io',
+    bio: 'Rainer Hahnekamp is a Google Developer Expert (GDE) and a core team member of NgRx. He is a trainer and consultant in the Angular Architects expert network and runs ng-news, a weekly Angular newsletter. Beyond NgRx, he is deeply involved in open source, working on projects like Testronaut and Sheriff.',
+    image: 'assets/images/speakers/rainer-hahnekamp.jpg',
+    flag: 'assets/images/speakers/flags/austria.png',
+    twitter: 'https://x.com/rainerhahnekamp',
+    linkedin: 'https://www.linkedin.com/in/rainerhahnekamp/',
+    github: 'https://github.com/rainerhahnekamp',
+    youtube: 'https://www.youtube.com/@RainerHahnekamp',
+    previousTalks: [
+     
+    ],
+  },
+    {
+    id: 6,
     name: 'Murat Sari',
     position: 'Owner CodeRabbit GmbH',
     bio: "Murat Sari is a software architect specializing in Angular. He has designed large projects in the enterprise and industrial environment and implemented them with his teams. Previously, Murat was the Lead Software Architect at one of the leading providers of real-time data analytics in the oil industry. In the backend, he relies on .NET Core and NodeJS/NestJS. Also, he uses big data technologies in some of his projects. Murat studied computer science at the Vienna University of Technology and taught as an external lecturer at the universities of applied sciences in Salzburg and Kapfenberg. At the latter, he designed a lecture on Angular. From 2012 to 2017 he was also a core team member in the Ogre3d project - an open-source 3D engine for Android and Windows Phone.",
@@ -59,8 +87,8 @@ export const speakers: ISpeakers[] = [
     previousTalks: [
     ]
   },
-  {
-    id: 5,
+    {
+    id: 7,
     name: 'Aprajita Verma',
     position: 'Frontend Architect at Mycom',
     bio: "Aprajita has over 16 years of experience building elegant, human-centric user interfaces. Her work spans AI-driven experiences, scalable design systems, and future-ready UI architectures, with a strong focus on practical, real-world impact. She is passionate about sharing insights and lessons learned from building products that work at scale.",
@@ -73,34 +101,7 @@ export const speakers: ISpeakers[] = [
     previousTalks: [
     ]
   },
-  {
-    id: 6,
-    name: 'Umesh kumar Potti',
-    position: 'Head of Engineering@Entain India',
-    bio: "Umesh Kumar is a senior engineering leader and Head of Engineering - Gaming, with extensive experience building and scaling large, high-availability platforms used by 100M+ users globally. Over his career, he has worked with organizations such as Microsoft, Adobe, Paytm, and Observe.ai, leading platform, cloud, and large-scale engineering initiatives. More recently, his focus has been on AI and GenAI adoption in engineering, with a strong emphasis on practical, real-world applications. His work centers on improving developer productivity, accelerating modernization, enhancing observability and operational intelligence, and enabling better decision-making at scale. He is particularly passionate about moving GenAI beyond experimentation to deliver embedded, measurable impact in everyday engineering workflows.",
-    image: 'assets/images/speakers/umesh-potti.jpeg',
-    flag: 'assets/images/speakers/flags/india.png',
-    twitter: '',
-    linkedin: 'https://www.linkedin.com/in/umesh226/',
-    github: '',
-    youtube: '',
-    previousTalks: [
-    ]
-  },
-  {
-    id: 7,
-    name: 'ShivPrasad Koirala',
-    position: 'Founder of Questpond',
-    bio: 'ShivPrasad is a Microsoft Technical Developer and YouTuber who focuses on two key areas: teaching Microsoft development technologies—such as AI/ML, C#, MVC, Design Patterns, Angular, SQL Server, ASP.NET, and Azure—in the simplest way possible, and helping learners prepare for and excel in programming interviews through his videos. More information about his work can be found on his website www.questpond.com and on his YouTube channel @Questpond.',
-    image: 'assets/images/speakers/shivprasad.jpeg',
-    flag: 'assets/images/speakers/flags/india.png',
-    twitter: '',
-    linkedin: 'https://www.linkedin.com/in/shivkoirala',
-    github: '',
-    youtube: 'https://www.youtube.com/@questpondvideos',
-    previousTalks: [
-    ],
-  },
+
   {
     id: 8,
     name: 'Dhananjay Kumar',
