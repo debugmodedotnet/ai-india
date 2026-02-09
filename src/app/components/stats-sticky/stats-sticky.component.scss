@@ -2,11 +2,12 @@
   position: relative;
   padding: 2rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  // transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 200px;
+  color: white;
   text-align: center;
-  background-color: #FDACAC;
+  background-color: #15803d;
 
   &::before {
     content: "";
@@ -31,7 +32,7 @@
 
   .sticky-category {
     display: inline-block;
-    background: rgba(0, 0, 0, 0.12);
+    font-size: 22px;
     padding: 0.5rem 2rem;
     border-radius: 15px;
     align-self: flex-start;
