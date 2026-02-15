@@ -13,7 +13,7 @@ export const agenda: IAgenda[] = [
     {
     title: 'Demystifying the AI Jungle: Connecting the Dots',
     speakerName: 'Rainer Hahnekamp',
-    speakerPosition: 'Trainer and Consultant',
+    speakerPosition: 'Consultant @Soverius AI',
     speakerImage: 'assets/images/speakers/rainer-hahnekamp.jpg',
     startTime: '9.00 AM',
     endTime: '9:30 AM',
@@ -23,7 +23,7 @@ export const agenda: IAgenda[] = [
   {
     title: 'From the AI Jungle to Structured RAG for AI-Assisted Code Review',
     speakerName: 'Murat Sari',
-    speakerPosition: 'Owner @CodeRabbit GmbH',
+    speakerPosition: 'Consultant @Soverius AI',
     speakerImage: 'assets/images/speakers/murat-Sari.jpeg',
     startTime: '9.30 AM',
     endTime: '10:00 AM',
@@ -31,14 +31,13 @@ export const agenda: IAgenda[] = [
       'AI-assisted code review is becoming increasingly common, but achieving consistent, high-quality results requires more than passing a diff to a language model. <br/><br/> This talk focuses on a practical use case: building a structured code review agent using Retrieval-Augmented Generation (RAG). We present a review pipeline that treats the codebase as a searchable knowledge system rather than a prompt attachment. <br/><br/> Repository structure, semantic embeddings, and static analysis signals are used to retrieve the most relevant context for a given change.The review process itself follows explicit steps: intent inference, context selection, rule-based analysis, and LLM-driven synthesis.',
   },
   {
-    title:'Testing Without Writing Tests? Lessons from an LLM-Driven Game Automation Platform',
-    speakerName: 'Umesh kumar Potti',
-    speakerPosition: 'Head of Engineering@Entain India',
-    speakerImage: 'assets/images/speakers/umesh-potti.jpeg',
-    startTime: '10:00 AM',
-    endTime: '10:30 AM',
-    description:
-      'What happens when test automation stops being script-first and becomes intent-driven? In this talk, we share how GameFactory leverages LLMs to rethink test automation for large-scale gaming platforms. <br/><br/> We will walk through how natural language, game logic, and AI reasoning come together to generate, evolve, and validate tests continuously—while still meeting strict reliability and compliance needs. Expect candid lessons on what worked, what didn’t, and how to responsibly operationalize GenAI in production-grade quality systems.',
+    title: 'Build a Scalable AI-Driven Chat Application Using Azure AI Services and React',
+    speakerName: 'Shailendra Chauhan',
+    speakerPosition: 'Founder @ScholarHat',
+    speakerImage: 'assets/images/speakers/shailendra-chauhan.jpeg',
+    startTime: '2:00 PM',
+    endTime: '2:30 PM',
+    description:'Design and implement a production-ready, AI-powered chat application leveraging Azure OpenAI Service for advanced natural language understanding and a modern React frontend for seamless user experience. This intelligent chatbot will: <br/><br/> <ul><li>Deliver business-specific Q&A using Retrieval-Augmented Generation (RAG)</li><li>Handle public knowledge queries with GPT-powered reasoning</li> <li>Provide real-time customer support assistance</li><li>Integrate secure backend APIs for enterprise workflows</li></ul> <br/><br/>The session will walk through architecture, implementation patterns, guardrails, caching strategies, and deployment considerations to build a robust AI solution ready for real-world enterprise environments.',
   },
   {
     title:'AI ML Design Patterns for Developers',
@@ -100,7 +99,7 @@ export const agenda: IAgenda[] = [
   },
   {
     title: 'Memory in AI Agents: What to Store, What to Forget, What to Summarize',
-    speakerName: 'Navyyaa Sharma',
+    speakerName: 'Navyaa Sharma',
     speakerPosition: 'Software Engineer @ Google',
     speakerImage: 'assets/images/speakers/navya.jpeg',
     startTime: '12:30 AM',
@@ -118,13 +117,14 @@ export const agenda: IAgenda[] = [
     description: '',
   },
   {
-    title: 'session',
-    speakerName: 'Shailendra Chauhan',
-    speakerPosition: 'Founder @ScholarHat',
-    speakerImage: 'assets/images/speakers/shailendra-chauhan.jpeg',
-    startTime: '2:00 PM',
-    endTime: '2:30 PM',
-    description:'TBD',
+    title:'Testing Without Writing Tests? Lessons from an LLM-Driven Game Automation Platform',
+    speakerName: 'Umesh kumar Potti',
+    speakerPosition: 'Head of Engineering@Entain India',
+    speakerImage: 'assets/images/speakers/umesh-potti.jpeg',
+    startTime: '2:00 AM',
+    endTime: '2:30 AM',
+    description:
+      'What happens when test automation stops being script-first and becomes intent-driven? In this talk, we share how GameFactory leverages LLMs to rethink test automation for large-scale gaming platforms. <br/><br/> We will walk through how natural language, game logic, and AI reasoning come together to generate, evolve, and validate tests continuously—while still meeting strict reliability and compliance needs. Expect candid lessons on what worked, what didn’t, and how to responsibly operationalize GenAI in production-grade quality systems.',
   },
   {
     title: 'WebMCP: Making the Web AI-Agent Ready',

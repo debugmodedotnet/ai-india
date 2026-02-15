@@ -3,9 +3,9 @@ import { ISpeakers } from "../models/speakers";
 export const speakers: ISpeakers[] = [
    {
     id: 1,
-    name: 'Navyyaa Sharma',
+    name: 'Navyaa Sharma',
     position: 'Software Engineer @ Google',
-    bio: 'Navyyaa is a Software Engineer at Google with experience building scalable systems and a strong interest in how Artificial Intelligence is transforming technology, decision-making, and the future of work. Her work focuses on designing reliable, high-impact solutions while understanding where AI excels and where human judgment remains essential.',
+    bio: 'Navyaa is a Software Engineer at Google with experience building scalable systems and a strong interest in how Artificial Intelligence is transforming technology, decision-making, and the future of work. Her work focuses on designing reliable, high-impact solutions while understanding where AI excels and where human judgment remains essential.',
     image: 'assets/images/speakers/navya.jpeg',
     flag: 'assets/images/speakers/flags/india.png',
     twitter: '',
@@ -129,7 +129,7 @@ export const speakers: ISpeakers[] = [
   {
     id: 10,
     name: 'Murat Sari',
-    position: 'Owner @CodeRabbit GmbH',
+    position: 'Consultant @@Soverius AI',
     bio: "Murat Sari is a software architect specializing in Angular. He has designed large projects in the enterprise and industrial environment and implemented them with his teams. Previously, Murat was the Lead Software Architect at one of the leading providers of real-time data analytics in the oil industry. In the backend, he relies on .NET Core and NodeJS/NestJS. Also, he uses big data technologies in some of his projects. Murat studied computer science at the Vienna University of Technology and taught as an external lecturer at the universities of applied sciences in Salzburg and Kapfenberg. At the latter, he designed a lecture on Angular. From 2012 to 2017 he was also a core team member in the Ogre3d project - an open-source 3D engine for Android and Windows Phone.",
     image: 'assets/images/speakers/murat-Sari.jpeg',
     flag: 'assets/images/speakers/flags/austria.png',
@@ -158,7 +158,7 @@ export const speakers: ISpeakers[] = [
   {
     id: 12,
     name: 'Rainer Hahnekamp',
-    position: 'Trainer and Consultant',
+    position: 'Consultant @Soverius AI',
     bio: 'Rainer Hahnekamp is a Google Developer Expert (GDE) and a core team member of NgRx. He is a trainer and consultant in the Angular Architects expert network and runs ng-news, a weekly Angular newsletter. Beyond NgRx, he is deeply involved in open source, working on projects like Testronaut and Sheriff.',
     image: 'assets/images/speakers/rainer-hahnekamp.jpg',
     flag: 'assets/images/speakers/flags/austria.png',
