@@ -10,7 +10,7 @@ export const agenda: IAgenda[] = [
     endTime: '9:00 AM',
     description: '',
   },
-    {
+  {
     title: 'Demystifying the AI Jungle: Connecting the Dots',
     speakerName: 'Rainer Hahnekamp',
     speakerPosition: 'Consultant @Soverius AI',
@@ -37,10 +37,10 @@ export const agenda: IAgenda[] = [
     speakerImage: 'assets/images/speakers/shailendra-chauhan.jpeg',
     startTime: '2:00 PM',
     endTime: '2:30 PM',
-    description:'Design and implement a production-ready, AI-powered chat application leveraging Azure OpenAI Service for advanced natural language understanding and a modern React frontend for seamless user experience. This intelligent chatbot will: <br/><br/> <ul><li>Deliver business-specific Q&A using Retrieval-Augmented Generation (RAG)</li><li>Handle public knowledge queries with GPT-powered reasoning</li> <li>Provide real-time customer support assistance</li><li>Integrate secure backend APIs for enterprise workflows</li></ul> <br/><br/>The session will walk through architecture, implementation patterns, guardrails, caching strategies, and deployment considerations to build a robust AI solution ready for real-world enterprise environments.',
+    description: 'Design and implement a production-ready, AI-powered chat application leveraging Azure OpenAI Service for advanced natural language understanding and a modern React frontend for seamless user experience. This intelligent chatbot will: <br/><br/> <ul><li>Deliver business-specific Q&A using Retrieval-Augmented Generation (RAG)</li><li>Handle public knowledge queries with GPT-powered reasoning</li> <li>Provide real-time customer support assistance</li><li>Integrate secure backend APIs for enterprise workflows</li></ul> <br/><br/>The session will walk through architecture, implementation patterns, guardrails, caching strategies, and deployment considerations to build a robust AI solution ready for real-world enterprise environments.',
   },
   {
-    title:'AI ML Design Patterns for Developers',
+    title: 'AI ML Design Patterns for Developers',
     speakerName: 'ShivPrasad Koirala',
     speakerPosition: 'Founder @Questpond',
     speakerImage: 'assets/images/speakers/shivprasad.jpeg',
@@ -85,9 +85,9 @@ export const agenda: IAgenda[] = [
     startTime: '11:30 AM',
     endTime: '12:00 PM',
     description:
-      'Benchmarks have become unreliable. Major AI labs are gaming evaluation metrics. Data contamination inflates scores. And there is a documented 25–30% accuracy drop between benchmark performance and production reality. Meanwhile, LLM-as-judge evaluators hallucinate scores, and most teams are flying blind without knowing if their system is actually improving. <br/><br/> This talk reveals why traditional benchmarks fail and introduces a production-aligned evaluation framework that actually works—Eval-Driven Development (EDD). You will learn how to: <br/><br/> Source golden datasets from production logs (not synthetic data), avoiding the eval-production gap that catches everyone off-guard. <br/><br/> Mix three grading <b>strategies—code-based (fast) </b>, <b>model-based (flexible) </b>, <b>human (calibration) </b>—to build reliable evaluations at scale <br/><br/> Close the feedback loop: Production failures → curated datasets → offline evals → CI/CD gates → monitored rollout → production insights → dataset refresh <br/><br/> Distinguish capability vs. regression evals, each serving different purposes (drive improvement vs. prevent backsliding) <br/><br/> Implement continuous evaluation infrastructure with automated scoring, real-time alerts, and regression detection that actually catches problems before users do' ,
+      'Benchmarks have become unreliable. Major AI labs are gaming evaluation metrics. Data contamination inflates scores. And there is a documented 25–30% accuracy drop between benchmark performance and production reality. Meanwhile, LLM-as-judge evaluators hallucinate scores, and most teams are flying blind without knowing if their system is actually improving. <br/><br/> This talk reveals why traditional benchmarks fail and introduces a production-aligned evaluation framework that actually works—Eval-Driven Development (EDD). You will learn how to: <br/><br/> Source golden datasets from production logs (not synthetic data), avoiding the eval-production gap that catches everyone off-guard. <br/><br/> Mix three grading <b>strategies—code-based (fast) </b>, <b>model-based (flexible) </b>, <b>human (calibration) </b>—to build reliable evaluations at scale <br/><br/> Close the feedback loop: Production failures → curated datasets → offline evals → CI/CD gates → monitored rollout → production insights → dataset refresh <br/><br/> Distinguish capability vs. regression evals, each serving different purposes (drive improvement vs. prevent backsliding) <br/><br/> Implement continuous evaluation infrastructure with automated scoring, real-time alerts, and regression detection that actually catches problems before users do',
   },
-   {
+  {
     title: 'Building Smarter Applications with On-device AI Agents & GraphRAG',
     speakerName: 'Ashita Prasad',
     speakerPosition: 'Dev Advocate @AWS',
@@ -95,7 +95,7 @@ export const agenda: IAgenda[] = [
     startTime: '12:00 AM',
     endTime: '12:30 PM',
     description:
-      'For more than a decade, we have been building applications that simply respond to our actions. But with the advent of agentic AI, a new segment of Agentic Apps are emerging that do not just respond, but actively reason, act, and adapt on behalf of the user. When used as the memory layer for agentic applications, Knowledge Graphs provide structured, provenance-aware factual retrieval and grounding. This significantly reduces hallucinations, supports explainable and controllable personalization, mitigates certain biases through curated schemas, and makes reasoning and personalization decisions transparent. <br/> <br/> In this talk, we will explore how developers can use open source on-device agentic AI frameworks to build real-world applications enhanced with GraphRAG, enabling grounded knowledge retrieval from graph databases.' ,
+      'For more than a decade, we have been building applications that simply respond to our actions. But with the advent of agentic AI, a new segment of Agentic Apps are emerging that do not just respond, but actively reason, act, and adapt on behalf of the user. When used as the memory layer for agentic applications, Knowledge Graphs provide structured, provenance-aware factual retrieval and grounding. This significantly reduces hallucinations, supports explainable and controllable personalization, mitigates certain biases through curated schemas, and makes reasoning and personalization decisions transparent. <br/> <br/> In this talk, we will explore how developers can use open source on-device agentic AI frameworks to build real-world applications enhanced with GraphRAG, enabling grounded knowledge retrieval from graph databases.',
   },
   {
     title: 'Memory in AI Agents: What to Store, What to Forget, What to Summarize',
@@ -117,7 +117,7 @@ export const agenda: IAgenda[] = [
     description: '',
   },
   {
-    title:'Testing Without Writing Tests? Lessons from an LLM-Driven Game Automation Platform',
+    title: 'Testing Without Writing Tests? Lessons from an LLM-Driven Game Automation Platform',
     speakerName: 'Umesh kumar Potti',
     speakerPosition: 'Head of Engineering@Entain India',
     speakerImage: 'assets/images/speakers/umesh-potti.jpeg',
@@ -135,16 +135,17 @@ export const agenda: IAgenda[] = [
     endTime: '3.00 PM',
     description: 'The Model Context Protocol (MCP) has become the universal standard for connecting AI to external tools, backed by Anthropic, OpenAI, Google, and Microsoft. WebMCP, an emerging W3C standard, lets any web application expose AI-callable tools with just a few lines of JavaScript, all running client-side with the usere xisting session. <br/> <br/> In this talk, you will learn what MCP is, what WebMCP brings to the browser, and see live demos in action. <br/><br/> Whether you are building new AI-powered apps or retrofitting existing ones, this is foundational knowledge for 2026.',
   },
-   {
+  {
     title:
-      'session',
+      'Moving legacy with AI',
     speakerName: 'Michael Hladky',
     speakerPosition: 'CEO @push-based.io',
     speakerImage: 'assets/images/speakers/michael-hladky.jpeg',
     startTime: '3:00 PM',
     endTime: '3:30 PM',
-    description:'TBD'
+    description: 'Legacy migrations are slow, expensive, and error-prone — unless AI is used properly. In this talk, I’ll show how we reduced migration time by 75% using a structured AI workflow. Instead of experimenting with prompts, the focus is on reproducible processes: AI context and token strategies, MCP, orchestration files, and the systematic evaluation of runs. <br/><br/> The emphasis is on what others can practically adopt to modernize large legacy codebases faster, more safely, and in a measurable way. <br/><br/> <b>Learning Objectives </b> <br/><br/> <ul><li>Why context and token management determine the success or failure of AI-driven migrations</li><li>How MCP and orchestration turn AI into a reliable engineering tool</li><li>How to evaluate, compare, and improve AI runs</li><li>A field-tested AI workflow that drastically reduces migration effort</li><li>Concrete patterns that can be directly applied to your own legacy projects</li></ul>'
   },
+
   {
     title: 'Simplifying Agents Development with Vercal AI SDK ',
     speakerName: 'Dhananjay Kumar',
