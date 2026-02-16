@@ -21,14 +21,14 @@ export const agenda: IAgenda[] = [
       'ASI, Open-Weight Models, Fine-Tuning,... the list of AI buzzwords grows every day. It is easy to get lost in the hype. <br/><br/> When I first started digging in, I had the impression that a new technology popped up every month to replace the old one. But I realized this was not true: these are not replacements, but connected building blocks. <br/><br/> In this talk, I will show you exactly how they fit together. <br/><br/> We will start with the foundation: the LLM itself. We will see how it simply predicts the next Token, how Temperature controls its creativity, and how Tools give it "hands" to interact with the world.<br/><br/> We will start with the foundation: the LLM itself. We will see how it simply predicts the next Token, how Temperature controls its creativity, and how Tools give it "hands" to interact with the world. <br/><br/> Then we will navigate the "Knowledge Layer" to clarify the crucial difference between RAG (giving the model a book) and Fine-Tuning (sending it to school). Finally, we will see how these pieces combine into Agentic AI and the Model Context Protocol (MCP) to build the autonomous systems of today. <br/> <br/> Ride the hype instead of chasing it. <br/><br/> By combining deterministic analysis with targeted retrieval, the system produces focused, explainable review reports that reflect both local changes and broader architectural constraints. <br/><br/> The approach works with open-weight models and can run fully on-premise, making it suitable for privacy-sensitive environments. ',
   },
   {
-    title: 'From the AI Jungle to Structured RAG for AI-Assisted Code Review',
+    title: 'From the AI Jungle to RAG in a Tab: Private AI Search',
     speakerName: 'Murat Sari',
     speakerPosition: 'Consultant @Soverius AI',
     speakerImage: 'assets/images/speakers/murat-Sari.jpeg',
     startTime: '9.30 AM',
     endTime: '10:00 AM',
     description:
-      'AI-assisted code review is becoming increasingly common, but achieving consistent, high-quality results requires more than passing a diff to a language model. <br/><br/> This talk focuses on a practical use case: building a structured code review agent using Retrieval-Augmented Generation (RAG). We present a review pipeline that treats the codebase as a searchable knowledge system rather than a prompt attachment. <br/><br/> Repository structure, semantic embeddings, and static analysis signals are used to retrieve the most relevant context for a given change.The review process itself follows explicit steps: intent inference, context selection, rule-based analysis, and LLM-driven synthesis.',
+      '“RAG”, “local AI”, “vector databases”… it’s easy to treat them as a checklist. I did too—until I tried to build a RAG app that runs <b>entirely inside the browser</b><br/><br>In this talk, I will show how a local-first RAG workflow fits together: ingest documents on-device, turn them into a searchable memory, retrieve the right context, and generate answers—without sending private data to a backend. The payoff is twofold: <b>privacy by default</b> and a new way to think about cost—shifting parts of the workload from centralized infrastructure to user devices.. <br/><br/> Then we tackle the practical question: <b>when is a local approach enough, when do you need a real vector index, and when does it cross the line where you need a server? </b> We’ll use a simple scaling intuition (how retrieval work grows with corpus size and embedding dimension) to make that decision predictable, not magical. <br/><br/> Finally, I’ll turn RAG into something you can see that shows where queries land and why the retriever picked what it picked—so you can debug retrieval instead of guessing.',
   },
   {
     title: 'Build a Scalable AI-Driven Chat Application Using Azure AI Services and React',
@@ -80,7 +80,7 @@ export const agenda: IAgenda[] = [
   {
     title: 'Building Reliable LLM Evals That Actually Work in Production',
     speakerName: 'Priyanka Kore',
-    speakerPosition: 'AI Solution & Product Architect @Adesso India',
+    speakerPosition: 'Lead @Adesso India',
     speakerImage: 'assets/images/speakers/priyanka.jpeg',
     startTime: '11:30 AM',
     endTime: '12:00 PM',

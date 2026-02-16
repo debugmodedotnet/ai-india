@@ -18,7 +18,7 @@ export const speakers: ISpeakers[] = [
     {
     id: 2,
     name: 'Priyanka Kore',
-    position: 'AI Solution & Product Architect @Adesso India',
+    position: 'Lead @Adesso India',
     bio: 'Priyanka Kore is an AI architect focused on designing and scaling enterprise-grade AI solutions that bridge deep technical implementation with real business impact. Over the past year, she has led AI enablement initiatives across multiple teams, designed agentic marketplace architectures, and helped organizations position AI as a core capability driver, not just an experimental add-on. Her work emphasizes building robust, scalable systems that solve real-world problems rather than standalone demos. Priyanka is a graduate of the IIT Delhi AI Leadership Program and is passionate about making AI accessible, practical, and production-ready for modern enterprises.',
     image: 'assets/images/speakers/priyanka.jpeg',
     flag: 'assets/images/speakers/flags/india.png',
@@ -130,7 +130,7 @@ export const speakers: ISpeakers[] = [
     id: 10,
     name: 'Murat Sari',
     position: 'Consultant @@Soverius AI',
-    bio: "Murat Sari is a software architect specializing in Angular. He has designed large projects in the enterprise and industrial environment and implemented them with his teams. Previously, Murat was the Lead Software Architect at one of the leading providers of real-time data analytics in the oil industry. In the backend, he relies on .NET Core and NodeJS/NestJS. Also, he uses big data technologies in some of his projects. Murat studied computer science at the Vienna University of Technology and taught as an external lecturer at the universities of applied sciences in Salzburg and Kapfenberg. At the latter, he designed a lecture on Angular. From 2012 to 2017 he was also a core team member in the Ogre3d project - an open-source 3D engine for Android and Windows Phone.",
+    bio: "Murat Sari is a software architect with nearly two decades of experience building software systems across cloud, edge, and embedded environments. He holds a master’s degree in computer graphics and digital image processing and is a named inventor on a German patent application in low-latency streaming systems. As a consultant, trainer, and architecture reviewer, he supports teams in designing and improving software systems and has been involved in several startups and technology projects. Earlier in his career, he worked on graphics, simulation, and industrial software, including real-time visualization and data platforms. Today, he works on applied AI, computer vision, and modern software architectures.",
     image: 'assets/images/speakers/murat-Sari.jpeg',
     flag: 'assets/images/speakers/flags/austria.png',
     twitter: '',
@@ -140,8 +140,23 @@ export const speakers: ISpeakers[] = [
     previousTalks: [
     ]
   },
-  {
+    {
     id: 11,
+    name: 'Rainer Hahnekamp',
+    position: 'Consultant @Soverius AI',
+    bio: 'Rainer Hahnekamp is a Google Developer Expert (GDE) and AI Architect at soverius.ai, with over 15 years of experience in the design and delivery of mission-critical enterprise systems. While the industry is currently in a race to adopt LLMs, Rainer’s expertise rests on a deep academic foundation in Unsupervised Machine Learning from the University of Vienna. As a strategic "Bridge Builder," Rainer specializes in the deep implementation of AI services. He moves beyond simple APIs to focus on Fine-Tuning, complex RAG architectures, and Agentic development.',
+    image: 'assets/images/speakers/rainer-hahnekamp.jpg',
+    flag: 'assets/images/speakers/flags/austria.png',
+    twitter: 'https://x.com/rainerhahnekamp',
+    linkedin: 'https://www.linkedin.com/in/rainerhahnekamp/',
+    github: 'https://github.com/rainerhahnekamp',
+    youtube: 'https://www.youtube.com/@RainerHahnekamp',
+    previousTalks: [
+     
+    ],
+  },
+  {
+    id: 12,
     name: 'Michael Hladky',
     position: 'CEO @push-based.io',
     bio: 'Michael Hladky is a Google Developer Expert (GDE), Microsoft MVP, Nx champion, trainer, and consultant with a focus on Angular and RxJS. For years he has been helping companies and developers to set up scalable architectures and performant processes enabling teams to keep up with state-of-the-art development. A vibrant member of the tech community, he organizes multiple community events and workshops each year to give back',
@@ -153,21 +168,6 @@ export const speakers: ISpeakers[] = [
     youtube: '',
     previousTalks: [
 
-    ],
-  },
-  {
-    id: 12,
-    name: 'Rainer Hahnekamp',
-    position: 'Consultant @Soverius AI',
-    bio: 'Rainer Hahnekamp is a Google Developer Expert (GDE) and a core team member of NgRx. He is a trainer and consultant in the Angular Architects expert network and runs ng-news, a weekly Angular newsletter. Beyond NgRx, he is deeply involved in open source, working on projects like Testronaut and Sheriff.',
-    image: 'assets/images/speakers/rainer-hahnekamp.jpg',
-    flag: 'assets/images/speakers/flags/austria.png',
-    twitter: 'https://x.com/rainerhahnekamp',
-    linkedin: 'https://www.linkedin.com/in/rainerhahnekamp/',
-    github: 'https://github.com/rainerhahnekamp',
-    youtube: 'https://www.youtube.com/@RainerHahnekamp',
-    previousTalks: [
-     
     ],
   },
   {
