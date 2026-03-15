@@ -6,8 +6,74 @@ export const agenda: IAgenda[] = [
     speakerName: '',
     speakerPosition: '',
     speakerImage: 'assets/images/agenda/registration.png',
-    startTime: '8:00 AM',
-    endTime: '9:00 AM',
+    startTime: '9:00 AM',
+    endTime: '10:00 AM',
+    description: '',
+  },
+  {
+    title: 'Speaker Felicitation',
+    speakerName: '',
+    speakerPosition: '',
+    speakerImage: 'assets/images/agenda/award.png',
+    startTime: '10:00 AM',
+    endTime: '10:30 AM',
+    description: '',
+  },
+  {
+    title: 'Building Reliable LLM Evals That Actually Work in Production',
+    speakerName: 'Priyanka Kore',
+    speakerPosition: 'Lead @Adesso India',
+    speakerImage: 'assets/images/speakers/priyanka.jpeg',
+    startTime: '10:30 AM',
+    endTime: '11:00 PM',
+    description:
+      'Benchmarks have become unreliable. Major AI labs are gaming evaluation metrics. Data contamination inflates scores. And there is a documented 25–30% accuracy drop between benchmark performance and production reality. Meanwhile, LLM-as-judge evaluators hallucinate scores, and most teams are flying blind without knowing if their system is actually improving. <br/><br/> This talk reveals why traditional benchmarks fail and introduces a production-aligned evaluation framework that actually works—Eval-Driven Development (EDD). You will learn how to: <br/><br/> Source golden datasets from production logs (not synthetic data), avoiding the eval-production gap that catches everyone off-guard. <br/><br/> Mix three grading <b>strategies—code-based (fast) </b>, <b>model-based (flexible) </b>, <b>human (calibration) </b>—to build reliable evaluations at scale <br/><br/> Close the feedback loop: Production failures → curated datasets → offline evals → CI/CD gates → monitored rollout → production insights → dataset refresh <br/><br/> Distinguish capability vs. regression evals, each serving different purposes (drive improvement vs. prevent backsliding) <br/><br/> Implement continuous evaluation infrastructure with automated scoring, real-time alerts, and regression detection that actually catches problems before users do',
+  },
+  {
+    title: 'WebMCP: Making the Web AI-Agent Ready',
+    speakerName: 'Markus Ingvarsson',
+    speakerPosition: 'Founding Software Engineer @Strawberry Browser',
+    speakerImage: 'assets/images/speakers/markus-ingvarsson.jpeg',
+    startTime: '11:00 PM',
+    endTime: '11.30 PM',
+    description: 'The Model Context Protocol (MCP) has become the universal standard for connecting AI to external tools, backed by Anthropic, OpenAI, Google, and Microsoft. WebMCP, an emerging W3C standard, lets any web application expose AI-callable tools with just a few lines of JavaScript, all running client-side with the usere xisting session. <br/> <br/> In this talk, you will learn what MCP is, what WebMCP brings to the browser, and see live demos in action. <br/><br/> Whether you are building new AI-powered apps or retrofitting existing ones, this is foundational knowledge for 2026.',
+  },
+  {
+    title: 'Testing Without Writing Tests? Lessons from an LLM-Driven Game Automation Platform',
+    speakerName: 'Umesh kumar Potti',
+    speakerPosition: 'Head of Engineering@Entain India',
+    speakerImage: 'assets/images/speakers/umesh-potti.jpeg',
+    startTime: '11:30 AM',
+    endTime: '12:00 AM',
+    description:
+      'What happens when test automation stops being script-first and becomes intent-driven? In this talk, we share how GameFactory leverages LLMs to rethink test automation for large-scale gaming platforms. <br/><br/> We will walk through how natural language, game logic, and AI reasoning come together to generate, evolve, and validate tests continuously—while still meeting strict reliability and compliance needs. Expect candid lessons on what worked, what didn’t, and how to responsibly operationalize GenAI in production-grade quality systems.',
+  },
+  {
+    title: 'AI ML Design Patterns for Developers',
+    speakerName: 'ShivPrasad Koirala',
+    speakerPosition: 'Founder @Questpond',
+    speakerImage: 'assets/images/speakers/shivprasad.jpeg',
+    startTime: '12:00 AM',
+    endTime: '12:30 AM',
+    description:
+      'This talk will discuss below AI/ML design pattrens for developers: <br/><br/> <ul><li>1. RAG (Retrieval-Augmented Generation) pattern: retrieve docs → prompt → generate </li> <li> 2. Agent + Tool-Use pattern: LLM plans and calls tools (DB, APIs, search)</li> <li>3. Guardrails pattern: validate input/output (PII, toxicity, policy, format)</li><li>4. Caching pattern: cache embeddings + LLM responses for cost/latency</li><li>5. Async / Queue-based inference pattern: decouple requests using queues</li></ul> <br/> ',
+  },
+  {
+    title: 'Build a Scalable AI-Driven Chat Application Using Azure AI Services and React',
+    speakerName: 'Shailendra Chauhan',
+    speakerPosition: 'Founder @ScholarHat',
+    speakerImage: 'assets/images/speakers/shailendra-chauhan.jpeg',
+    startTime: '12:30 PM',
+    endTime: '1:00 PM',
+    description: 'Design and implement a production-ready, AI-powered chat application leveraging Azure OpenAI Service for advanced natural language understanding and a modern React frontend for seamless user experience. This intelligent chatbot will: <br/><br/> <ul><li>Deliver business-specific Q&A using Retrieval-Augmented Generation (RAG)</li><li>Handle public knowledge queries with GPT-powered reasoning</li> <li>Provide real-time customer support assistance</li><li>Integrate secure backend APIs for enterprise workflows</li></ul> <br/><br/>The session will walk through architecture, implementation patterns, guardrails, caching strategies, and deployment considerations to build a robust AI solution ready for real-world enterprise environments.',
+  },
+  {
+    title: 'Lunch Break',
+    speakerName: '',
+    speakerPosition: '',
+    speakerImage: 'assets/images/agenda/lunch-break.png',
+    startTime: '1.00 PM',
+    endTime: '2:00 PM',
     description: '',
   },
   {
@@ -15,8 +81,8 @@ export const agenda: IAgenda[] = [
     speakerName: 'Rainer Hahnekamp',
     speakerPosition: 'Consultant @Soverius AI',
     speakerImage: 'assets/images/speakers/rainer-hahnekamp.jpg',
-    startTime: '9.00 AM',
-    endTime: '9:30 AM',
+    startTime: '2.00 PM',
+    endTime: '2:30 PM',
     description:
       'ASI, Open-Weight Models, Fine-Tuning,... the list of AI buzzwords grows every day. It is easy to get lost in the hype. <br/><br/> When I first started digging in, I had the impression that a new technology popped up every month to replace the old one. But I realized this was not true: these are not replacements, but connected building blocks. <br/><br/> In this talk, I will show you exactly how they fit together. <br/><br/> We will start with the foundation: the LLM itself. We will see how it simply predicts the next Token, how Temperature controls its creativity, and how Tools give it "hands" to interact with the world.<br/><br/> We will start with the foundation: the LLM itself. We will see how it simply predicts the next Token, how Temperature controls its creativity, and how Tools give it "hands" to interact with the world. <br/><br/> Then we will navigate the "Knowledge Layer" to clarify the crucial difference between RAG (giving the model a book) and Fine-Tuning (sending it to school). Finally, we will see how these pieces combine into Agentic AI and the Model Context Protocol (MCP) to build the autonomous systems of today. <br/> <br/> Ride the hype instead of chasing it. <br/><br/> By combining deterministic analysis with targeted retrieval, the system produces focused, explainable review reports that reflect both local changes and broader architectural constraints. <br/><br/> The approach works with open-weight models and can run fully on-premise, making it suitable for privacy-sensitive environments. ',
   },
@@ -25,115 +91,10 @@ export const agenda: IAgenda[] = [
     speakerName: 'Murat Sari',
     speakerPosition: 'Consultant @Soverius AI',
     speakerImage: 'assets/images/speakers/murat-Sari.jpeg',
-    startTime: '9.30 AM',
-    endTime: '10:00 AM',
+    startTime: '2.30 PM',
+    endTime: '3:00 PM',
     description:
       '“RAG”, “local AI”, “vector databases”… it’s easy to treat them as a checklist. I did too—until I tried to build a RAG app that runs <b>entirely inside the browser</b><br/><br>In this talk, I will show how a local-first RAG workflow fits together: ingest documents on-device, turn them into a searchable memory, retrieve the right context, and generate answers—without sending private data to a backend. The payoff is twofold: <b>privacy by default</b> and a new way to think about cost—shifting parts of the workload from centralized infrastructure to user devices.. <br/><br/> Then we tackle the practical question: <b>when is a local approach enough, when do you need a real vector index, and when does it cross the line where you need a server? </b> We’ll use a simple scaling intuition (how retrieval work grows with corpus size and embedding dimension) to make that decision predictable, not magical. <br/><br/> Finally, I’ll turn RAG into something you can see that shows where queries land and why the retriever picked what it picked—so you can debug retrieval instead of guessing.',
-  },
-  {
-    title: 'Build a Scalable AI-Driven Chat Application Using Azure AI Services and React',
-    speakerName: 'Shailendra Chauhan',
-    speakerPosition: 'Founder @ScholarHat',
-    speakerImage: 'assets/images/speakers/shailendra-chauhan.jpeg',
-    startTime: '2:00 PM',
-    endTime: '2:30 PM',
-    description: 'Design and implement a production-ready, AI-powered chat application leveraging Azure OpenAI Service for advanced natural language understanding and a modern React frontend for seamless user experience. This intelligent chatbot will: <br/><br/> <ul><li>Deliver business-specific Q&A using Retrieval-Augmented Generation (RAG)</li><li>Handle public knowledge queries with GPT-powered reasoning</li> <li>Provide real-time customer support assistance</li><li>Integrate secure backend APIs for enterprise workflows</li></ul> <br/><br/>The session will walk through architecture, implementation patterns, guardrails, caching strategies, and deployment considerations to build a robust AI solution ready for real-world enterprise environments.',
-  },
-  {
-    title: 'AI ML Design Patterns for Developers',
-    speakerName: 'ShivPrasad Koirala',
-    speakerPosition: 'Founder @Questpond',
-    speakerImage: 'assets/images/speakers/shivprasad.jpeg',
-    startTime: '10:30 AM',
-    endTime: '11:00 AM',
-    description:
-      'This talk will discuss below AI/ML design pattrens for developers: <br/><br/> <ul><li>1. RAG (Retrieval-Augmented Generation) pattern: retrieve docs → prompt → generate </li> <li> 2. Agent + Tool-Use pattern: LLM plans and calls tools (DB, APIs, search)</li> <li>3. Guardrails pattern: validate input/output (PII, toxicity, policy, format)</li><li>4. Caching pattern: cache embeddings + LLM responses for cost/latency</li><li>5. Async / Queue-based inference pattern: decouple requests using queues</li></ul> <br/> ',
-  },
-  {
-    title: 'Speaker Felicitation',
-    speakerName: '',
-    speakerPosition: '',
-    speakerImage: 'assets/images/agenda/award.png',
-    startTime: '11:00 AM',
-    endTime: '11:30 AM',
-    description: '',
-  },
-  // {
-  //   title: 'Break',
-  //   speakerName: '',
-  //   speakerPosition: '',
-  //   speakerImage: 'assets/images/agenda/tea-cup.png',
-  //   startTime: '10:20 AM',
-  //   endTime: '10:30 AM',
-  //   description: '',
-  // },
-  // {
-  //   title: 'Keynote',
-  //   speakerName: 'TBD',
-  //   speakerPosition: '',
-  //   speakerImage: '',
-  //   startTime: '10:30 AM',
-  //   endTime: '11:00 AM',
-  //   description:
-  //     'Learn about all key features of Angular 20 and futute of modern Angular development',
-  // },
-  {
-    title: 'Building Reliable LLM Evals That Actually Work in Production',
-    speakerName: 'Priyanka Kore',
-    speakerPosition: 'Lead @Adesso India',
-    speakerImage: 'assets/images/speakers/priyanka.jpeg',
-    startTime: '11:30 AM',
-    endTime: '12:00 PM',
-    description:
-      'Benchmarks have become unreliable. Major AI labs are gaming evaluation metrics. Data contamination inflates scores. And there is a documented 25–30% accuracy drop between benchmark performance and production reality. Meanwhile, LLM-as-judge evaluators hallucinate scores, and most teams are flying blind without knowing if their system is actually improving. <br/><br/> This talk reveals why traditional benchmarks fail and introduces a production-aligned evaluation framework that actually works—Eval-Driven Development (EDD). You will learn how to: <br/><br/> Source golden datasets from production logs (not synthetic data), avoiding the eval-production gap that catches everyone off-guard. <br/><br/> Mix three grading <b>strategies—code-based (fast) </b>, <b>model-based (flexible) </b>, <b>human (calibration) </b>—to build reliable evaluations at scale <br/><br/> Close the feedback loop: Production failures → curated datasets → offline evals → CI/CD gates → monitored rollout → production insights → dataset refresh <br/><br/> Distinguish capability vs. regression evals, each serving different purposes (drive improvement vs. prevent backsliding) <br/><br/> Implement continuous evaluation infrastructure with automated scoring, real-time alerts, and regression detection that actually catches problems before users do',
-  },
-  {
-    title: 'Building Smarter Applications with On-device AI Agents & GraphRAG',
-    speakerName: 'Ashita Prasad',
-    speakerPosition: 'Dev Advocate @AWS',
-    speakerImage: 'assets/images/speakers/ashita.png',
-    startTime: '12:00 AM',
-    endTime: '12:30 PM',
-    description:
-      'For more than a decade, we have been building applications that simply respond to our actions. But with the advent of agentic AI, a new segment of Agentic Apps are emerging that do not just respond, but actively reason, act, and adapt on behalf of the user. When used as the memory layer for agentic applications, Knowledge Graphs provide structured, provenance-aware factual retrieval and grounding. This significantly reduces hallucinations, supports explainable and controllable personalization, mitigates certain biases through curated schemas, and makes reasoning and personalization decisions transparent. <br/> <br/> In this talk, we will explore how developers can use open source on-device agentic AI frameworks to build real-world applications enhanced with GraphRAG, enabling grounded knowledge retrieval from graph databases.',
-  },
-  {
-    title: 'Memory in AI Agents: What to Store, What to Forget, What to Summarize',
-    speakerName: 'Navyaa Sharma',
-    speakerPosition: 'Software Engineer @ Google',
-    speakerImage: 'assets/images/speakers/navya.jpeg',
-    startTime: '12:30 AM',
-    endTime: '1:00 PM',
-    description:
-      ' Most AI agents fail not because of poor reasoning, but because of poor memory design. <br/><br/> I will break down memory into short term, long term, and episodic layers, and show how each should be implemented. I will cover what information should be stored, what must be forgotten and how summarization dramatically improves agent reliability. <br/><br/> This talk will focus on practical, code level memory strategies that make agents cheaper, faster and more accurate in production.',
-  },
-  {
-    title: 'Lunch Break',
-    speakerName: '',
-    speakerPosition: '',
-    speakerImage: 'assets/images/agenda/lunch-break.png',
-    startTime: '1:00 PM',
-    endTime: '2:00 PM',
-    description: '',
-  },
-  {
-    title: 'Testing Without Writing Tests? Lessons from an LLM-Driven Game Automation Platform',
-    speakerName: 'Umesh kumar Potti',
-    speakerPosition: 'Head of Engineering@Entain India',
-    speakerImage: 'assets/images/speakers/umesh-potti.jpeg',
-    startTime: '2:00 AM',
-    endTime: '2:30 AM',
-    description:
-      'What happens when test automation stops being script-first and becomes intent-driven? In this talk, we share how GameFactory leverages LLMs to rethink test automation for large-scale gaming platforms. <br/><br/> We will walk through how natural language, game logic, and AI reasoning come together to generate, evolve, and validate tests continuously—while still meeting strict reliability and compliance needs. Expect candid lessons on what worked, what didn’t, and how to responsibly operationalize GenAI in production-grade quality systems.',
-  },
-  {
-    title: 'WebMCP: Making the Web AI-Agent Ready',
-    speakerName: 'Markus Ingvarsson',
-    speakerPosition: 'Founding Software Engineer @Strawberry Browser',
-    speakerImage: 'assets/images/speakers/markus-ingvarsson.jpeg',
-    startTime: '2:30 PM',
-    endTime: '3.00 PM',
-    description: 'The Model Context Protocol (MCP) has become the universal standard for connecting AI to external tools, backed by Anthropic, OpenAI, Google, and Microsoft. WebMCP, an emerging W3C standard, lets any web application expose AI-callable tools with just a few lines of JavaScript, all running client-side with the usere xisting session. <br/> <br/> In this talk, you will learn what MCP is, what WebMCP brings to the browser, and see live demos in action. <br/><br/> Whether you are building new AI-powered apps or retrofitting existing ones, this is foundational knowledge for 2026.',
   },
   {
     title:
@@ -145,7 +106,6 @@ export const agenda: IAgenda[] = [
     endTime: '3:30 PM',
     description: 'Legacy migrations are slow, expensive, and error-prone — unless AI is used properly. In this talk, I’ll show how we reduced migration time by 75% using a structured AI workflow. Instead of experimenting with prompts, the focus is on reproducible processes: AI context and token strategies, MCP, orchestration files, and the systematic evaluation of runs. <br/><br/> The emphasis is on what others can practically adopt to modernize large legacy codebases faster, more safely, and in a measurable way. <br/><br/> <b>Learning Objectives </b> <br/><br/> <ul><li>Why context and token management determine the success or failure of AI-driven migrations</li><li>How MCP and orchestration turn AI into a reliable engineering tool</li><li>How to evaluate, compare, and improve AI runs</li><li>A field-tested AI workflow that drastically reduces migration effort</li><li>Concrete patterns that can be directly applied to your own legacy projects</li></ul>'
   },
-
   {
     title: 'Simplifying Agents Development with Vercal AI SDK ',
     speakerName: 'Dhananjay Kumar',
@@ -155,6 +115,7 @@ export const agenda: IAgenda[] = [
     endTime: '4.00 PM',
     description: 'Building AI agents can quickly become complex, involving tool orchestration, state management, and streaming workflows. This talk explores how the Vercel AI SDK simplifies agent development by providing structured primitives for tool use, prompt handling, and streaming responses, enabling developers to build reliable and scalable AI agents with less boilerplate.',
   },
+
   {
     title: 'Tea Break',
     speakerName: '',
@@ -165,12 +126,22 @@ export const agenda: IAgenda[] = [
     description: '',
   },
   {
+    title: 'Building Smarter Applications with On-device AI Agents & GraphRAG',
+    speakerName: 'Ashita Prasad',
+    speakerPosition: 'Dev Advocate @AWS',
+    speakerImage: 'assets/images/speakers/ashita.png',
+    startTime: '4:30 AM',
+    endTime: '5:00 PM',
+    description:
+      'For more than a decade, we have been building applications that simply respond to our actions. But with the advent of agentic AI, a new segment of Agentic Apps are emerging that do not just respond, but actively reason, act, and adapt on behalf of the user. When used as the memory layer for agentic applications, Knowledge Graphs provide structured, provenance-aware factual retrieval and grounding. This significantly reduces hallucinations, supports explainable and controllable personalization, mitigates certain biases through curated schemas, and makes reasoning and personalization decisions transparent. <br/> <br/> In this talk, we will explore how developers can use open source on-device agentic AI frameworks to build real-world applications enhanced with GraphRAG, enabling grounded knowledge retrieval from graph databases.',
+  },
+  {
     title: 'RAG it Till You Make It: Building Smarter AI with Graphs & Gemini 3',
     speakerName: 'Bhavesh Bhatt',
     speakerPosition: 'Lead Data Scientist',
     speakerImage: 'assets/images/speakers/bhavesh.jpeg',
-    startTime: '4:30 PM',
-    endTime: '5:00 PM',
+    startTime: '5:00 PM',
+    endTime: '5:30 PM',
     description:
       'Enhance the accuracy of RAGs by leveraging the combined power of GraphRAGs, Neo4j & Google Gemini 3.  <br/><br/> In this session, I will start by exploring the fundamentals of RAG & why graph databases like Neo4j, paired with GraphRAGs are critical for providing context-rich, intelligent responses. Dive into the Cypher language to unlock the full potential of your connected data & see how Gemini advanced capabilities can synthesize responses with unparalleled accuracy.',
   },
@@ -179,19 +150,9 @@ export const agenda: IAgenda[] = [
     speakerName: 'Shivay Lamba',
     speakerPosition: 'Senior Developer Experience Engineer @ Couchbase',
     speakerImage: 'assets/images/speakers/shivaya.jpg',
-    startTime: '5:00 PM',
-    endTime: '5:30 PM',
-    description:
-      'This talk demonstrates how Fine-Grained Authorization (FGA) provides robust security for Retrieval-Augmented Generation (RAG) and agentic AI systems. Learn how to implement permission models that protect sensitive information while enabling AI to access only authorized data. <br/<br/> The talk explores implementations using OpenFGA and LangChain, showcasing how to build security directly into AI retrieval pipelines. <br/><br/> The presenters will provide real world case studies to discover how enterprises can prevent data leakage, implement multi-tenant isolation, and maintain audit trails while scaling to billions of access decisions. <br/><br/> Open source tools like OpenFGA and integration techniques with vector databases will be featured, along with best practices for real-world deployment. Thus join us to understand how one can maintain security without sacrificing performance or user experience in Agentic / Gen AI applications.',
-  },
-  {
-    title: 'TBD ',
-    speakerName: 'TBD',
-    speakerPosition: 'tbd',
-    speakerImage: '',
     startTime: '5:30 PM',
     endTime: '6:00 PM',
     description:
-      'TBD',
-  },
+      'This talk demonstrates how Fine-Grained Authorization (FGA) provides robust security for Retrieval-Augmented Generation (RAG) and agentic AI systems. Learn how to implement permission models that protect sensitive information while enabling AI to access only authorized data. <br/<br/> The talk explores implementations using OpenFGA and LangChain, showcasing how to build security directly into AI retrieval pipelines. <br/><br/> The presenters will provide real world case studies to discover how enterprises can prevent data leakage, implement multi-tenant isolation, and maintain audit trails while scaling to billions of access decisions. <br/><br/> Open source tools like OpenFGA and integration techniques with vector databases will be featured, along with best practices for real-world deployment. Thus join us to understand how one can maintain security without sacrificing performance or user experience in Agentic / Gen AI applications.',
+  }
 ];
