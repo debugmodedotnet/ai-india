@@ -43,19 +43,20 @@ export const speakers: ISpeakers[] = [
     previousTalks: [
     ],
   },
-   {
+  {
     id: 4,
-    name: 'Umesh kumar Potti',
-    position: 'Head of Engineering@Entain India',
-    bio: "Umesh Kumar is a senior engineering leader and Head of Engineering - Gaming, with extensive experience building and scaling large, high-availability platforms used by 100M+ users globally. Over his career, he has worked with organizations such as Microsoft, Adobe, Paytm, and Observe.ai, leading platform, cloud, and large-scale engineering initiatives. More recently, his focus has been on AI and GenAI adoption in engineering, with a strong emphasis on practical, real-world applications. His work centers on improving developer productivity, accelerating modernization, enhancing observability and operational intelligence, and enabling better decision-making at scale. He is particularly passionate about moving GenAI beyond experimentation to deliver embedded, measurable impact in everyday engineering workflows.",
-    image: 'assets/images/speakers/umesh-potti.jpeg',
+    name: 'Jeevan D C',
+    position: 'Engineering Manager @Entain',
+    bio: 'Jeevan D C wrote the first line of code for a digital bank that scaled to 1.5 million customers built in 18 months, grew the engineering team from 3 to 300, and migrated an entire cloud platform with just 4 hours of downtime. He has also re-architected consumer apps to handle 30M users across telecom, insurance, and SaaS. Today, he works on tech strategy, org design, and talent — applying engineering thinking to how organizations actually function. He teaches at HyperVerge Academy and leads a 2,000+ member tech community.',
+    image: 'assets/images/speakers/jeevan.jpeg',
     flag: 'assets/images/speakers/flags/india.png',
     twitter: '',
-    linkedin: 'https://www.linkedin.com/in/umesh226/',
+    linkedin: 'https://noobj.me/',
     github: '',
     youtube: '',
     previousTalks: [
-    ]
+
+    ],
   },
     {
     id: 5,
