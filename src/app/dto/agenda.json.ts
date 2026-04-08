@@ -39,24 +39,23 @@ export const agenda: IAgenda[] = [
     description: 'The Model Context Protocol (MCP) has become the universal standard for connecting AI to external tools, backed by Anthropic, OpenAI, Google, and Microsoft. WebMCP, an emerging W3C standard, lets any web application expose AI-callable tools with just a few lines of JavaScript, all running client-side with the usere xisting session. <br/> <br/> In this talk, you will learn what MCP is, what WebMCP brings to the browser, and see live demos in action. <br/><br/> Whether you are building new AI-powered apps or retrofitting existing ones, this is foundational knowledge for 2026.',
   },
   {
-    title: 'Testing Without Writing Tests? Lessons from an LLM-Driven Game Automation Platform',
-    speakerName: 'Umesh kumar Potti',
-    speakerPosition: 'Head of Engineering@Entain India',
-    speakerImage: 'assets/images/speakers/umesh-potti.jpeg',
+    title: 'From Text to Vector: How High Dimensional Data gets Stored, Searched & Retrieved',
+    speakerName: 'Jeevan D C',
+    speakerPosition: 'Engineering Manager @Entain India',
+    speakerImage: 'assets/images/speakers/jeevan.jpeg',
     startTime: '11:30 AM',
     endTime: '12:00 AM',
-    description:
-      'What happens when test automation stops being script-first and becomes intent-driven? In this talk, we share how GameFactory leverages LLMs to rethink test automation for large-scale gaming platforms. <br/><br/> We will walk through how natural language, game logic, and AI reasoning come together to generate, evolve, and validate tests continuously—while still meeting strict reliability and compliance needs. Expect candid lessons on what worked, what didn’t, and how to responsibly operationalize GenAI in production-grade quality systems.',
+    description: 'Every AI application that "understands" language relies on embeddings — but what actually happens after you call an embedding API? This talk goes behind the scenes: how text becomes high-dimensional vectors, how those vectors are physically stored in databases, and how semantic search finds the closest match using distance functions like cosine and euclidean. We\'ll start with a brute-force scan across 50,000 vectors, see why it breaks at scale, then explore how approximate nearest neighbor indexes — IVFFlat (k-means clustering) and HNSW (hierarchical graph navigation) — deliver 50–150x speedups. No fancy vector databases — just plain SQL demos you can run on your laptop. You\'ll leave with a clear mental model of the full pipeline — from raw text to ranked results — and practical tips on when to use which index as you scale.',
   },
   {
-    title: 'AI ML Design Patterns for Developers',
+    title: 'AI / ML Using Microsoft Ecosystem',
     speakerName: 'ShivPrasad Koirala',
     speakerPosition: 'Founder @Questpond',
     speakerImage: 'assets/images/speakers/shivprasad.jpeg',
     startTime: '12:00 AM',
     endTime: '12:30 AM',
     description:
-      'This talk will discuss below AI/ML design pattrens for developers: <br/><br/> <ul><li>1. RAG (Retrieval-Augmented Generation) pattern: retrieve docs → prompt → generate </li> <li> 2. Agent + Tool-Use pattern: LLM plans and calls tools (DB, APIs, search)</li> <li>3. Guardrails pattern: validate input/output (PII, toxicity, policy, format)</li><li>4. Caching pattern: cache embeddings + LLM responses for cost/latency</li><li>5. Async / Queue-based inference pattern: decouple requests using queues</li></ul> <br/> ',
+      ' I have been a Microsoft developer for many years. With AI and Machine Learning growing in a big way, I would like to ensure most of my solutions are built using native C#, .NET, and the Microsoft ecosystem rather than moving completely to other stacks. <br/> <br/> In this session, I will walk through the different components of AI development and how they can be implemented using Microsoft technologies. <br/><br/> Topics we will cover: <br/><br/> <ul><li>Regression and NLP using ML NET</li><li>Using ONNX for connecting to external AI models</li><li>Semantic Kernel, Microsoft Extensions Hosting, and MCP NuGet packages</li><li>Using IEmbedding and IChatClient for loose coupling and extensible AI architecture</li><li>Azure AI Foundry (AutoML, AI Designer, and Notebooks)</li><li>Azure Content Safety for implementing AI Guardrails</li></ul> <br/> This session is mainly focused on how a traditional .NET developer can enter the AI/ML world using the Microsoft ecosystem.',
   },
   {
     title: 'Build a Scalable AI-Driven Chat Application Using Azure AI Services and React',
@@ -84,7 +83,7 @@ export const agenda: IAgenda[] = [
     startTime: '2.00 PM',
     endTime: '2:30 PM',
     description:
-      'ASI, Open-Weight Models, Fine-Tuning,... the list of AI buzzwords grows every day. It is easy to get lost in the hype. <br/><br/> When I first started digging in, I had the impression that a new technology popped up every month to replace the old one. But I realized this was not true: these are not replacements, but connected building blocks. <br/><br/> In this talk, I will show you exactly how they fit together. <br/><br/> We will start with the foundation: the LLM itself. We will see how it simply predicts the next Token, how Temperature controls its creativity, and how Tools give it "hands" to interact with the world.<br/><br/> We will start with the foundation: the LLM itself. We will see how it simply predicts the next Token, how Temperature controls its creativity, and how Tools give it "hands" to interact with the world. <br/><br/> Then we will navigate the "Knowledge Layer" to clarify the crucial difference between RAG (giving the model a book) and Fine-Tuning (sending it to school). Finally, we will see how these pieces combine into Agentic AI and the Model Context Protocol (MCP) to build the autonomous systems of today. <br/> <br/> Ride the hype instead of chasing it. <br/><br/> By combining deterministic analysis with targeted retrieval, the system produces focused, explainable review reports that reflect both local changes and broader architectural constraints. <br/><br/> The approach works with open-weight models and can run fully on-premise, making it suitable for privacy-sensitive environments. ',
+      'Open-weight models, fine-tuning, skills... the list of AI buzzwords grows every day.\n\nWhen I first started digging in, I had the impression that a new technology popped up every month just to replace the old one, but these are not replacements. They are connected building blocks.\n\nIn this talk, I\'ll show you exactly how they fit together.\n\nWe\'ll start with the foundation: the LLM itself. We will look at what it actually means to create one and how it works. Going from predicting the next token to how Temperature, Inference, and Chain of Thought (CoT) change the results.\n\nOnce we have the basics, we\'ll tackle the limits of LLMs and the practical approaches used to solve them.\n\nThis means:\n\nManaging Context: How much can the model actually "remember"?\n\nData Actuality: How do we keep the information up to date?\n\nAgents & Tools: Giving the model "hands" to finally interact with the world.\n\nThe goal is to understand the mechanics of AI well enough to finally separate the facts from the hype.',
   },
   {
     title: 'From the AI Jungle to RAG in a Tab: Private AI Search',
@@ -107,7 +106,7 @@ export const agenda: IAgenda[] = [
     description: 'Legacy migrations are slow, expensive, and error-prone — unless AI is used properly. In this talk, I’ll show how we reduced migration time by 75% using a structured AI workflow. Instead of experimenting with prompts, the focus is on reproducible processes: AI context and token strategies, MCP, orchestration files, and the systematic evaluation of runs. <br/><br/> The emphasis is on what others can practically adopt to modernize large legacy codebases faster, more safely, and in a measurable way. <br/><br/> <b>Learning Objectives </b> <br/><br/> <ul><li>Why context and token management determine the success or failure of AI-driven migrations</li><li>How MCP and orchestration turn AI into a reliable engineering tool</li><li>How to evaluate, compare, and improve AI runs</li><li>A field-tested AI workflow that drastically reduces migration effort</li><li>Concrete patterns that can be directly applied to your own legacy projects</li></ul>'
   },
   {
-    title: 'Simplifying Agents Development with Vercal AI SDK ',
+    title: 'Simplifying Agents Development with Vercel AI SDK ',
     speakerName: 'Dhananjay Kumar',
     speakerPosition: 'Founder nomadcoder | AI-India',
     speakerImage: 'assets/images/speakers/dj.jpeg',
