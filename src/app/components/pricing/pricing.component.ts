@@ -1,59 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { conferenceTickets } from '../../dto/tickets.json';
+import { ConferenceTicketCatalog, IConferenceTicket } from '../../models/ticket';
 
 @Component({
   selector: 'app-pricing',
   standalone: true,
   imports: [],
   templateUrl: './pricing.component.html',
-  styleUrl: './pricing.component.scss'
+  styleUrl: './pricing.component.scss',
 })
 export class PricingComponent {
+  readonly tickets = signal<ConferenceTicketCatalog>(conferenceTickets);
 
-  tickets: any = [
-    {
-      id: 1,
-      title: "AI-India",
-      price: "4000",
-      features: [
-        "Entry to AI-India Conference on 12 April",
-        "Access to all AI-India conference sessions and recordings",
-        "T-Shirt and goodies bag",
-        "Lunch, Breakfast, Tea/Coffee provided"
-      ],
-      buttonText: "Buy AI-India Ticket",
-      buyLink: "https://www.townscript.com/v2/e/ngindia-aiindia-2026-430442/booking/tickets",
-      isDisabled: false,
-      totalTickets: 400
-    },
-    {
-      id: 2,
-      title: "ng-India",
-      price: "4000",
-      features: [
-        "Entry to ng-India Conference on 11 April",
-        "Access to all ng-India conference sessions and recordings",
-        "T-Shirt and goodies bag",
-        "Lunch, Breakfast, Tea/Coffee provided"
-      ],
-      buttonText: "Buy ng-India Ticket",
-      buyLink: "https://www.townscript.com/v2/e/ngindia-aiindia-2026-430442/booking/tickets",
-      isDisabled: false,
-      totalTickets: 400
-    },
-    {
-      id: 3,
-      title: "AI-India + ng-India",
-      price: "7000",
-      features: [
-        "Entry to both Conferences on 11-12 April",
-        "Access to both conferences sessions and recordings",
-        "T-Shirt and goodies bag",
-        "Lunch, Breakfast, Tea/Coffee provided"
-      ],
-      buttonText: "Buy AI-India + ng-India Ticket",
-      buyLink: "https://www.townscript.com/v2/e/ngindia-aiindia-2026-430442/booking/tickets",
-      isDisabled: false,
-      totalTickets: 400
+  enroll(ticket: IConferenceTicket): void {
+    if (ticket.isDisabled || !ticket.enrollUrl) {
+      return;
     }
-  ]
+
+    window.open(ticket.enrollUrl, '_blank', 'noopener,noreferrer');
+  }
 }

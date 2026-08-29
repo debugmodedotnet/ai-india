@@ -19,7 +19,7 @@ export class SpeakersComponent implements OnInit {
   }
 
   openCallForPaper(): void {
-    const url = 'https://docs.google.com/forms/d/e/1FAIpQLSdZvRKIeJ0x6tjQuPjCBHFNjiRNAhs7_zyqL9zJdPM63fH4XA/viewform';
+    const url = 'https://forms.gle/t7SdBXbfbLFtmGAJ9';
     window.open(url, '_blank');
   }
 }

@@ -57,8 +57,11 @@ export class HeaderComponent {
     window.open(url, '_blank');
   }
 
-  buyTickets(){
-    this.router.navigate(['/home'], { fragment: 'pricing' });
+  buyTickets() {
+    this.closeMobileMenu();
+    void this.router.navigate(['/home'], { fragment: 'pricing' }).then(() => {
+      document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
   }
 
 }

@@ -1,55 +1,56 @@
 <section class="pricing-section py-5 nmc-bg-light">
   <div class="container-boxed">
     <div class="text-center heading mb-5">
-      <h2 class="mb-4 text-bottom-line position-relative">Tickets</h2>
+      <h2 class="mb-4 text-bottom-line position-relative">How to Attend</h2>
     </div>
 
     <div class="row g-4 align-items-stretch justify-content-center mt-3">
-
-      @for(ticket of tickets;track ticket.id){
-      <div class="col-xl-4 col-lg-6 col-md-6 d-grid align-items-stretch">
+      @for (ticket of tickets(); track ticket.id) {
+      <div class="col-12 col-md-10 col-lg-9 col-xl-8 d-grid align-items-stretch">
         <div class="pricing-table">
-          <div class="text-center">
-            <h2
-              class="font-32 nmc-dark-grey fw-bold border-bottom pb-3"
-            >
-              {{ ticket.title }}
-            </h2>
+            <p class="attend-intro text-start mb-4">
+              To attend AI-India, you need to support the nomadcoder community with a
+              <span class="fw-bold nmc-primary">₹2,000</span> contribution. You will get,
+            </p>
 
-            <h2
-              class="font-18 fw-semibold my-4 font-family-poppins nmc-medium-grey"
-            >
-              {{ticket.totalTickets}} Tickets
-            </h2>
+            <div class="row align-items-center g-4 mb-5">
+              <div class="col-md-6">
+                <ul class="pricing-text m-0">
+                  @for (feature of ticket.features; track feature) {
+                  <li class="mb-4">{{ feature }}</li>
+                  }
+                </ul>
+              </div>
 
-            <span class="price d-block mb-3">
-              <sup>₹</sup> <span class="number">{{ticket.price}}</span><sub> +18% GST + Platform fee</sub>
-            </span>
-
-            <ul class="pricing-text mb-5 ps-3">
-              @for(feature of ticket.features;track feature){
-              <li class="mb-4">{{feature}}</li>
-              }
-            </ul>
+              <div class="col-md-6 d-flex justify-content-center">
+                <img
+                  src="ai-india-tshirt.JPG"
+                  alt="AI-India black T-shirt"
+                  class="tshirt-image"
+                />
+              </div>
+            </div>
 
             <button
-              class="nmc-btn-primary h-auto px-2 py-3 w-100 border-0"
-              disabled
-            >{{ticket.buttonText}}</button>
-          </div>
+              class="nmc-btn-primary h-auto px-4 py-3 w-100 border-0 enroll-btn"
+              type="button"
+              [disabled]="ticket.isDisabled"
+              (click)="enroll(ticket)"
+            >
+              {{ ticket.buttonText }}
+            </button>
         </div>
       </div>
-    }
-    
+      }
     </div>
 
     <div
-      class="error-label text-danger font-18 d-flex align-items-center justify-content-center mt-5 mb-0">
+      class="error-label text-danger font-18 d-flex align-items-center justify-content-center mt-5 mb-0"
+    >
       <i class="bi bi-exclamation-triangle-fill me-2"></i>
       <p class="nmc-medium-grey font-family-inter m-0">
         Tickets once sold can’t be cancelled, transferred, or exchanged.
       </p>
     </div>
   </div>
-
 </section>

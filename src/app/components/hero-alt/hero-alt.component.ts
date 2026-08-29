@@ -1,16 +1,19 @@
-import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hero-alt',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive],
+  imports: [],
   templateUrl: './hero-alt.component.html',
   styleUrl: './hero-alt.component.scss'
 })
 export class HeroAltComponent {
+  private router = inject(Router);
 
-  navigatetongIndia(){
-    window.open('https://www.ng-ind.com/','_blank');
+  scrollToTickets(): void {
+    void this.router.navigate(['/home'], { fragment: 'pricing' }).then(() => {
+      document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
   }
 }

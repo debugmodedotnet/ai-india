@@ -10,11 +10,12 @@ import { SponsorsComponent } from "../sponsors/sponsors.component";
 import { AlbumsComponent } from "../albums/albums.component";
 import { HeroAltComponent } from '../hero-alt/hero-alt.component';
 import { StatsStickyComponent } from '../stats-sticky/stats-sticky.component';
+import { ConferenceInfoComponent } from '../conference-info/conference-info.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [SpeakersComponent, AgendaComponent, VenueComponent, PricingComponent, AboutComponent, SponsorsComponent, AlbumsComponent, HeroAltComponent, StatsStickyComponent],
+  imports: [SpeakersComponent, AgendaComponent, VenueComponent, PricingComponent, AboutComponent, SponsorsComponent, AlbumsComponent, HeroAltComponent, StatsStickyComponent, ConferenceInfoComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
