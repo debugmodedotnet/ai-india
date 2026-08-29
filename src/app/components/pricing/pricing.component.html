@@ -1,23 +1,35 @@
 <section class="pricing-section py-5 nmc-bg-light">
   <div class="container-boxed">
     <div class="text-center heading mb-5">
-      <h2 class="mb-4 text-bottom-line position-relative">Tickets</h2>
+      <h2 class="mb-4 text-bottom-line position-relative">How to Attend</h2>
     </div>
 
     <div class="row g-4 align-items-stretch justify-content-center mt-3">
       @for (ticket of tickets(); track ticket.id) {
       <div class="col-12 col-md-10 col-lg-9 col-xl-8 d-grid align-items-stretch">
         <div class="pricing-table">
-          <div class="text-center">
-            <h2 class="font-32 nmc-dark-grey fw-bold border-bottom pb-3">
-              {{ ticket.title }}
-            </h2>
+            <p class="attend-intro text-start mb-4">
+              To attend AI-India, you need to support the nomadcoder community with a
+              <span class="fw-bold nmc-primary">₹2,000</span> contribution. You will get,
+            </p>
 
-            <ul class="pricing-text my-5">
-              @for (feature of ticket.features; track feature) {
-              <li class="mb-4">{{ feature }}</li>
-              }
-            </ul>
+            <div class="row align-items-center g-4 mb-5">
+              <div class="col-md-6">
+                <ul class="pricing-text m-0">
+                  @for (feature of ticket.features; track feature) {
+                  <li class="mb-4">{{ feature }}</li>
+                  }
+                </ul>
+              </div>
+
+              <div class="col-md-6 d-flex justify-content-center">
+                <img
+                  src="ai-india-tshirt.JPG"
+                  alt="AI-India black T-shirt"
+                  class="tshirt-image"
+                />
+              </div>
+            </div>
 
             <button
               class="nmc-btn-primary h-auto px-4 py-3 w-100 border-0 enroll-btn"
@@ -27,7 +39,6 @@
             >
               {{ ticket.buttonText }}
             </button>
-          </div>
         </div>
       </div>
       }

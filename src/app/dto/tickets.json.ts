@@ -5,13 +5,13 @@ export const conferenceTickets = [
     id: 1,
     title: 'How to Attend',
     features: [
-      'You should be paid member of nomadcoder developer community',
-      'You will have access to all sessions',
-      "Session won't be recorded",
-      'You will get AI-India T-Shirt',
+      'Access to all sessions',
+      'AI-India Black T-shirt',
+      'Lunch/coffee/Tea',
+      'Access to booths',
     ],
     buttonText: 'Enroll For the Conference',
-    enrollUrl: 'https://www.nomadcoder.ai',
+    enrollUrl: 'https://www.nomadcoder.ai/ai-india-2026',
     isDisabled: false,
   },
 ] as const satisfies ConferenceTicketCatalog;
