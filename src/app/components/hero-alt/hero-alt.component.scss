@@ -21,23 +21,16 @@
             right: 25px;
         }
 
-        .tagline {
+            .tagline {
             font-size: 75px !important;
             line-height: 1.2;
         }
     }
 
-    .nmc-btn-ai {
-        background-color: #373A40 !important;
-        color: #FFFFFF !important;
-        border: 2px solid #373A40 !important;
-        transition: all 0.3s ease;
-        &:hover {
-            background-color: #dc0000 !important;
-            border-color: #dc0000 !important;
-            color: white !important;
-            font-weight: bold;
-        }
+    .register-btn {
+        min-width: 280px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
     }
 }
 

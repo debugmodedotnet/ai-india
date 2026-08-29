@@ -4,6 +4,21 @@
       <h2 class="mb-4 text-bottom-line position-relative">Speakers</h2>
     </div>
 
+    <div class="speakers-coming-soon text-center py-4">
+      <h3 class="font-family-poppins nmc-dark-grey mb-4">Speakers coming soon</h3>
+      <p class="nmc-medium-grey font-20 mb-4">
+        Interested in speaking at AI-India?
+      </p>
+      <a
+        class="nmc-btn-primary px-4 px-sm-5 h-auto py-2 py-sm-3 font-20 d-inline-flex align-items-center"
+        href="https://forms.gle/t7SdBXbfbLFtmGAJ9"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="bi bi-mic-fill me-2"></i>Submit your talk here
+      </a>
+    </div>
+
     <!-- <div class="speakers row g-5">
       @for(speaker of speakers; track speaker;){
       <div class="col-lg-3 col-md-4 col-sm-6 col-12 speaker">
@@ -86,19 +101,13 @@
       }
     </div> -->
 
-    <div class="speakers-list mt-5">
+    <!-- <div class="speakers-list mt-5">
       @for (speaker of speakers; track speaker;) {
       <div class="speaker d-flex align-items-center justify-content-between flex-column flex-md-row gap-5 mt-5">
         <div class="speaker-img position-relative w-30 z-1">
           <figure class="m-0 overflow-hidden">
             <img [src]="speaker.image" class="h-100 w-100 object-fit-cover" alt="" />
           </figure>
-
-          <!-- <img
-            [src]="speaker.flag"
-            [alt]="speaker.name"
-            class="flag object-fit-cover mx-auto mt-3"
-          /> -->
         </div>
 
         <div class="speaker-info text-center text-md-start w-75 w-767-100">
@@ -145,18 +154,14 @@
         </div>
       </div>
       }
-    </div>
+    </div> -->
 
-    <!-- <button [disabled]="true" class="nmc-btn-primary px-4 px-sm-5 h-auto py-2 py-sm-3 font-20 mx-auto mt-5" type="button" (click)="openCallForPaper()">
-      Call for Paper
-    </button> -->
-
-    <div
+    <!-- <div
       class="error-label text-danger font-18 d-flex align-items-center justify-content-center mt-4 mb-0 border-top pt-4">
       <i class="bi bi-exclamation-triangle-fill me-2"></i>
       <p class="nmc-medium-grey font-family-inter m-0">
         Speakers are subjected to be changed
       </p>
-    </div>
+    </div> -->
   </div>
 </section>

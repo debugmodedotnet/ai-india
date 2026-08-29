@@ -52,11 +52,18 @@
         &:hover a {
             color: $nmc-primary !important;
         }
+    }
+}
 
-        .nmc-btn-primary:hover {
-            background-color: $nmc-white !important;
-            color: $nmc-primary;
-        }
+.header-register-btn {
+    background-color: $nmc-dark-grey;
+    color: $nmc-white;
+    transition: background-color 0.3s ease;
+
+    &:hover,
+    &:focus {
+        background-color: $nmc-primary;
+        color: $nmc-white;
     }
 }
 

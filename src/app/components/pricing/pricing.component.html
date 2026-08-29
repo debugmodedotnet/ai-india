@@ -5,51 +5,41 @@
     </div>
 
     <div class="row g-4 align-items-stretch justify-content-center mt-3">
-
-      @for(ticket of tickets;track ticket.id){
-      <div class="col-xl-4 col-lg-6 col-md-6 d-grid align-items-stretch">
+      @for (ticket of tickets(); track ticket.id) {
+      <div class="col-12 col-md-10 col-lg-9 col-xl-8 d-grid align-items-stretch">
         <div class="pricing-table">
           <div class="text-center">
-            <h2
-              class="font-32 nmc-dark-grey fw-bold border-bottom pb-3"
-            >
+            <h2 class="font-32 nmc-dark-grey fw-bold border-bottom pb-3">
               {{ ticket.title }}
             </h2>
 
-            <h2
-              class="font-18 fw-semibold my-4 font-family-poppins nmc-medium-grey"
-            >
-              {{ticket.totalTickets}} Tickets
-            </h2>
-
-            <span class="price d-block mb-3">
-              <sup>₹</sup> <span class="number">{{ticket.price}}</span><sub> +18% GST + Platform fee</sub>
-            </span>
-
-            <ul class="pricing-text mb-5 ps-3">
-              @for(feature of ticket.features;track feature){
-              <li class="mb-4">{{feature}}</li>
+            <ul class="pricing-text my-5">
+              @for (feature of ticket.features; track feature) {
+              <li class="mb-4">{{ feature }}</li>
               }
             </ul>
 
             <button
-              class="nmc-btn-primary h-auto px-2 py-3 w-100 border-0"
-              disabled
-            >{{ticket.buttonText}}</button>
+              class="nmc-btn-primary h-auto px-4 py-3 w-100 border-0 enroll-btn"
+              type="button"
+              [disabled]="ticket.isDisabled"
+              (click)="enroll(ticket)"
+            >
+              {{ ticket.buttonText }}
+            </button>
           </div>
         </div>
       </div>
-    }
-    
+      }
     </div>
 
     <div
-      class="error-label text-danger font-18 d-flex align-items-center justify-content-center mt-5 mb-0">
+      class="error-label text-danger font-18 d-flex align-items-center justify-content-center mt-5 mb-0"
+    >
       <i class="bi bi-exclamation-triangle-fill me-2"></i>
       <p class="nmc-medium-grey font-family-inter m-0">
         Tickets once sold can’t be cancelled, transferred, or exchanged.
       </p>
     </div>
   </div>
-
 </section>
