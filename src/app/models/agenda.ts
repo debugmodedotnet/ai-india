@@ -5,5 +5,6 @@ export interface IAgenda {
     speakerImage: string;
     startTime: string;
     endTime: string;
+    /** Talk description in Markdown (not HTML). */
     description: string;
 }

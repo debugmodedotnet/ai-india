@@ -17,9 +17,4 @@ export class SpeakersComponent implements OnInit {
   ngOnInit(): void {
     this.speakers.sort((a, b) => a.id - b.id);
   }
-
-  openCallForPaper(): void {
-    const url = 'https://forms.gle/t7SdBXbfbLFtmGAJ9';
-    window.open(url, '_blank');
-  }
 }
