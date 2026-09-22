@@ -5,9 +5,7 @@ export interface ISpeakers {
     bio: string;
     image: string;
     flag: string;
-    twitter?: string;
     linkedin?: string;
-    github?: string;
-    youtube?: string;
+    nomadcoder?: string;
     previousTalks: { title?: string; event?: string; link?: string; }[];
 }

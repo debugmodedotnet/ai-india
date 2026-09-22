@@ -4,31 +4,29 @@
       <h2 class="mb-4 text-bottom-line position-relative">Agenda</h2>
     </div>
 
-    <div class="agenda-coming-soon text-center py-4">
-      <h3 class="font-family-poppins nmc-dark-grey mb-0">Agenda coming soon</h3>
-    </div>
-
-    <!-- <div class="agendas">
-      @for(agenda of agendas; track agenda;){
+    <div class="agendas">
+      @for(agenda of agendas; track agenda.startTime + agenda.title){
       <div class="agenda d-flex align-items-center align-items-sm-start flex-column flex-sm-row">
-        @if(agenda.speakerImage && agenda.speakerName){
-        <figure class="speaker-img m-0 rounded-circle overflow-hidden">
-          <img
-            [src]="agenda.speakerImage"
-            class="w-100 h-100 object-fit-cover"
-            alt=""
-          />
-        </figure>
-        }@else {
-        <figure
-          class="speaker-img icon m-0 rounded-circle overflow-hidden d-flex"
-        >
-          <img
-            [src]="agenda.speakerImage"
-            class="w-100 h-100 object-fit-contin m-auto"
-            alt=""
-          />
-        </figure>
+        @if(agenda.speakerImage){
+          @if(agenda.speakerName){
+          <figure class="speaker-img m-0 rounded-circle overflow-hidden">
+            <img
+              [src]="agenda.speakerImage"
+              class="w-100 h-100 object-fit-cover"
+              [alt]="agenda.speakerName"
+            />
+          </figure>
+          } @else {
+          <figure
+            class="speaker-img icon m-0 rounded-circle overflow-hidden d-flex"
+          >
+            <img
+              [src]="agenda.speakerImage"
+              class="w-100 h-100 object-fit-contain m-auto"
+              alt=""
+            />
+          </figure>
+          }
         }
 
         <div
@@ -39,33 +37,35 @@
           >
           <h2 class="my-3 nmc-primary">{{ agenda.title }}</h2>
 
-          <p
-            [innerHTML]="agenda.description"
-            class="nmc-medium-grey font-family-inter"
-          ></p>
+          @if(agenda.description){
+          <div
+            class="nmc-medium-grey font-family-inter markdown-desc"
+            [innerHTML]="agenda.description | markdown"
+          ></div>
+          }
 
-          <h3 class="speaker-name font-24 m-0 nmc-primary font-family-poppins">
-            @if(agenda.speakerName){—
-            {{ agenda.speakerName }}
-            } @if(agenda.speakerPosition){
+          @if(agenda.speakerName){
+          <h3 class="speaker-name font-24 mt-3 mb-0 nmc-primary font-family-poppins">
+            — {{ agenda.speakerName }}
+            @if(agenda.speakerPosition){
             <span class="ms-2 position font-16">{{
               agenda.speakerPosition
-            }}</span
-            >}
+            }}</span>
+            }
           </h3>
+          }
         </div>
       </div>
       }
     </div>
 
-   <div
+    <div
       class="error-label text-danger font-18 d-flex align-items-center justify-content-center mt-5 mb-0"
     >
       <i class="bi bi-exclamation-triangle-fill me-2"></i>
       <p class="nmc-medium-grey font-family-inter m-0">
         Agendas are subjected to be changed
       </p>
-    </div> -->
-
+    </div>
   </div>
 </section>

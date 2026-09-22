@@ -6,16 +6,16 @@ export const sponsors: ISponsors[] = [
   //   sponsorImage: 'assets/images/sponsors/ivy.png',
   //   sponsorType: 'Silver',
   // },
-  {
-    sponsorLink: 'https://search.app/DQ9sioxPDQbpPeVd7',
-    sponsorImage: 'assets/images/sponsors/scholarhat.png',
-    sponsorType: '',
-  },
-  {
-    sponsorLink: 'https://www.7n.com/',
-    sponsorImage: 'assets/images/sponsors/7n.png',
-    sponsorType: '',
-  },
+  // {
+  //   sponsorLink: 'https://search.app/DQ9sioxPDQbpPeVd7',
+  //   sponsorImage: 'assets/images/sponsors/scholarhat.png',
+  //   sponsorType: '',
+  // },
+  // {
+  //   sponsorLink: 'https://www.7n.com/',
+  //   sponsorImage: 'assets/images/sponsors/7n.png',
+  //   sponsorType: '',
+  // },
   // {
   //   sponsorLink: 'https://rezoomex.com/',
   //   sponsorImage: 'assets/images/sponsors/rezoomex.png',
@@ -26,11 +26,11 @@ export const sponsors: ISponsors[] = [
   //   sponsorImage: 'assets/images/sponsors/nx.png',
   //   sponsorType: 'Bronze',
   // },
-  {
-    sponsorLink: 'https://a4technology.com/',
-    sponsorImage: 'assets/images/sponsors/a4tech.jpeg',
-    sponsorType: 'Bronze',
-  },
+  // {
+  //   sponsorLink: 'https://a4technology.com/',
+  //   sponsorImage: 'assets/images/sponsors/a4tech.jpeg',
+  //   sponsorType: 'Bronze',
+  // },
   // {
   //   sponsorLink: 'https://www.telerik.com/kendo-angular-ui',
   //   sponsorImage: 'assets/images/sponsors/kendo.png',
@@ -55,10 +55,10 @@ export const sponsors: ISponsors[] = [
   //   sponsorLink: 'https://hrone.cloud/',
   //   sponsorImage: 'assets/images/sponsors/hrone.png',
   //   sponsorType: 'Bronze',
-  // }
+  // },
   {
-    sponsorLink: 'http://www.questpond.com',
+    sponsorLink: 'https://www.questpond.com',
     sponsorImage: 'assets/images/sponsors/quest-pond.jpeg',
-    sponsorType: ''
-  }
+    sponsorType: '',
+  },
 ];

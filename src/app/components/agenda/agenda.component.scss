@@ -40,7 +40,9 @@
         }
 
         .text {
-            width: calc(100% - 120px);
+            flex: 1;
+            width: auto;
+            min-width: 0;
 
             .time {
                 color: rgba(0, 0, 0, .4);
@@ -58,6 +60,32 @@
 
             .position {
                 color: rgba(0, 0, 0, .4);
+            }
+
+            .markdown-desc {
+                margin-bottom: 1rem;
+
+                p {
+                    margin-bottom: 0.75rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                ul,
+                ol {
+                    padding-left: 1.25rem;
+                    margin-bottom: 0.75rem;
+                }
+
+                li {
+                    margin-bottom: 0.35rem;
+                }
+
+                strong {
+                    font-weight: 600;
+                }
             }
         }
 
