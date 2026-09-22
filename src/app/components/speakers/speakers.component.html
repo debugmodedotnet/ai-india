@@ -4,88 +4,6 @@
       <h2 class="mb-4 text-bottom-line position-relative">Speakers</h2>
     </div>
 
-    <!-- <div class="speakers row g-5">
-      @for(speaker of speakers; track speaker;){
-      <div class="col-lg-3 col-md-4 col-sm-6 col-12 speaker">
-        <div class="flip-card" tabindex="0">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <figure class="m-0 overflow-hidden">
-                <img
-                  [src]="speaker.image"
-                  class="w-100 h-100 object-fit-cover"
-                  [alt]="speaker.name"
-                />
-
-                <img
-                  [src]="speaker.flag"
-                  [alt]="speaker.name"
-                  class="flag position-absolute object-fit-cover"
-                />
-              </figure>
-            </div>
-
-            <div class="flip-card-back">
-              <p class="nmc-white font-14 mt-2">
-                {{ speaker.bio }}
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center pt-3">
-          <h3 class="font-24 fw-bold nmc-primary m-0">{{ speaker.name }}</h3>
-
-          <span class="font-16 mt-2 mb-0 nmc-medium-grey">
-            {{ speaker.position }}
-          </span>
-
-          <ul
-            class="social d-flex align-items-center justify-content-center gap-2 mt-2"
-          >
-            @if(speaker.twitter){
-            <li>
-              <a
-                [href]="speaker.twitter"
-                target="_blank"
-                class="nmc-dark-grey font-18"
-                ><i class="bi bi-twitter"></i
-              ></a>
-            </li>
-            } @if(speaker.linkedin){
-            <li>
-              <a
-                [href]="speaker.linkedin"
-                target="_blank"
-                class="nmc-dark-grey font-18"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-            </li>
-            }@if(speaker.github){
-            <li>
-              <a
-                [href]="speaker.github"
-                target="_blank"
-                class="nmc-dark-grey font-18"
-                ><i class="bi bi-github"></i
-              ></a>
-            </li>
-            }@if(speaker.youtube){
-            <li>
-              <a
-                [href]="speaker.youtube"
-                target="_blank"
-                class="nmc-dark-grey font-20"
-                ><i class="bi bi-youtube"></i
-              ></a>
-            </li>
-            }
-          </ul>
-        </div>
-      </div>
-      }
-    </div> -->
-
     <div class="speakers-list mt-5">
       @for (speaker of speakers; track speaker;) {
       <div class="speaker d-flex align-items-center justify-content-between flex-column flex-md-row gap-5 mt-5">
@@ -153,13 +71,5 @@
       </div>
       }
     </div>
-
-    <!-- <div
-      class="error-label text-danger font-18 d-flex align-items-center justify-content-center mt-4 mb-0 border-top pt-4">
-      <i class="bi bi-exclamation-triangle-fill me-2"></i>
-      <p class="nmc-medium-grey font-family-inter m-0">
-        Speakers are subjected to be changed
-      </p>
-    </div> -->
   </div>
 </section>

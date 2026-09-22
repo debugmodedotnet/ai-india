@@ -15,6 +15,13 @@ export class SpeakersComponent implements OnInit {
   speakers: ISpeakers[] = speakers;
 
   ngOnInit(): void {
-    this.speakers.sort((a, b) => a.id - b.id);
+    this.speakers.sort((a, b) => {
+      const aLast = a.name === 'Dhananjay Kumar';
+      const bLast = b.name === 'Dhananjay Kumar';
+      if (aLast !== bLast) {
+        return aLast ? 1 : -1;
+      }
+      return a.name.localeCompare(b.name, undefined, { sensitivity: 'base' });
+    });
   }
 }
