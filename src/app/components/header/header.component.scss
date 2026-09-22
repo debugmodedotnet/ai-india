@@ -56,13 +56,13 @@
 }
 
 .header-register-btn {
-    background-color: $nmc-dark-grey;
+    background-color: $nmc-primary;
     color: $nmc-white;
     transition: background-color 0.3s ease;
 
     &:hover,
     &:focus {
-        background-color: $nmc-primary;
+        background-color: color-mix(in srgb, $nmc-primary, black 12%);
         color: $nmc-white;
     }
 }

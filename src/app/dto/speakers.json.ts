@@ -19,7 +19,7 @@ export const speakers: ISpeakers[] = [
     bio: 'ShivPrasad is a Microsoft Technical Developer and YouTuber who focuses on two key areas: teaching Microsoft development technologies—such as AI/ML, C#, MVC, Design Patterns, Angular, SQL Server, ASP.NET, and Azure—in the simplest way possible, and helping learners prepare for and excel in programming interviews through his videos. More information about his work can be found on his website www.questpond.com and on his YouTube channel @Questpond.',
     image: 'assets/images/speakers/shivprasad.jpeg',
     linkedin: 'https://www.linkedin.com/in/shivkoirala',
-    nomadcoder: '',
+    nomadcoder: 'https://nomadcoder.ai/p/shivprasadkoiralaCe1IDXYL',
     previousTalks: [
     ],
   },
@@ -29,7 +29,7 @@ export const speakers: ISpeakers[] = [
     position: 'Engineering Manager @Entain',
     bio: 'Jeevan D C wrote the first line of code for a digital bank that scaled to 1.5 million customers built in 18 months, grew the engineering team from 3 to 300, and migrated an entire cloud platform with just 4 hours of downtime. He has also re-architected consumer apps to handle 30M users across telecom, insurance, and SaaS. Today, he works on tech strategy, org design, and talent — applying engineering thinking to how organizations actually function. He teaches at HyperVerge Academy and leads a 2,000+ member tech community.',
     image: 'assets/images/speakers/jeevan.jpeg',
-    linkedin: '',
+    linkedin: 'https://linkedin.com/in/jeevan-d-c',
     nomadcoder: 'https://nomadcoder.ai/p/jeevandchjlHYOeQ',
     previousTalks: [
 
@@ -42,7 +42,7 @@ export const speakers: ISpeakers[] = [
     bio: 'Dhananjay Kumar founded NomadCoder, which trains people to become job-ready developers.  He also consults for big enterprise companies, has written a book about Angular, speaks at international developer conferences, and organizes AI-India, a major Angular conference. Dhananjay is writing his second Angular book and training for a 10K run. You can contact him for training and consulting on Angular, .NET, Azure, etc.',
     image: 'assets/images/speakers/dj.jpeg',
     linkedin: 'https://www.linkedin.com/in/dhananjaykumar07/',
-    nomadcoder: '',
+    nomadcoder: 'https://nomadcoder.ai/p/dhananjaykumarDSALNf0b',
     previousTalks: [
     ],
   },
@@ -75,7 +75,7 @@ export const speakers: ISpeakers[] = [
     bio: 'Chinmay Naik is a founder at One2N (one2n.io), where he helps companies solve backend and reliability engineering problems. His 18+ years in software engineering span industries, startups, and enterprises. He has architected systems that grew to millions of users in less than a year. He is a regular speaker at international conferences such as Conf42’s Golang and SREConf, RubyConf, and local meetups. He writes pragmatic engineering stories, and outside work he talks about psychology, playing percussion, and Age of Empires.',
     image: 'assets/images/speakers/chinmay.jpg',
     linkedin: 'https://www.linkedin.com/in/chinmay185/',
-    nomadcoder: '',
+    nomadcoder: 'https://nomadcoder.ai/p/chinmaynaikOrhfsOJh',
     previousTalks: [
     ],
   },
@@ -109,6 +109,17 @@ export const speakers: ISpeakers[] = [
     image: 'assets/images/speakers/sunny.png',
     linkedin: 'https://www.linkedin.com/in/sunnyksharma',
     nomadcoder: 'https://nomadcoder.ai/p/sunnysharmaONdCMf0H',
+    previousTalks: [
+    ],
+  },
+  {
+    id: 19,
+    name: 'Varun Srinivas',
+    position: 'CTO @Coditas',
+    bio: 'Varun Srinivas is CTO and co-founder of Coditas, which helps companies adopt and implement AI to transform how they work. He builds the AI agents that do it — running today at a top GRC platform, a healthcare startup in prior authorization, global and Indian banks, and a leading US health system. His focus is agent harnesses and evaluation: what it actually takes to make an agent behave in production the way it did in a test. Most of what he knows comes from weekends. He put Claude on a Raspberry Pi riding a toy Cybertruck, to find out what a model does once you give it a body. He reverse-engineered an undocumented thermal printer so that a web page could turn your voice into a printed picture in five seconds. He built JyotishBench, which scores frontier models on Vedic astrology, and ontology.guru, which catalogues 120 published ontologies so you don\'t have to go and learn RDF first. He believes in tokenmaxxing, and that AI is one of the best things to have happened to builders.',
+    image: 'assets/images/speakers/varun.png',
+    linkedin: 'https://linkedin.com/in/varun1505',
+    nomadcoder: 'https://nomadcoder.ai/p/varunsi7jJFyP6',
     previousTalks: [
     ],
   }

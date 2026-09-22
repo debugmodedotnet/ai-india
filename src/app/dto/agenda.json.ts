@@ -77,8 +77,8 @@ The patterns are drawn from running an agent fleet at organizational scale, incl
   },
   {
     title: 'Your evals are lying to you',
-    speakerName: 'Varun S',
-    speakerPosition: '',
+    speakerName: 'Varun Srinivas',
+    speakerPosition: 'CTO @Coditas',
     startTime: '12:00 PM',
     endTime: '12:30 PM',
     description: `Your evals are lying to you. They say pass, and your agent still fails in production. Confidently wrong, drifting off-task over a long session, burning 10x the tokens it should. The eval passed. The agent still failed.
