@@ -10,7 +10,7 @@ export const conferenceTickets = [
       'Lunch/coffee/Tea',
       'Access to booths',
     ],
-    buttonText: 'Enroll For the Conference',
+    buttonText: 'Register',
     enrollUrl: 'https://nomadcoder.ai/event/p/15',
     isDisabled: false,
   },

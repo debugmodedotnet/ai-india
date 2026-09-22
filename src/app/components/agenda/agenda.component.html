@@ -6,56 +6,18 @@
 
     <div class="agendas">
       @for(agenda of agendas; track agenda.startTime + agenda.title){
-      <div class="agenda d-flex align-items-center align-items-sm-start flex-column flex-sm-row">
-        @if(agenda.speakerImage){
-          @if(agenda.speakerName){
-          <figure class="speaker-img m-0 rounded-circle overflow-hidden">
-            <img
-              [src]="agenda.speakerImage"
-              class="w-100 h-100 object-fit-cover"
-              [alt]="agenda.speakerName"
-            />
-          </figure>
-          } @else {
-          <figure
-            class="speaker-img icon m-0 rounded-circle overflow-hidden d-flex"
-          >
-            <img
-              [src]="agenda.speakerImage"
-              class="w-100 h-100 object-fit-contain m-auto"
-              alt=""
-            />
-          </figure>
-          }
+      <article class="agenda">
+        <p class="time">{{ agenda.startTime }} – {{ agenda.endTime }}</p>
+        <h3 class="talk-title" [innerHTML]="agenda.title | markdown: 'inline'"></h3>
+
+        @if(agenda.description){
+        <div class="talk-details" [innerHTML]="agenda.description | markdown"></div>
         }
 
-        <div
-          class="text ps-0 ps-sm-4 ps-md-5 mt-4 mt-sm-0 text-center text-sm-start"
-        >
-          <span class="time fw-semibold"
-            >{{ agenda.startTime }} - {{ agenda.endTime }}</span
-          >
-          <h2 class="my-3 nmc-primary">{{ agenda.title }}</h2>
-
-          @if(agenda.description){
-          <div
-            class="nmc-medium-grey font-family-inter markdown-desc"
-            [innerHTML]="agenda.description | markdown"
-          ></div>
-          }
-
-          @if(agenda.speakerName){
-          <h3 class="speaker-name font-24 mt-3 mb-0 nmc-primary font-family-poppins">
-            — {{ agenda.speakerName }}
-            @if(agenda.speakerPosition){
-            <span class="ms-2 position font-16">{{
-              agenda.speakerPosition
-            }}</span>
-            }
-          </h3>
-          }
-        </div>
-      </div>
+        @if(agenda.speakerName){
+        <p class="speaker-name">— {{ agenda.speakerName }}</p>
+        }
+      </article>
       }
     </div>
 

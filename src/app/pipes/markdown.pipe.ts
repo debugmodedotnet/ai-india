@@ -8,12 +8,13 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 export class MarkdownPipe implements PipeTransform {
   private sanitizer = inject(DomSanitizer);
 
-  transform(value: string | null | undefined): SafeHtml {
+  transform(value: string | null | undefined, mode: 'block' | 'inline' = 'block'): SafeHtml {
     if (!value?.trim()) {
       return '';
     }
 
-    return this.sanitizer.bypassSecurityTrustHtml(markdownToHtml(value));
+    const html = mode === 'inline' ? formatInline(escapeHtml(value.trim())) : markdownToHtml(value);
+    return this.sanitizer.bypassSecurityTrustHtml(html);
   }
 }
 
@@ -45,6 +46,14 @@ function markdownToHtml(markdown: string): string {
       continue;
     }
 
+    const heading = lines[index].match(/^(#{1,3})\s+(.+)$/);
+    if (heading) {
+      const tag = heading[1].length === 1 ? 'h3' : heading[1].length === 2 ? 'h4' : 'h5';
+      html.push(`<${tag}>${formatInline(heading[2])}</${tag}>`);
+      index += 1;
+      continue;
+    }
+
     if (/^[-*]\s+/.test(lines[index])) {
       const items: string[] = [];
       while (index < lines.length && /^[-*]\s+/.test(lines[index])) {
@@ -69,6 +78,7 @@ function markdownToHtml(markdown: string): string {
     while (
       index < lines.length &&
       lines[index].trim() !== '' &&
+      !/^#{1,3}\s+/.test(lines[index]) &&
       !/^[-*]\s+/.test(lines[index]) &&
       !/^\d+\.\s+/.test(lines[index])
     ) {
