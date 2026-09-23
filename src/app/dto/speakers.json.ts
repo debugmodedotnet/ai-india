@@ -122,5 +122,16 @@ export const speakers: ISpeakers[] = [
     nomadcoder: 'https://nomadcoder.ai/p/varunsi7jJFyP6',
     previousTalks: [
     ],
+  },
+  {
+    id: 20,
+    name: 'Nidhi Singh Attri',
+    position: 'AI Consultant & Creator',
+    bio: 'Nidhi Singh Attri is at the frontier of AI, building with it every day and sharing everything she learns, with no gatekeeping, with 2.5K+ YouTube subscribers and 7K+ LinkedIn followers. Her latest project is Agent Router, a CLI that checks how much quota is left on your Claude Code, Codex and Cursor subscriptions and picks the right agent and model for the task. On her desk sits a Raspberry Pi running a Hermes agent, her content partner, which keeps track of what\'s trending in AI and tells her what she should pick next. She also helps founders figure out how AI fits into their business. Before AI, she spent a decade building software at scale, eight years of it in blockchain. At Jio, she worked on the blockchain platform built for TRAI\'s anti-spam regulations, used by 500 million subscribers. At Walmart, she shipped the food traceability blockchain platform, and her last role was in Developer Relations at a DeFi infrastructure startup. Outside work, you\'ll find her running somewhere green, the more trees the better.',
+    image: 'assets/images/speakers/nidhi.jpg',
+    linkedin: 'https://www.linkedin.com/in/nidhisinghattri/',
+    nomadcoder: '',
+    previousTalks: [
+    ],
   }
 ];

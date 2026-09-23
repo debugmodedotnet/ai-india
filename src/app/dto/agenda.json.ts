@@ -162,35 +162,11 @@ We’ll look at:
 This session is especially relevant for **mobile developers, AI engineers, and developers interested in on-device AI**.`,
   },
   {
-    title: 'Voice Agents: Ready for Production or Just a Great Demo?',
-    speakerName: 'Manoranjan Rajguru',
-    speakerPosition: '',
-    startTime: '3:30 PM',
-    endTime: '4:00 PM',
-    description: `Voice Agents are getting remarkably good at conversations, but a great demo is very different from a **production-ready Voice Agent**.
-
-This session explores how to evaluate Voice Agents beyond simple “it worked” testing, covering the challenges that arise in real-world conversations.
-
-We’ll explore:
-
-* Conversation quality and overall user experience
-* Task completion and accuracy
-* Latency and response time
-* Handling interruptions, unexpected answers, and changes in user intent
-* Speech recognition challenges, including different accents
-* Robustness against real-world scenarios
-* Jailbreaking and red teaming
-* Direct and indirect attacks
-* How to measure, trace, govern, and improve Voice Agents
-
-Through practical **evaluation strategies, metrics, and real-world scenarios**, you’ll learn how to systematically test Voice Agents and determine whether they are truly **ready for production — or simply a great demo**.`,
-  },
-  {
     title: 'Tea break',
     speakerName: '',
     speakerPosition: '',
-    startTime: '4:00 PM',
-    endTime: '4:30 PM',
+    startTime: '3:30 PM',
+    endTime: '4:00 PM',
     description: '',
   },
   {
@@ -253,8 +229,8 @@ Through practical **code and pipeline examples**, you’ll learn how to safely m
   },
   {
     title: 'MCP: One Setup for Multiple AI Agents',
-    speakerName: 'Nidhi Singh',
-    speakerPosition: '',
+    speakerName: 'Nidhi Singh Attri',
+    speakerPosition: 'AI Consultant & Creator',
     startTime: '6:00 PM',
     endTime: '6:30 PM',
     description: `I feel most people don’t realize **how much MCP has evolved** or what the best way to use it is.
