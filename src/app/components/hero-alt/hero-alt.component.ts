@@ -12,8 +12,8 @@ export class HeroAltComponent {
   private router = inject(Router);
 
   scrollToTickets(): void {
-    void this.router.navigate(['/home'], { fragment: 'pricing' }).then(() => {
-      document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    void this.router.navigate(['/home'], { fragment: 'register' }).then(() => {
+      document.getElementById('register')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   }
 }

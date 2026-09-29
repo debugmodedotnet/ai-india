@@ -51,19 +51,9 @@
         padding: 0 1.75rem;
         border: none;
         border-radius: 0;
-        box-shadow: none;
-        background-color: $nmc-medium-grey;
-        color: $nmc-white;
         font-size: 1.15rem;
         font-weight: 700;
         line-height: 64px;
-
-        &:hover,
-        &:focus {
-            background-color: $nmc-primary;
-            color: $nmc-white;
-            box-shadow: none;
-        }
     }
 
 }

@@ -1,6 +1,29 @@
 @use "../../styles/variables" as *;
 
+$agenda-session-colors: (
+    #fecaca,
+    #fed7aa,
+    #fde68a,
+    #d9f99d,
+    #a7f3d0,
+    #99f6e4,
+    #a5f3fc,
+    #bae6fd,
+    #bfdbfe,
+    #c7d2fe,
+    #ddd6fe,
+    #e9d5ff,
+    #f5d0fe,
+    #fbcfe8,
+    #fda4af,
+    #fdba74
+);
+
 .agenda-section {
+    .agenda-container {
+        max-width: 1080px;
+    }
+
     .heading {
         h2 {
             font-size: 40px;
@@ -15,6 +38,45 @@
         margin-bottom: 16px;
         box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.07);
 
+        @for $i from 1 through length($agenda-session-colors) {
+            &:nth-child(#{length($agenda-session-colors)}n + #{$i}) {
+                background: nth($agenda-session-colors, $i);
+            }
+        }
+
+        .agenda-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .agenda-summary {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .expand-btn {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            margin-top: 1.35rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #111;
+            background: transparent;
+            color: #111;
+            font-size: 1.15rem;
+            line-height: 1;
+            cursor: pointer;
+
+            &:focus-visible {
+                outline: 2px solid $nmc-primary;
+                outline-offset: 2px;
+            }
+        }
+
         .time {
             margin: 0 0 0.4rem;
             color: #9aa0a6;
@@ -24,7 +86,7 @@
         }
 
         .talk-title {
-            margin: 0 0 0.85rem;
+            margin: 0;
             color: #111;
             font-family: $nmc-font-family-inter;
             font-size: 1.55rem;
@@ -38,6 +100,7 @@
         }
 
         .talk-details {
+            margin-top: 1rem;
             color: #3c4043;
             font-size: 0.98rem;
             line-height: 1.6;
