@@ -1,21 +1,38 @@
 <section class="agenda-section py-5 nmc-bg-light">
-  <div class="container-boxed">
+  <div class="container-boxed agenda-container">
     <div class="text-center heading mb-5">
       <h2 class="mb-4 text-bottom-line position-relative">Agenda</h2>
     </div>
 
     <div class="agendas">
-      @for(agenda of agendas; track agenda.startTime + agenda.title){
-      <article class="agenda">
-        <p class="time">{{ agenda.startTime }} – {{ agenda.endTime }}</p>
-        <h3 class="talk-title" [innerHTML]="agenda.title | markdown: 'inline'"></h3>
+      @for(agenda of agendas; track agenda.startTime + agenda.title; let index = $index){
+      <article class="agenda" [class.is-open]="isOpen(agenda)">
+        <div class="agenda-header">
+          <div class="agenda-summary">
+            <p class="time">{{ agenda.startTime }} – {{ agenda.endTime }}</p>
+            <h3 class="talk-title" [innerHTML]="agenda.title | markdown: 'inline'"></h3>
 
-        @if(agenda.description){
-        <div class="talk-details" [innerHTML]="agenda.description | markdown"></div>
-        }
+            @if(agenda.speakerName){
+            <p class="speaker-name">— {{ agenda.speakerName }}</p>
+            }
+          </div>
 
-        @if(agenda.speakerName){
-        <p class="speaker-name">— {{ agenda.speakerName }}</p>
+          @if(hasDetails(agenda)){
+          <button
+            type="button"
+            class="expand-btn"
+            [attr.aria-expanded]="isOpen(agenda)"
+            [attr.aria-controls]="'agenda-details-' + index"
+            [attr.aria-label]="isOpen(agenda) ? 'Hide session details' : 'Show session details'"
+            (click)="toggle(agenda)"
+          >
+            <i class="bi" [class.bi-plus-lg]="!isOpen(agenda)" [class.bi-dash-lg]="isOpen(agenda)"></i>
+          </button>
+          }
+        </div>
+
+        @if(hasDetails(agenda) && isOpen(agenda)){
+        <div class="talk-details" [id]="'agenda-details-' + index" [innerHTML]="agenda.description | markdown"></div>
         }
       </article>
       }

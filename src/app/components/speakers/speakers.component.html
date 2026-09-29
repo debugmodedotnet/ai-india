@@ -1,5 +1,5 @@
 <section class="speakers-section py-5 nmc-bg-white">
-  <div class="container-boxed">
+  <div class="container-boxed speakers-container">
     <div class="text-center heading mb-5">
       <h2 class="mb-4 text-bottom-line position-relative">Speakers</h2>
     </div>
@@ -7,9 +7,9 @@
     <div class="speakers-list mt-5">
       @for (speaker of speakers; track speaker;) {
       <div class="speaker d-flex align-items-center justify-content-between flex-column flex-md-row gap-5 mt-5">
-        <div class="speaker-img position-relative w-30 z-1">
+        <div class="speaker-img position-relative z-1">
           <figure class="m-0 overflow-hidden">
-            <img [src]="speaker.image" class="h-100 w-100 object-fit-cover" [alt]="speaker.name" />
+            <img [src]="speaker.image" [alt]="speaker.name" />
           </figure>
         </div>
 

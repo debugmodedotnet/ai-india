@@ -1,0 +1,107 @@
+@use "../../styles/variables" as *;
+
+.sponsorship-section {
+    .heading {
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+    }
+
+    article ::ng-deep {
+        h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-family: $nmc-font-family-poppins;
+            color: $nmc-primary;
+        }
+
+        h4 {
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+            font-family: $nmc-font-family-poppins;
+            color: $nmc-dark-grey;
+        }
+
+        a {
+            font-weight: 600;
+        }
+
+        .md-accent {
+            color: #e86c00;
+            font-weight: 700;
+        }
+
+        blockquote {
+            margin: 1.75rem 0 2.75rem !important;
+            padding: 0.25rem 0 0.25rem 1.25rem;
+            border-left: 4px solid $nmc-primary;
+            font-family: $nmc-font-family-poppins;
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.35;
+            color: $nmc-dark-grey;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        ul,
+        ol {
+            list-style: disc !important;
+            margin: 0.75rem 0 1rem !important;
+            padding-left: 1.35rem !important;
+        }
+
+        li {
+            display: list-item;
+            list-style: disc !important;
+            margin: 0 0 0.35rem !important;
+            padding: 0 !important;
+        }
+    }
+
+    .download-brochure {
+        display: inline-block;
+        min-width: 320px;
+        margin-top: 2rem;
+        padding: 1.15rem 2.5rem;
+        border: none;
+        border-radius: 0;
+        background-color: $nmc-primary;
+        color: $nmc-white;
+        font-size: 1.35rem;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: none;
+
+        &:hover,
+        &:focus-visible {
+            background-color: $nmc-primary;
+            color: $nmc-white;
+            box-shadow: none;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .text-bottom-line::after {
+        inset: 44px 0 0 0;
+    }
+
+    .sponsorship-section {
+        .heading {
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        article ::ng-deep blockquote {
+            font-size: 1.5rem;
+        }
+    }
+}

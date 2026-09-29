@@ -190,6 +190,39 @@ textarea {
     pointer-events: none;
 }
 
+.header-register-btn,
+.register-btn,
+.enroll-btn,
+.brochure-btn {
+    background-color: $nmc-red !important;
+    color: $nmc-white !important;
+    cursor: pointer;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+
+    &:hover:not(:disabled),
+    &:focus-visible:not(:disabled) {
+        background-color: color-mix(in srgb, $nmc-red, black 14%) !important;
+        color: $nmc-white !important;
+        transform: translateY(-3px) scale(1.02);
+        box-shadow: 0 10px 24px rgba(220, 0, 0, 0.35);
+    }
+
+    &:active:not(:disabled) {
+        transform: translateY(-1px) scale(1);
+        box-shadow: 0 4px 12px rgba(220, 0, 0, 0.28);
+    }
+
+    &:disabled {
+        background-color: $nmc-medium-grey !important;
+        transform: none;
+        box-shadow: none;
+        pointer-events: none;
+    }
+}
+
 .scroll-top {
     position: fixed;
     visibility: hidden;
