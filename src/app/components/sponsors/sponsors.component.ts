@@ -12,9 +12,4 @@ import { sponsors } from '../../dto/sponsors.json';
 export class SponsorsComponent {
 
   sponsors: ISponsors[] = sponsors;
-
-  openSponsorshipDoc(): void {
-    const pdfUrl = 'ai-india-sponsorship.pdf';
-    window.open(pdfUrl, '_blank');
-  }
 }

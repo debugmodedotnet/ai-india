@@ -28,6 +28,13 @@ function escapeHtml(text: string): string {
 
 function formatInline(text: string): string {
   return text
+    .replace(/\[([^\[\]]+)\]\((https?:\/\/[^\s)]+|mailto:[^\s)]+)\)/gi, (_match, label: string, url: string) => {
+      if (url.toLowerCase().startsWith('mailto:')) {
+        return `<a href="${url}">${label}</a>`;
+      }
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+    })
+    .replace(/\*\*!(.+?)\*\*/g, '<strong class="md-accent">$1</strong>')
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/__(.+?)__/g, '<strong>$1</strong>')
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
@@ -51,6 +58,16 @@ function markdownToHtml(markdown: string): string {
       const tag = heading[1].length === 1 ? 'h3' : heading[1].length === 2 ? 'h4' : 'h5';
       html.push(`<${tag}>${formatInline(heading[2])}</${tag}>`);
       index += 1;
+      continue;
+    }
+
+    if (/^&gt;\s+/.test(lines[index])) {
+      const quote: string[] = [];
+      while (index < lines.length && /^&gt;\s+/.test(lines[index])) {
+        quote.push(formatInline(lines[index].replace(/^&gt;\s+/, '')));
+        index += 1;
+      }
+      html.push(`<blockquote><p>${quote.join('<br>')}</p></blockquote>`);
       continue;
     }
 
@@ -79,6 +96,7 @@ function markdownToHtml(markdown: string): string {
       index < lines.length &&
       lines[index].trim() !== '' &&
       !/^#{1,3}\s+/.test(lines[index]) &&
+      !/^&gt;\s+/.test(lines[index]) &&
       !/^[-*]\s+/.test(lines[index]) &&
       !/^\d+\.\s+/.test(lines[index])
     ) {

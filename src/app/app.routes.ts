@@ -8,6 +8,7 @@ export const routes: Routes = [
     { path: 'venue', loadComponent: () => import('./components/venue/venue.component').then(m => m.VenueComponent) },
     { path: 'sponsors', loadComponent: () => import('./components/sponsors/sponsors.component').then(m => m.SponsorsComponent) },
     { path: 'coc', loadComponent: () => import('./components/coc/coc.component').then(m => m.CocComponent) },
+    { path: 'sponsorship', loadComponent: () => import('./components/sponsorship/sponsorship.component').then(m => m.SponsorshipComponent) },
 
     { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
