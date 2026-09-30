@@ -46,6 +46,15 @@
             border: 2px solid $nmc-primary;
         }
     }
+
+    .edition-photos {
+        display: inline-block;
+        margin-top: 0.85rem;
+        color: $nmc-primary;
+        font-size: 1.05rem;
+        font-weight: 600;
+        text-decoration: underline !important;
+    }
 }
 
 @media (max-width: 425px) {
