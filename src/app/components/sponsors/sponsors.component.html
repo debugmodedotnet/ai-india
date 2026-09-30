@@ -4,15 +4,12 @@
       <h2 class="mb-4 text-bottom-line position-relative">Sponsors</h2>
     </div>
 
-    <div class="row g-3 clients-wrap justify-content-center">
+    <div class="row g-4 clients-wrap justify-content-center align-items-center">
       @for(sponsor of sponsors; track sponsor.sponsorLink){
-      <div class="col-xl-3 col-md-4 col-sm-6">
-        <div
-          class="client-logo nmc-bg-light d-flex align-items-center justify-content-center overflow-hidden position-relative">
+      <div class="col-auto">
+        <div class="client-logo d-flex align-items-center justify-content-center position-relative">
           <a [href]="sponsor.sponsorLink" target="_blank" rel="noopener noreferrer">
-            <figure class="overflow-hidden p-5 m-0">
-              <img [src]="sponsor.sponsorImage" class="w-100 h-100 object-fit-contain" alt="QuestPond" />
-            </figure>
+            <img class="sponsor-logo" [src]="sponsor.sponsorImage" [alt]="sponsor.sponsorName" />
           </a>
 
           @if (sponsor.sponsorType) {

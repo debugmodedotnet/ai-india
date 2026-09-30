@@ -9,19 +9,19 @@
     }
 
     .client-logo {
-        border: 1px solid color-mix(in srgb, $nmc-dark-grey, transparent 85%);
+        border: none;
+        background: transparent;
 
-        figure {
-            //width: 230px;
-            height: 200px;
+        .sponsor-logo {
+            width: 280px;
+            height: 280px;
+            object-fit: contain;
+            display: block;
+            transition: 0.3s;
+        }
 
-            img {
-                transition: 0.3s;
-            }
-
-            &:hover img {
-                transform: scale(1.1);
-            }
+        &:hover .sponsor-logo {
+            transform: scale(1.06);
         }
     }
 
