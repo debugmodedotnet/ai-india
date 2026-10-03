@@ -162,19 +162,11 @@ We’ll look at:
 This session is especially relevant for **mobile developers, AI engineers, and developers interested in on-device AI**.`,
   },
   {
-    title: 'Tea break',
-    speakerName: '',
-    speakerPosition: '',
-    startTime: '3:30 PM',
-    endTime: '4:00 PM',
-    description: '',
-  },
-  {
     title: 'A Guardrail Blueprint for Production AI Agents',
     speakerName: 'Laxminarayan Chandrashekar',
     speakerPosition: 'Technical Lead and Architect @Siemens',
-    startTime: '4:30 PM',
-    endTime: '5:00 PM',
+    startTime: '3:30 PM',
+    endTime: '4:00 PM',
     description: `Building production-ready AI agents requires more than securing the model itself. This talk presents a practical **security architecture for production agents**, designed to prevent a compromised or manipulated model from automatically becoming a compromised system.
 
 We’ll explore how to separate:
@@ -194,6 +186,14 @@ Through a **live code demo**, we’ll build a practical blueprint for agents wit
 * Strong security guardrails
 
 The session also covers key risks highlighted in **OWASP’s Agentic Applications security guidance**, including **goal hijacking, tool misuse, privilege abuse, supply-chain vulnerabilities, and unexpected code execution**.`,
+  },
+  {
+    title: 'Tea break',
+    speakerName: '',
+    speakerPosition: '',
+    startTime: '4:00 PM',
+    endTime: '4:30 PM',
+    description: '',
   },
   {
     title: 'Engineering a Model Router for Cost, Latency & Quality',
