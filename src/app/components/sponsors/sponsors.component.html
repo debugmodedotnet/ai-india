@@ -9,7 +9,12 @@
       <div class="col-auto">
         <div class="client-logo d-flex align-items-center justify-content-center position-relative">
           <a [href]="sponsor.sponsorLink" target="_blank" rel="noopener noreferrer">
-            <img class="sponsor-logo" [src]="sponsor.sponsorImage" [alt]="sponsor.sponsorName" />
+            <img
+              class="sponsor-logo"
+              [class.compact]="sponsor.compact"
+              [src]="sponsor.sponsorImage"
+              [alt]="sponsor.sponsorName"
+            />
           </a>
 
           @if (sponsor.sponsorType) {

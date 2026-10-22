@@ -3,4 +3,5 @@ export interface ISponsors {
     sponsorImage: string;
     sponsorType: string;
     sponsorName: string;
+    compact?: boolean;
 }
