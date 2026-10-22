@@ -11,9 +11,37 @@
     .venue-details {
         max-width: 720px;
 
-        h3 {
-            font-size: 28px;
-            font-weight: 600;
+    }
+
+    .venue-address {
+        margin: 0 0 1.25rem;
+        font-style: normal;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: $nmc-dark-grey;
+    }
+
+    .venue-name {
+        margin: 0 0 0.85rem;
+        font-size: 1.65rem;
+        font-weight: 700;
+        line-height: 1.35;
+        color: $nmc-black;
+    }
+
+    .venue-map {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        margin-top: 1.25rem;
+        color: $nmc-black;
+        font-size: 1.05rem;
+        font-weight: 700;
+        text-decoration: underline;
+        text-underline-offset: 0.18em;
+
+        &:hover,
+        &:focus-visible {
             color: $nmc-primary;
         }
     }
@@ -52,8 +80,13 @@
 
 @media (max-width: 425px) {
     .venue-section {
-        .venue-details h3 {
-            font-size: 24px;
+        .venue-address,
+        .venue-map {
+            font-size: 15px;
+        }
+
+        .venue-name {
+            font-size: 1.35rem;
         }
 
         .venue-list li {

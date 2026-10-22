@@ -223,6 +223,16 @@ textarea {
     }
 }
 
+.header-register-btn,
+.register-btn {
+    background-color: $nmc-black !important;
+
+    &:hover:not(:disabled),
+    &:focus-visible:not(:disabled) {
+        background-color: $nmc-red !important;
+    }
+}
+
 .scroll-top {
     position: fixed;
     visibility: hidden;
