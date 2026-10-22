@@ -133,5 +133,16 @@ export const speakers: ISpeakers[] = [
     nomadcoder: 'https://nomadcoder.ai/p/nidhisinghnAKLCCMI',
     previousTalks: [
     ],
+  },
+  {
+    id: 21,
+    name: 'Aarshad Dinesh Devani',
+    position: 'Senior AI Architect @Cobweb MENA FZ',
+    bio: 'Arshad helps companies build credible AI products — and credible AI reputations with developers. Currently Senior AI Architect, working across agentic systems, RAG pipelines, LLMs, and multi-model architectures on Azure and GCP. His focus is the seam between architecture and developer experience: designs that engineers can actually build on, fast.',
+    image: 'assets/images/speakers/arshad.jpeg',
+    linkedin: 'https://www.linkedin.com/in/aarshaddevani/',
+    nomadcoder: '',
+    previousTalks: [
+    ],
   }
 ];
