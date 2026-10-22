@@ -1,74 +1,46 @@
-<section class="speakers-section py-5 nmc-bg-white">
+<section class="speakers-section">
   <div class="container-boxed speakers-container">
-    <div class="text-center heading mb-5">
-      <h2 class="mb-4 text-bottom-line position-relative">Speakers</h2>
+    <div class="text-center heading">
+      <h2 class="mb-0 text-bottom-line position-relative">Speakers</h2>
     </div>
 
-    <div class="speakers-list mt-5">
-      @for (speaker of speakers; track speaker;) {
-      <div class="speaker d-flex align-items-center justify-content-between flex-column flex-md-row gap-5 mt-5">
-        <div class="speaker-img position-relative z-1">
-          <figure class="m-0 overflow-hidden">
+    <div class="speakers-grid">
+      @for (speaker of speakers; track speaker.id; let i = $index) {
+        <article class="speaker-card">
+          <div class="portrait" [class.has-mark]="i % 2 === 1">
             <img [src]="speaker.image" [alt]="speaker.name" />
-          </figure>
-        </div>
-
-        <div class="speaker-info text-center text-md-start w-75 w-767-100">
-          <h3 class="nmc-primary font-family-poppins pe-2 position-relative">
-            {{ speaker.name }}
-
-            <span class="nmc-medium-grey font-18">{{ speaker.position }}</span>
-          </h3>
-
-          <p class="nmc-medium-grey">
-            {{ speaker.bio }}
-          </p>
-
-          @if (speaker.previousTalks && speaker.previousTalks.length > 0 ){
-          <h5 class="nmc-primary font-family-poppins">Previous Talks:</h5>
-          <ul class="mb-4">
-            @for( talk of speaker.previousTalks | slice: 0:5; track talk;){
-            <li>
-              <i class="bi bi-link-45deg nmc-primary"></i>
-              <a class="nmc-dark-grey fw-semibold text-decoration-underline cursor-pointer" [href]="talk.link"
-                target="_blank">
-                {{ talk.title }} : {{ talk.event }}
-              </a>
-            </li>
-            } @if( speaker.previousTalks.length > 5){
-            <li class="nmc-medium-grey">
-              +{{ speaker.previousTalks.length - 5 }} more...
-            </li>
-            }
-          </ul>
-          }
-
-          <div class="social d-flex align-items-center justify-content-center justify-content-md-start gap-3">
-            @if(speaker.linkedin){
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              [href]="speaker.linkedin"
-              class="font-20 nmc-dark-grey"
-              [attr.aria-label]="speaker.name + ' on LinkedIn'"
-            >
-              <i class="bi bi-linkedin"></i>
-            </a>
-            } @if(speaker.nomadcoder){
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              [href]="speaker.nomadcoder"
-              class="nomadcoder-link text-decoration-none"
-              [attr.aria-label]="speaker.name + ' on NomadCoder'"
-              title="NomadCoder"
-            >
-              NC
-            </a>
-            }
           </div>
-        </div>
-      </div>
+
+          <h3>{{ speaker.name }}</h3>
+          <p class="role">{{ speaker.position }}</p>
+
+          @if (speaker.linkedin || speaker.nomadcoder) {
+            <div class="social">
+              @if (speaker.linkedin) {
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  [href]="speaker.linkedin"
+                  [attr.aria-label]="speaker.name + ' on LinkedIn'"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              }
+              @if (speaker.nomadcoder) {
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  [href]="speaker.nomadcoder"
+                  class="nomadcoder-link"
+                  [attr.aria-label]="speaker.name + ' on NomadCoder'"
+                  title="NomadCoder"
+                >
+                  NC
+                </a>
+              }
+            </div>
+          }
+        </article>
       }
     </div>
   </div>

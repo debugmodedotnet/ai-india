@@ -1,73 +1,95 @@
 @use "../../styles/variables" as *;
 
 .stats {
-    margin: 2.75rem 0 1.25rem;
+    margin: 0.25rem 0 2.5rem;
+    padding: 2.25rem 0 1.75rem;
+    border-top: 1px solid $nmc-grey-2;
+    border-bottom: 1px solid $nmc-grey-2;
 }
 
 .stats-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0.85rem;
 }
 
 .stat {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 9.5rem;
-    padding: 1.35rem 0.75rem;
-    background-color: $nmc-primary;
+    padding: 0.25rem 1rem;
     text-align: center;
+
+    &::before {
+        content: "";
+        width: 2rem;
+        height: 3px;
+        margin-bottom: 0.9rem;
+        background-color: $nmc-primary;
+    }
+
+    &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 18%;
+        right: 0;
+        width: 1px;
+        height: 64%;
+        background-color: $nmc-grey-2;
+    }
 }
 
 .stat-value {
     margin: 0;
-    color: $nmc-white;
+    color: $nmc-black;
     font-family: $nmc-font-family-poppins;
-    font-size: 3.75rem;
+    font-size: 4rem;
     font-weight: 700;
-    line-height: 1;
+    line-height: 0.95;
 }
 
 .stat-label {
-    margin: 0.5rem 0 0;
-    color: $nmc-white;
-    font-size: 1.15rem;
+    margin: 0.55rem 0 0;
+    color: $nmc-primary;
+    font-size: 0.8rem;
     font-weight: 600;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.16em;
     line-height: 1.2;
     text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
-    .stats-row {
-        grid-template-columns: 1fr 1fr;
+    .stats {
+        margin-bottom: 2rem;
+        padding: 1.75rem 0 1.25rem;
     }
 
-    .stat {
-        aspect-ratio: 1;
-        min-height: 0;
-        padding: 1rem 0.6rem;
+    .stats-row {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1.75rem;
+    }
+
+    .stat::after {
+        display: none;
     }
 
     .stat-value {
-        font-size: 2.85rem;
+        font-size: 3rem;
     }
 
     .stat-label {
-        font-size: 0.95rem;
-        letter-spacing: 0.08em;
+        font-size: 0.72rem;
+        letter-spacing: 0.12em;
     }
 }
 
 @media (max-width: 360px) {
     .stat-value {
-        font-size: 2.15rem;
+        font-size: 2.4rem;
     }
 
     .stat-label {
-        font-size: 0.7rem;
-        letter-spacing: 0.04em;
+        letter-spacing: 0.06em;
     }
 }
