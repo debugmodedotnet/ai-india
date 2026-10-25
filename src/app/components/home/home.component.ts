@@ -1,6 +1,4 @@
 import { AfterViewInit, Component, inject } from '@angular/core';
-import { SpeakersComponent } from "../speakers/speakers.component";
-import { AgendaComponent } from "../agenda/agenda.component";
 import { VenueComponent } from "../venue/venue.component";
 import { PricingComponent } from "../pricing/pricing.component";
 import { ViewportScroller } from '@angular/common';
@@ -9,11 +7,12 @@ import { SponsorsComponent } from "../sponsors/sponsors.component";
 import { HeroAltComponent } from '../hero-alt/hero-alt.component';
 import { StatsStickyComponent } from '../stats-sticky/stats-sticky.component';
 import { ConferenceInfoComponent } from '../conference-info/conference-info.component';
+import { SessionPostersComponent } from '../session-posters/session-posters.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [SpeakersComponent, AgendaComponent, VenueComponent, PricingComponent, SponsorsComponent, HeroAltComponent, StatsStickyComponent, ConferenceInfoComponent],
+  imports: [VenueComponent, PricingComponent, SponsorsComponent, HeroAltComponent, StatsStickyComponent, ConferenceInfoComponent, SessionPostersComponent],
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements AfterViewInit {

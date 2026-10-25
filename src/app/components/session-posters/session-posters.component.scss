@@ -1,0 +1,231 @@
+@use "../../styles/variables" as *;
+
+.session-posters {
+  background: $nmc-white;
+  padding: 4.5rem 0 3rem;
+
+  .heading h2 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+
+.poster {
+  padding: 2.75rem 0 0.5rem;
+}
+
+.poster-layout {
+  display: grid;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.copy {
+  max-width: 36rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.85rem;
+  color: #5c6570;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0 0 1rem;
+  color: #16181d;
+  font-family: $nmc-font-family-poppins;
+  font-size: clamp(2rem, 3.6vw, 3.15rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.title-long {
+  font-size: clamp(1.65rem, 2.6vw, 2.35rem);
+}
+
+.abstract {
+  margin: 0 0 1.15rem;
+  max-width: 34rem;
+  color: #2f3640;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.time {
+  margin: 0;
+  color: #16181d;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.visual {
+  display: flex;
+  justify-content: center;
+}
+
+.stage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 268px);
+  padding: 2.35rem 0.55rem 1rem;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 100% 0, #f6c445 0 3.5rem, transparent 3.6rem),
+    radial-gradient(circle at 0 100%, #ff7a59 0 1.5rem, transparent 1.6rem),
+    radial-gradient(circle at 100% 100%, #2ec4b6 0 2.6rem, transparent 2.7rem),
+    #12141a;
+}
+
+.stage-label {
+  position: absolute;
+  z-index: 2;
+  top: 0.55rem;
+  left: 0.7rem;
+  margin: 0;
+  padding: 0.28rem 0.72rem 0.34rem;
+  border-radius: 999px;
+  background: #7b6cff;
+  color: $nmc-white;
+  font-family: $nmc-font-family-poppins;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.stage img {
+  width: 100%;
+  height: 360px;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: center 15%;
+}
+
+.speaker {
+  padding: 0.9rem 0.35rem 0.15rem;
+}
+
+.name,
+.role {
+  margin: 0;
+}
+
+.name {
+  color: $nmc-white;
+  font-family: $nmc-font-family-poppins;
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.break {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+  padding: 1.15rem 1.4rem;
+  border-radius: 14px;
+  background: #f4f5f7;
+}
+
+.break-title {
+  margin: 0;
+  color: #16181d;
+  font-family: $nmc-font-family-poppins;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.role {
+  margin-top: 0.2rem;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.7rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $nmc-white;
+    font-size: 1.15rem;
+    line-height: 1;
+
+    &:hover,
+    &:focus-visible {
+      color: #f6c445;
+    }
+  }
+
+  .nc {
+    width: 22px;
+    height: 22px;
+    border: 1.5px solid currentColor;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+}
+
+@media (min-width: 760px) {
+  .poster-layout {
+    grid-template-columns: minmax(0, 1fr) 268px;
+    gap: 4.5rem;
+  }
+
+  .is-flip .poster-layout {
+    grid-template-columns: 268px minmax(0, 1fr);
+  }
+
+  .is-flip .visual {
+    order: -1;
+    justify-content: flex-start;
+  }
+
+  .poster:not(.is-flip) .visual {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 575px) {
+  .session-posters {
+    padding: 3.25rem 0 2rem;
+
+    .heading h2 {
+      font-size: 32px;
+    }
+  }
+
+  .poster {
+    padding-top: 2.25rem;
+  }
+
+  .break {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .stage {
+    width: min(100%, 240px);
+  }
+
+  .stage img {
+    height: 320px;
+  }
+}
