@@ -2,15 +2,7 @@ import { IAgenda } from "../models/agenda";
 
 export const agenda: IAgenda[] = [
   {
-    title: 'Registration and T-shirt collection',
-    speakerName: '',
-    speakerPosition: '',
-    startTime: '9:00 AM',
-    endTime: '10:00 AM',
-    description: '',
-  },
-  {
-    title: 'Keynote',
+    title: 'Registration',
     speakerName: '',
     speakerPosition: '',
     startTime: '10:00 AM',
@@ -199,8 +191,8 @@ The session also covers key risks highlighted in **OWASP’s Agentic Application
     title: 'Engineering a Model Router for Cost, Latency & Quality',
     speakerName: 'Sunny Sharma',
     speakerPosition: 'Technical Architect @HROne',
-    startTime: '5:00 PM',
-    endTime: '5:30 PM',
+    startTime: '4:30 PM',
+    endTime: '5:00 PM',
     description: `Production AI applications often send every request to the strongest available model.
 
 That is simple — but expensive, slower than necessary, and frequently wasteful.
@@ -213,8 +205,8 @@ This session shows how to build a practical model-routing layer that selects mod
     title: 'From Commit to Production: Building AI-Ready CI/CD Pipelines with Harness',
     speakerName: 'Arumulla Yaswanth Reddy',
     speakerPosition: 'Software Engineer @Arealis Networks',
-    startTime: '5:30 PM',
-    endTime: '6:00 PM',
+    startTime: '5:00 PM',
+    endTime: '5:30 PM',
     description: `AI applications need more than traditional **CI/CD**. This talk explores how to build an **AI-ready delivery pipeline using Harness**, covering the complete journey from code to production.
 
 We’ll explore:
@@ -226,17 +218,5 @@ We’ll explore:
 * Building guardrails for safe AI deployments
 
 Through practical **code and pipeline examples**, you’ll learn how to safely move **AI applications from commit to production** with automation, evaluation, and the right guardrails in place.`,
-  },
-  {
-    title: 'MCP: One Setup for Multiple AI Agents',
-    speakerName: 'Nidhi Singh Attri',
-    speakerPosition: 'AI Consultant & Creator',
-    startTime: '6:00 PM',
-    endTime: '6:30 PM',
-    description: `I feel most people don’t realize **how much MCP has evolved** or what the best way to use it is.
-
-Today, many of us use **multiple AI agents**, and it can be a pain to connect our apps to each of them manually.
-
-In this talk, I’ll explore how you can use a tool called **Executor** to set up your integrations **once** and use them across multiple AI agents.`,
   },
 ];
