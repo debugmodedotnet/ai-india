@@ -1,11 +1,35 @@
 @use "../../styles/variables" as *;
 
 .conference-info-section {
-    .video-block {
-        width: min(100%, 960px);
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
+    .info-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            list-style: none;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: $nmc-dark-grey;
+            margin-bottom: 1.25rem !important;
+
+            &::before {
+                content: "";
+                flex-shrink: 0;
+                width: 0.45rem;
+                height: 0.45rem;
+                margin-top: 0.55em;
+                border-radius: 50%;
+                background-color: $nmc-primary;
+            }
+
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
     }
 
     .video-wrap {
@@ -30,5 +54,11 @@
         font-size: 1.05rem;
         font-weight: 600;
         text-decoration: underline !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .conference-info-section .info-list li {
+        font-size: 1rem;
     }
 }

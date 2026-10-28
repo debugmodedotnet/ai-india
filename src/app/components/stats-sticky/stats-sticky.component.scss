@@ -1,15 +1,14 @@
 @use "../../styles/variables" as *;
 
 .stats {
-    margin: 0.25rem 0 2.5rem;
-    padding: 2.25rem 0 1.75rem;
-    border-top: 1px solid $nmc-grey-2;
-    border-bottom: 1px solid $nmc-grey-2;
+    background-color: $nmc-white;
+    padding: 2.5rem 0 2.75rem;
 }
 
 .stats-row {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.35rem;
 }
 
 .stat {
@@ -18,78 +17,67 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.25rem 1rem;
+    min-height: 168px;
+    padding: 1.75rem 1rem 1.5rem;
+    background-color: $nmc-red;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.14);
     text-align: center;
+    overflow: hidden;
 
     &::before {
         content: "";
-        width: 2rem;
-        height: 3px;
-        margin-bottom: 0.9rem;
-        background-color: $nmc-primary;
-    }
-
-    &:not(:last-child)::after {
-        content: "";
         position: absolute;
-        top: 18%;
+        top: 0;
         right: 0;
-        width: 1px;
-        height: 64%;
-        background-color: $nmc-grey-2;
+        width: 18px;
+        height: 18px;
+        background: linear-gradient(225deg, rgba(0, 0, 0, 0.2) 50%, transparent 50%);
     }
 }
 
 .stat-value {
     margin: 0;
-    color: $nmc-black;
+    color: $nmc-white;
     font-family: $nmc-font-family-poppins;
-    font-size: 4rem;
+    font-size: 3.75rem;
     font-weight: 700;
-    line-height: 0.95;
+    line-height: 1;
 }
 
 .stat-label {
-    margin: 0.55rem 0 0;
-    color: $nmc-primary;
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.16em;
+    margin: 0.45rem 0 0;
+    color: $nmc-white;
+    font-size: 1.05rem;
+    font-weight: 500;
     line-height: 1.2;
-    text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
     .stats {
-        margin-bottom: 2rem;
-        padding: 1.75rem 0 1.25rem;
+        padding: 1.75rem 0 2rem;
     }
 
     .stats-row {
         grid-template-columns: 1fr 1fr;
-        row-gap: 1.75rem;
+        gap: 0.9rem;
     }
 
-    .stat::after {
-        display: none;
+    .stat {
+        min-height: 132px;
+        padding: 1.35rem 0.75rem 1.15rem;
     }
 
     .stat-value {
-        font-size: 3rem;
+        font-size: 2.75rem;
     }
 
     .stat-label {
-        font-size: 0.72rem;
-        letter-spacing: 0.12em;
+        font-size: 0.95rem;
     }
 }
 
 @media (max-width: 360px) {
     .stat-value {
-        font-size: 2.4rem;
-    }
-
-    .stat-label {
-        letter-spacing: 0.06em;
+        font-size: 2.2rem;
     }
 }

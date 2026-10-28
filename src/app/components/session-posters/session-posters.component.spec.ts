@@ -19,24 +19,35 @@ describe('SessionPostersComponent', () => {
     expect(fixture.componentInstance).toBeTruthy();
   });
 
-  it('alternates speaker and session sides', () => {
-    const posters: NodeListOf<HTMLElement> = fixture.nativeElement.querySelectorAll('.poster');
+  it('lists talks with the speaker name and no photo', () => {
+    const sessions: NodeListOf<HTMLElement> = fixture.nativeElement.querySelectorAll('.session');
+    const talk = [...sessions].find((session) => session.textContent?.includes('Dhananjay Kumar'));
 
-    expect(posters.length).toBeGreaterThan(1);
-    expect(posters[0].classList.contains('is-flip')).toBeFalse();
-    expect(posters[1].classList.contains('is-flip')).toBeTrue();
-    expect(posters[0].textContent).toContain('Dhananjay Kumar');
-    expect(posters[0].querySelector('.time')?.textContent).toContain('10:30 AM');
+    expect(talk).toBeTruthy();
+    expect(talk?.querySelector('img')).toBeNull();
+    expect(talk?.querySelector('.time')?.textContent).toContain('10:30 AM');
+    expect(fixture.nativeElement.querySelector('img')).toBeNull();
   });
 
-  it('shows breaks as time cards without a photo', () => {
-    const breaks: NodeListOf<HTMLElement> = fixture.nativeElement.querySelectorAll('.break');
-    const titles = [...breaks].map((card) => card.querySelector('.break-title')?.textContent);
+  it('renders markdown lists in the description', () => {
+    const details: HTMLElement | null = [...fixture.nativeElement.querySelectorAll('.details')]
+      .find((node: HTMLElement) => node.textContent?.includes('What We\'ll Cover'));
 
-    expect(titles).toContain('Registration and T-shirt collection');
-    expect(titles).toContain('Lunch');
-    expect(titles).toContain('Tea break');
-    expect(breaks[0].querySelector('img')).toBeNull();
-    expect(breaks[0].textContent).toContain('9:00 AM');
+    expect(details?.querySelector('h4')?.textContent).toContain('What We\'ll Cover');
+    expect(details?.querySelectorAll('li').length).toBeGreaterThan(1);
+    expect(details?.querySelector('strong')).toBeTruthy();
+  });
+
+  it('shows breaks as title and time only', () => {
+    const sessions: NodeListOf<HTMLElement> = fixture.nativeElement.querySelectorAll('.session');
+    const registration = [...sessions].find((session) =>
+      session.textContent?.includes('Registration')
+    );
+
+    expect(registration?.querySelector('.time')?.textContent).toContain('10:00 AM');
+    expect(registration?.querySelector('.speaker')).toBeNull();
+    expect(registration?.querySelector('.details')).toBeNull();
+    expect(fixture.nativeElement.textContent).toContain('Lunch');
+    expect(fixture.nativeElement.textContent).toContain('Tea break');
   });
 });

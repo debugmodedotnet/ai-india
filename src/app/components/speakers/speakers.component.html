@@ -4,44 +4,74 @@
       <h2 class="mb-0 text-bottom-line position-relative">Speakers</h2>
     </div>
 
-    <div class="speakers-grid">
-      @for (speaker of speakers; track speaker.id; let i = $index) {
-        <article class="speaker-card">
-          <div class="portrait" [class.has-mark]="i % 2 === 1">
+    <ol class="speakers-list">
+      @for (speaker of speakers; track speaker.id) {
+        <li>
+          <article class="speaker-row">
+          <div class="portrait">
             <img [src]="speaker.image" [alt]="speaker.name" />
           </div>
 
-          <h3>{{ speaker.name }}</h3>
-          <p class="role">{{ speaker.position }}</p>
+          <div class="details">
+            <h3>{{ speaker.name }}</h3>
+            <p class="role">{{ speaker.position }}</p>
+            @if (speaker.bio) {
+              <p class="bio">{{ speaker.bio }}</p>
+            }
 
-          @if (speaker.linkedin || speaker.nomadcoder) {
-            <div class="social">
-              @if (speaker.linkedin) {
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  [href]="speaker.linkedin"
-                  [attr.aria-label]="speaker.name + ' on LinkedIn'"
-                >
-                  <i class="bi bi-linkedin"></i>
-                </a>
-              }
-              @if (speaker.nomadcoder) {
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  [href]="speaker.nomadcoder"
-                  class="nomadcoder-link"
-                  [attr.aria-label]="speaker.name + ' on NomadCoder'"
-                  title="NomadCoder"
-                >
-                  NC
-                </a>
-              }
-            </div>
-          }
-        </article>
+            @if (speaker.previousTalks.length) {
+              <div class="talks">
+                <h4>Previous Talks:</h4>
+                <ul>
+                  @for (talk of speaker.previousTalks; track talk.title) {
+                    <li>
+                      @if (talk.link) {
+                        <a [href]="talk.link" target="_blank" rel="noopener noreferrer">
+                          <i class="bi bi-link-45deg"></i>
+                          {{ talk.title }}@if (talk.event) {<span> : {{ talk.event }}</span>}
+                        </a>
+                      } @else {
+                        <span>
+                          <i class="bi bi-link-45deg"></i>
+                          {{ talk.title }}@if (talk.event) {<span> : {{ talk.event }}</span>}
+                        </span>
+                      }
+                    </li>
+                  }
+                </ul>
+              </div>
+            }
+
+            @if (speaker.linkedin || speaker.nomadcoder) {
+              <div class="social">
+                @if (speaker.linkedin) {
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    [href]="speaker.linkedin"
+                    [attr.aria-label]="speaker.name + ' on LinkedIn'"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                }
+                @if (speaker.nomadcoder) {
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    [href]="speaker.nomadcoder"
+                    class="nomadcoder-link"
+                    [attr.aria-label]="speaker.name + ' on NomadCoder'"
+                    title="NomadCoder"
+                  >
+                    NC
+                  </a>
+                }
+              </div>
+            }
+          </div>
+          </article>
+        </li>
       }
-    </div>
+    </ol>
   </div>
 </section>

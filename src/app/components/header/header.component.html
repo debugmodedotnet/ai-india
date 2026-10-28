@@ -18,6 +18,24 @@
       (keydown)="closeMobileMenu()"
       tabindex="0"
     >
+      <a class="font-18 nmc-black" href="/home#speakers">Speakers</a>
+    </li>
+
+    <li
+      class="w-100 py-4"
+      (click)="closeMobileMenu()"
+      (keydown)="closeMobileMenu()"
+      tabindex="0"
+    >
+      <a class="font-18 nmc-black" href="/home#sessions">Sessions</a>
+    </li>
+
+    <li
+      class="w-100 py-4"
+      (click)="closeMobileMenu()"
+      (keydown)="closeMobileMenu()"
+      tabindex="0"
+    >
       <a class="font-18 nmc-black" href="/home#sponsors">Sponsors</a>
     </li>
 
@@ -67,6 +85,24 @@
           id="navbar"
         >
           <ul class="navbar-nav mb-lg-0 gap-3 align-items-center">
+            <li class="nav-item">
+              <a
+                class="nav-link font-16 nmc-black px-3 py-1"
+                [routerLink]="['/home']"
+                fragment="speakers"
+                >Speakers</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link font-16 nmc-black px-3 py-1"
+                [routerLink]="['/home']"
+                fragment="sessions"
+                >Sessions</a
+              >
+            </li>
+
             <li class="nav-item">
               <a
                 class="nav-link font-16 nmc-black px-3 py-1"

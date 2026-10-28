@@ -8,11 +8,12 @@ import { HeroAltComponent } from '../hero-alt/hero-alt.component';
 import { StatsStickyComponent } from '../stats-sticky/stats-sticky.component';
 import { ConferenceInfoComponent } from '../conference-info/conference-info.component';
 import { SessionPostersComponent } from '../session-posters/session-posters.component';
+import { SpeakersComponent } from '../speakers/speakers.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [VenueComponent, PricingComponent, SponsorsComponent, HeroAltComponent, StatsStickyComponent, ConferenceInfoComponent, SessionPostersComponent],
+  imports: [VenueComponent, PricingComponent, SponsorsComponent, HeroAltComponent, StatsStickyComponent, ConferenceInfoComponent, SessionPostersComponent, SpeakersComponent],
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements AfterViewInit {

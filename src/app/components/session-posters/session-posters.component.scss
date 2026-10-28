@@ -1,231 +1,158 @@
 @use "../../styles/variables" as *;
 
-.session-posters {
-  background: $nmc-white;
-  padding: 4.5rem 0 3rem;
+.sessions {
+    background-color: $nmc-white;
+    color: $nmc-black;
+    overflow-x: clip;
+    padding: 5.5rem 0 6rem;
 
-  .heading h2 {
-    font-size: 40px;
-    font-weight: 700;
-  }
+    .sessions-container {
+        max-width: 980px;
+    }
+
+    .heading h2 {
+        color: $nmc-black;
+        font-size: 40px;
+        font-weight: 700;
+    }
 }
 
-.poster {
-  padding: 2.75rem 0 0.5rem;
+.session-list {
+    margin-top: 3.5rem;
 }
 
-.poster-layout {
-  display: grid;
-  align-items: center;
-  gap: 2.5rem;
-}
-
-.copy {
-  max-width: 36rem;
-}
-
-.eyebrow {
-  margin: 0 0 0.85rem;
-  color: #5c6570;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
-.title {
-  margin: 0 0 1rem;
-  color: #16181d;
-  font-family: $nmc-font-family-poppins;
-  font-size: clamp(2rem, 3.6vw, 3.15rem);
-  font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 1.05;
-}
-
-.title-long {
-  font-size: clamp(1.65rem, 2.6vw, 2.35rem);
-}
-
-.abstract {
-  margin: 0 0 1.15rem;
-  max-width: 34rem;
-  color: #2f3640;
-  font-size: 1.05rem;
-  font-weight: 500;
-  line-height: 1.5;
+.session {
+    display: grid;
+    grid-template-columns: 11.5rem minmax(0, 1fr);
+    column-gap: 2rem;
+    align-items: start;
+    padding: 1.75rem 0;
+    border-top: 1px solid $nmc-grey-2;
+    text-align: left;
 }
 
 .time {
-  margin: 0;
-  color: #16181d;
-  font-size: 1.05rem;
-  font-weight: 700;
+    margin: 0.35rem 0 0;
+    color: $nmc-black;
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.4;
 }
 
-.visual {
-  display: flex;
-  justify-content: center;
-}
+.title {
+    margin: 0;
+    color: $nmc-red;
+    font-family: $nmc-font-family-poppins;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.25;
 
-.stage {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: min(100%, 268px);
-  padding: 2.35rem 0.55rem 1rem;
-  border-radius: 18px;
-  background:
-    radial-gradient(circle at 100% 0, #f6c445 0 3.5rem, transparent 3.6rem),
-    radial-gradient(circle at 0 100%, #ff7a59 0 1.5rem, transparent 1.6rem),
-    radial-gradient(circle at 100% 100%, #2ec4b6 0 2.6rem, transparent 2.7rem),
-    #12141a;
-}
-
-.stage-label {
-  position: absolute;
-  z-index: 2;
-  top: 0.55rem;
-  left: 0.7rem;
-  margin: 0;
-  padding: 0.28rem 0.72rem 0.34rem;
-  border-radius: 999px;
-  background: #7b6cff;
-  color: $nmc-white;
-  font-family: $nmc-font-family-poppins;
-  font-size: 0.92rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
-}
-
-.stage img {
-  width: 100%;
-  height: 360px;
-  border-radius: 12px;
-  object-fit: cover;
-  object-position: center 15%;
+    strong {
+        color: $nmc-red;
+        font-weight: 700;
+    }
 }
 
 .speaker {
-  padding: 0.9rem 0.35rem 0.15rem;
-}
-
-.name,
-.role {
-  margin: 0;
-}
-
-.name {
-  color: $nmc-white;
-  font-family: $nmc-font-family-poppins;
-  font-size: 1.45rem;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.break {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.25rem;
-  margin-top: 1.75rem;
-  padding: 1.15rem 1.4rem;
-  border-radius: 14px;
-  background: #f4f5f7;
-}
-
-.break-title {
-  margin: 0;
-  color: #16181d;
-  font-family: $nmc-font-family-poppins;
-  font-size: 1.35rem;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.role {
-  margin-top: 0.2rem;
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 0.92rem;
-  line-height: 1.35;
-}
-
-.social {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-top: 0.7rem;
-
-  a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: $nmc-white;
-    font-size: 1.15rem;
-    line-height: 1;
-
-    &:hover,
-    &:focus-visible {
-      color: #f6c445;
-    }
-  }
-
-  .nc {
-    width: 22px;
-    height: 22px;
-    border: 1.5px solid currentColor;
-    border-radius: 4px;
-    font-size: 9px;
+    margin: 0.4rem 0 0;
+    color: $nmc-black;
+    font-size: 1.05rem;
     font-weight: 700;
-    letter-spacing: -0.3px;
-  }
+    line-height: 1.35;
 }
 
-@media (min-width: 760px) {
-  .poster-layout {
-    grid-template-columns: minmax(0, 1fr) 268px;
-    gap: 4.5rem;
-  }
-
-  .is-flip .poster-layout {
-    grid-template-columns: 268px minmax(0, 1fr);
-  }
-
-  .is-flip .visual {
-    order: -1;
-    justify-content: flex-start;
-  }
-
-  .poster:not(.is-flip) .visual {
-    justify-content: flex-end;
-  }
+.role {
+    display: block;
+    margin-top: 0.15rem;
+    color: $nmc-medium-grey;
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
-@media (max-width: 575px) {
-  .session-posters {
-    padding: 3.25rem 0 2rem;
+.details {
+    margin-top: 0.85rem;
+    color: #2b2b2b;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
 
-    .heading h2 {
-      font-size: 32px;
+:host ::ng-deep .details {
+    p {
+        margin: 0 0 0.85rem;
     }
-  }
 
-  .poster {
-    padding-top: 2.25rem;
-  }
+    p:last-child {
+        margin-bottom: 0;
+    }
 
-  .break {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.35rem;
-  }
+    h3,
+    h4,
+    h5 {
+        margin: 1.2rem 0 0.45rem;
+        color: $nmc-black;
+        font-family: $nmc-font-family-inter;
+        font-size: 1.08rem;
+        font-weight: 700;
+        line-height: 1.35;
+    }
 
-  .stage {
-    width: min(100%, 240px);
-  }
+    ul,
+    ol {
+        list-style: disc !important;
+        margin: 0.15rem 0 0.95rem !important;
+        padding-left: 1.35rem !important;
+    }
 
-  .stage img {
-    height: 320px;
-  }
+    ol {
+        list-style: decimal !important;
+    }
+
+    li {
+        display: list-item;
+        list-style: disc !important;
+        margin: 0 0 0.35rem !important;
+        padding: 0 !important;
+    }
+
+    ol li {
+        list-style: decimal !important;
+    }
+
+    strong {
+        color: $nmc-black;
+        font-weight: 700;
+    }
+
+    a {
+        color: $nmc-red;
+    }
+
+    code {
+        padding: 0.1em 0.35em;
+        background: #f4f5f7;
+        font-size: 0.92em;
+    }
+}
+
+@media (max-width: 700px) {
+    .sessions {
+        padding: 3.5rem 0 4rem;
+
+        .heading h2 {
+            font-size: 32px;
+        }
+    }
+
+    .session {
+        grid-template-columns: 1fr;
+        row-gap: 0.35rem;
+    }
+
+    .time {
+        margin-top: 0;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
 }

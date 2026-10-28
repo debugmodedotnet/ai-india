@@ -1,73 +1,31 @@
-<section class="session-posters" aria-label="Sessions">
-  <div class="container-boxed">
+<section class="sessions" aria-label="Sessions">
+  <div class="container-boxed sessions-container">
     <div class="text-center heading">
-      <h2 class="mb-4 text-bottom-line position-relative">Sessions</h2>
+      <h2 class="mb-0 text-bottom-line position-relative">Sessions</h2>
     </div>
 
-    @for (session of sessions; track session.startTime + session.title; let index = $index) {
-      @if (!session.speakerName) {
-        <article class="break" [attr.aria-labelledby]="'session-title-' + index">
-          <h3 class="break-title" [id]="'session-title-' + index">{{ session.title }}</h3>
-          <p class="time">{{ session.startTime }} – {{ session.endTime }}</p>
-        </article>
-      } @else {
-      <article class="poster" [class.is-flip]="session.flip" [attr.aria-labelledby]="'session-title-' + index">
-        <div class="poster-layout">
-          <div class="copy">
-            <p class="eyebrow">Talk</p>
-            <h3
-              class="title"
-              [class.title-long]="longTitle(session.title)"
-              [id]="'session-title-' + index"
-              [innerHTML]="session.title | markdown: 'inline'"
-            ></h3>
-            @if (session.abstract) {
-              <p class="abstract">{{ session.abstract }}</p>
-            }
+    <ol class="session-list">
+      @for (session of sessions; track session.startTime + session.title) {
+        <li>
+          <article class="session">
             <p class="time">{{ session.startTime }} – {{ session.endTime }}</p>
-          </div>
-
-          <div class="visual">
-            <div class="stage">
-              <p class="stage-label">Speaker</p>
-              @if (session.image) {
-                <img [src]="session.image" [alt]="session.speakerName" />
+            <div class="body">
+              <h3 class="title" [innerHTML]="session.title | markdown: 'inline'"></h3>
+              @if (session.speakerName) {
+                <p class="speaker">
+                  {{ session.speakerName }}
+                  @if (session.speakerPosition) {
+                    <span class="role">{{ session.speakerPosition }}</span>
+                  }
+                </p>
               }
-              <div class="speaker">
-                <p class="name">{{ session.speakerName }}</p>
-                @if (session.speakerPosition) {
-                  <p class="role">{{ session.speakerPosition }}</p>
-                }
-                @if (session.linkedin || session.nomadcoder) {
-                  <div class="social">
-                    @if (session.linkedin) {
-                      <a
-                        [href]="session.linkedin"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        [attr.aria-label]="session.speakerName + ' on LinkedIn'"
-                      >
-                        <i class="bi bi-linkedin"></i>
-                      </a>
-                    }
-                    @if (session.nomadcoder) {
-                      <a
-                        class="nc"
-                        [href]="session.nomadcoder"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        [attr.aria-label]="session.speakerName + ' on NomadCoder'"
-                        title="NomadCoder"
-                      >NC</a>
-                    }
-                  </div>
-                }
-              </div>
+              @if (session.description) {
+                <div class="details" [innerHTML]="session.description | markdown"></div>
+              }
             </div>
-          </div>
-        </div>
-      </article>
+          </article>
+        </li>
       }
-    }
+    </ol>
   </div>
 </section>
