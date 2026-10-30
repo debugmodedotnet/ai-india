@@ -201,22 +201,4 @@ Summarization, extraction, code generation, classification, and complex reasonin
 
 This session shows how to build a practical model-routing layer that selects models based on workload, complexity, privacy, latency, and cost — and escalates to stronger models only when necessary.`,
   },
-  {
-    title: 'From Commit to Production: Building AI-Ready CI/CD Pipelines with Harness',
-    speakerName: 'Arumulla Yaswanth Reddy',
-    speakerPosition: 'Software Engineer @Arealis Networks',
-    startTime: '5:00 PM',
-    endTime: '5:30 PM',
-    description: `AI applications need more than traditional **CI/CD**. This talk explores how to build an **AI-ready delivery pipeline using Harness**, covering the complete journey from code to production.
-
-We’ll explore:
-
-* Automated builds and testing
-* Security and AI evaluation
-* Automated deployment
-* Progressive delivery
-* Building guardrails for safe AI deployments
-
-Through practical **code and pipeline examples**, you’ll learn how to safely move **AI applications from commit to production** with automation, evaluation, and the right guardrails in place.`,
-  },
 ];

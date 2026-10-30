@@ -58,17 +58,6 @@ export const speakers: ISpeakers[] = [
     ],
   },
   {
-    id: 14,
-    name: 'Arumulla Yaswanth Reddy',
-    position: 'Software Engineer @Arealis Networks',
-    bio: 'Yaswanth Reddy Arumulla is a Lead DevOps Engineer at Arealis Networks Pvt. Ltd., with hands-on experience in AWS, Kubernetes, CI/CD, DevSecOps, and cloud-native technologies. He is also an AWS Community Builder, public speaker, and creator of Yashacademy0, a DevOps YouTube channel with 2.5K+ subscribers, where he shares practical, hands-on technical training. Yaswanth is passionate about building scalable infrastructure, improving software delivery, and exploring how AI can transform DevOps and cloud engineering. He enjoys sharing knowledge at community events and helping engineers learn through real-world projects.',
-    image: 'assets/images/speakers/arumulla.png',
-    linkedin: 'https://www.linkedin.com/in/yaswanth-arumulla/',
-    nomadcoder: 'https://nomadcoder.ai/p/arumullayaswanthreddya5TDAbIJ',
-    previousTalks: [
-    ],
-  },
-  {
     id: 15,
     name: 'Chinmay Naik',
     position: 'Founder @One2N',
@@ -122,5 +111,5 @@ export const speakers: ISpeakers[] = [
     nomadcoder: 'https://nomadcoder.ai/p/varunsi7jJFyP6',
     previousTalks: [
     ],
-  }
+  },
 ];
