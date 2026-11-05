@@ -10,19 +10,11 @@ export const agenda: IAgenda[] = [
     description: '',
   },
   {
-    title: 'Beyond ReAct: Building Reliable AI Agents with LangGraph',
-    speakerName: 'Dhananjay Kumar',
-    speakerPosition: 'Founder nomadcoder | AI-India',
-    startTime: '10:30 AM',
-    endTime: '11:00 AM',
-    description: '',
-  },
-  {
     title: 'Self Improving Agent Architecture',
     speakerName: 'Priyanka Kore',
     speakerPosition: 'Lead @Adesso India',
-    startTime: '11:00 AM',
-    endTime: '11:30 AM',
+    startTime: '10:30 AM',
+    endTime: '11:00 AM',
     description: `A growing class of **agentic systems** don't just execute tasks — they rewrite their own prompts, regenerate their own tool definitions, and restructure their own workflows in response to failure. It's a compelling premise: an agent that debugs itself.
 
 But in practice, these systems tend to improve fast and then flatten out, often well short of human-level reliability, and the reasons why are more structural than incidental.
@@ -39,8 +31,8 @@ This is a grounded, failure-mode-focused talk for anyone building **agentic syst
     title: "We Can't Improve What we Can't Measure: Evals, Harnesses, and Silent Failure in Production Agents",
     speakerName: 'Jeevan D C',
     speakerPosition: 'Engineering Manager @Entain',
-    startTime: '11:30 AM',
-    endTime: '12:00 PM',
+    startTime: '11:00 AM',
+    endTime: '11:30 AM',
     description: `Most agent projects clear the **demo bar** and then stall. A prompt is reworded, a model is swapped, or a tool is added — but there's no reliable signal showing whether the system improved or quietly regressed.
 
 Classic testing assumes **deterministic output and known-correct answers**. Agents offer neither.
@@ -71,8 +63,8 @@ The patterns are drawn from running an agent fleet at organizational scale, incl
     title: 'Your evals are lying to you',
     speakerName: 'Varun Srinivas',
     speakerPosition: 'CTO @Coditas',
-    startTime: '12:00 PM',
-    endTime: '12:30 PM',
+    startTime: '11:30 AM',
+    endTime: '12:00 PM',
     description: `Your evals are lying to you. They say pass, and your agent still fails in production. Confidently wrong, drifting off-task over a long session, burning 10x the tokens it should. The eval passed. The agent still failed.
 
 This talk is about closing that gap. I'll walk through building an eval pipeline that mirrors how your agent actually gets used: deterministic checks for what you can verify exactly, LLM judges for what you can't, and human review for the rest — wired into a loop that runs on every change, not just before a big release.
@@ -87,12 +79,38 @@ What you'll learn:
 * What to do when your evals themselves start lying to you`,
   },
   {
-    title: 'TBD',
+    title: 'Building a Complete Local AI Ecosystem',
     speakerName: 'ShivPrasad Koirala',
     speakerPosition: 'Founder @Questpond',
+    startTime: '12:00 PM',
+    endTime: '12:30 PM',
+    description: `- Choosing Local LLMs: Qwen, Gemma, and GPT-OSS
+- Running Models with Ollama and LM Studio
+- Local Embeddings: Qwen3 Embedding, EmbeddingGemma, and Nomic
+- Building Local RAG with Vector Databases
+- Security and Guardrails with NeMo Guardrails and Presidio
+- Observability and Tracing with Langfuse
+- Evaluating Accuracy, Speed, Memory Usage, and Cost
+- Putting the Complete Local AI Stack Together`,
+  },
+  {
+    title: 'Running Offline AI on Mobile Devices',
+    speakerName: 'Infant Mystica',
+    speakerPosition: 'Software Developer @TranslateLive',
     startTime: '12:30 PM',
     endTime: '1:00 PM',
-    description: '',
+    description: `This talk explores how to **run AI models directly on user devices**, reducing dependency on a network connection and cloud infrastructure.
+
+We’ll look at:
+
+* Unreliable network connectivity and how offline AI can address it
+* Latency reduction by processing AI workloads on-device
+* Cloud cost optimization by reducing dependency on cloud inference
+* Hardware limitations when running AI models locally
+* Offline-first UX architecture for AI-powered applications
+* Building an offline AI pipeline for real-world applications
+
+This session is especially relevant for **mobile developers, AI engineers, and developers interested in on-device AI**.`,
   },
   {
     title: 'Lunch',
@@ -115,11 +133,25 @@ I'll cover the basics of what inference engineering is, how one can self-host mo
 I'll cover the talk in a story format where I'll walk through the journey I took to learn inference engineering and hosting private sovereign AI infra to serve production traffic.`,
   },
   {
+    title: 'Engineering a Model Router for Cost, Latency & Quality',
+    speakerName: 'Sunny Sharma',
+    speakerPosition: 'Technical Architect @HROne',
+    startTime: '2:30 PM',
+    endTime: '3:00 PM',
+    description: `Production AI applications often send every request to the strongest available model.
+
+That is simple — but expensive, slower than necessary, and frequently wasteful.
+
+Summarization, extraction, code generation, classification, and complex reasoning have very different requirements.
+
+This session shows how to build a practical model-routing layer that selects models based on workload, complexity, privacy, latency, and cost — and escalates to stronger models only when necessary.`,
+  },
+  {
     title: 'MCP at Scale: Going Serverless',
     speakerName: 'Sumit Parakh',
     speakerPosition: 'Principal Software Engineer @Perforce Software',
-    startTime: '2:30 PM',
-    endTime: '3:00 PM',
+    startTime: '3:00 PM',
+    endTime: '3:30 PM',
     description: `As MCP (Model Context Protocol) moves from experimentation to production, scaling MCP servers introduces challenges around infrastructure, availability, cost, and operational overhead.
 
 With the evolution of MCP toward stateless and asynchronous architectures, serverless becomes a natural fit for building scalable MCP integrations.
@@ -133,25 +165,6 @@ This talk explores:
 * Practical considerations for moving MCP servers from prototype to production
 
 A practical session for developers and AI engineers looking to build scalable, production-ready MCP integrations.`,
-  },
-  {
-    title: 'Running Offline AI on Mobile Devices',
-    speakerName: 'Infant Mystica',
-    speakerPosition: 'Software Developer @TranslateLive',
-    startTime: '3:00 PM',
-    endTime: '3:30 PM',
-    description: `This talk explores how to **run AI models directly on user devices**, reducing dependency on a network connection and cloud infrastructure.
-
-We’ll look at:
-
-* Unreliable network connectivity and how offline AI can address it
-* Latency reduction by processing AI workloads on-device
-* Cloud cost optimization by reducing dependency on cloud inference
-* Hardware limitations when running AI models locally
-* Offline-first UX architecture for AI-powered applications
-* Building an offline AI pipeline for real-world applications
-
-This session is especially relevant for **mobile developers, AI engineers, and developers interested in on-device AI**.`,
   },
   {
     title: 'A Guardrail Blueprint for Production AI Agents',
@@ -187,18 +200,67 @@ The session also covers key risks highlighted in **OWASP’s Agentic Application
     endTime: '4:30 PM',
     description: '',
   },
+
   {
-    title: 'Engineering a Model Router for Cost, Latency & Quality',
-    speakerName: 'Sunny Sharma',
-    speakerPosition: 'Technical Architect @HROne',
+    title: 'Creating AI Agents Using LangGraph and TypeScript',
+    speakerName: 'Dhananjay Kumar',
+    speakerPosition: 'Founder nomadcoder | AI-India',
     startTime: '4:30 PM',
-    endTime: '5:00 PM',
-    description: `Production AI applications often send every request to the strongest available model.
+    endTime: '6:00 PM',
+    description: `## Module 1: Understanding LangGraph (30 Minutes)
 
-That is simple — but expensive, slower than necessary, and frequently wasteful.
+### Topics Covered
+- Introduction to AI Agents and LangGraph
+- Understanding Graph-based Architecture
+- State, Nodes and Edges
+- StateGraph, START and END
+- Connecting Nodes and Executing a Graph
 
-Summarization, extraction, code generation, classification, and complex reasoning have very different requirements.
+### Lab 1: Build Your First Graph
+- Create a StateGraph using TypeScript.
+- Define state and nodes.
+- Connect nodes and execute the graph.
 
-This session shows how to build a practical model-routing layer that selects models based on workload, complexity, privacy, latency, and cost — and escalates to stronger models only when necessary.`,
+## Module 2: Building Your First AI Agent (30 Minutes)
+
+### Topics Covered
+- Understanding LLM Tool Calling
+- Creating Custom Tools using TypeScript
+- Integrating Tools with an LLM
+- Understanding Conditional Edges
+- Introduction to the ReAct Agent Pattern
+
+### Lab 2: Build a Tool-Calling Agent
+- Create a custom tool.
+- Connect the tool with an LLM.
+- Build an agent that decides when to use a tool.
+- Generate responses based on tool results.
+
+## Module 3: Making Agents Stateful (30 Minutes)
+
+### Topics Covered
+- Understanding Conversational Memory
+- Managing State Across Interactions
+- Introduction to Checkpointers
+- Understanding Thread IDs
+
+### Lab 3: Build a Conversational AI Assistant
+- Add memory to your existing agent.
+- Maintain conversation context.
+- Test multiple interactions within the same conversation.
+
+## Learning Outcomes
+
+By the end of this workshop, participants will be able to:
+
+- Understand the fundamentals of LangGraph.
+- Build graphs using TypeScript.
+- Create AI agents with custom tools.
+- Implement conditional execution.
+- Add conversational memory to AI agents.
+
+## Notes
+
+This is an offline workshop, so you don't need to bring a laptop.`,
   },
 ];

@@ -25,7 +25,7 @@ describe('SessionPostersComponent', () => {
 
     expect(talk).toBeTruthy();
     expect(talk?.querySelector('img')).toBeNull();
-    expect(talk?.querySelector('.time')?.textContent).toContain('10:30 AM');
+    expect(talk?.querySelector('.time')?.textContent).toContain('4:30 PM');
     expect(fixture.nativeElement.querySelector('img')).toBeNull();
   });
 
